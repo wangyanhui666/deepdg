@@ -8,7 +8,7 @@ net='resnet18'
 task='img_dg'
 output='../../data/train_output/test'
 
-i=0
+i=2
 
 # MLDG 
 python train.py --data_dir $data_dir --max_epoch $max_epoch --net $net --task $task --output $output \
