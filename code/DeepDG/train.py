@@ -62,6 +62,7 @@ def get_args():
                         default=1, help='MMD, CORAL hyper-param')
     parser.add_argument('--momentum', type=float,
                         default=0.9, help='for optimizer')
+    parser.add_argument('--mu',type=float,default=1,help='DANN_RES_A feature fusion rate')
     parser.add_argument('--net', type=str, default='resnet50',
                         help="featurizer: vgg16, resnet50, resnet101,DTNBase")
     parser.add_argument('--N_WORKERS', type=int, default=4)

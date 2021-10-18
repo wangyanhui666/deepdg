@@ -47,6 +47,7 @@ def alg_loss_dict(args):
                  'CORAL': ['class', 'coral', 'total'],
                  'DANN': ['class', 'dis', 'total'],
                  'DANN_RES_C': ['class', 'total'],
+                 'DANN_RES_A': ['class', 'total'],
                  'ERM': ['class'],
                  'Mixup': ['class'],
                  'MLDG': ['total'],
