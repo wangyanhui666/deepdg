@@ -10,7 +10,7 @@ from alg.opt import *
 from alg import alg, modelopera
 from utils.util import set_random_seed, save_checkpoint, print_args, train_valid_target_eval_names, alg_loss_dict, Tee, img_param_init, print_environ
 from datautil.getdataloader import get_img_dataloader
-
+from torch.utils.tensorboard import SummaryWriter
 
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
@@ -18,13 +18,16 @@ def get_args():
     parser.add_argument('--alpha', type=float,
                         default=1, help='DANN dis alpha')
     parser.add_argument('--batch_size', type=int,
-                        default=32, help='batch_size')
+                        default=4, help='batch_size')
     parser.add_argument('--beta1', type=float, default=0.5,
                         help='Adam hyper-param')
     parser.add_argument('--bottleneck', type=int,
                         default=256, help='bottleneck dim')
+    parser.add_argument('--bottleneck_a', type=int,
+                        default=256, help='top path bottleneck dim')
     parser.add_argument('--checkpoint_freq', type=int,
                         default=1, help='Checkpoint every N epoch')
+    parser.add_argument('--checkpoint', type=str, default=None, help='checkpoint path')
     parser.add_argument('--classifier', type=str,
                         default="linear", choices=["linear", "wn"])
     parser.add_argument('--data_file', type=str, default='',
@@ -71,6 +74,7 @@ def get_args():
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--split_style', type=str, default='strat',
                         help="the style to split the train and eval datasets")
+    parser.add_argument('--data_dir', type=str, default='/output/log/', help='data dir')
     parser.add_argument('--task', type=str, default="img_dg",
                         choices=["img_dg"], help='now only support image tasks')
     parser.add_argument('--tau', type=float, default=1, help="andmask tau")
@@ -95,11 +99,19 @@ if __name__ == '__main__':
     args = get_args()
     set_random_seed(args.seed)
 
+    # writer = SummaryWriter('runs/fashion_mnist_experiment_1')
     loss_list = alg_loss_dict(args)
     train_loaders, eval_loaders = get_img_dataloader(args)
     eval_name_dict = train_valid_target_eval_names(args)
     algorithm_class = alg.get_algorithm_class(args.algorithm)
-    algorithm = algorithm_class(args).cuda()
+    if args.algorithm=='DANN_RES_C' or args.algorithm=='DANN_RES_A':
+        print('use pretrained DANN')
+        DANN=alg.get_algorithm_class('DANN')(args)
+        check_point=torch.load(args.checkpoint)
+        DANN.load_state_dict(check_point['model_dict'])
+        algorithm = algorithm_class(args,DANN).cuda()
+    else:
+        algorithm = algorithm_class(args).cuda()
     algorithm.train()
     opt = get_optimizer(algorithm, args)
     sch = get_scheduler(opt, args)

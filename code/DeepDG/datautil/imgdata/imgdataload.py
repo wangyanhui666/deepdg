@@ -1,5 +1,6 @@
 # coding=utf-8
 from torch.utils.data import Dataset
+import os
 import numpy as np
 from datautil.util import Nmax
 from datautil.imgdata.util import rgb_loader, l_loader
@@ -8,6 +9,7 @@ from torchvision.datasets import ImageFolder
 
 class ImageDataset(object):
     def __init__(self, dataset, task, root_dir, domain_name, domain_label=-1, labels=None, transform=None, target_transform=None, indices=None, test_envs=[], mode='RGB'):
+        print(os.path.abspath(root_dir))
         self.imgs = ImageFolder(root_dir+domain_name).imgs
         self.domain_num = 0
         self.task = task
