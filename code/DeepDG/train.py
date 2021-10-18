@@ -144,6 +144,7 @@ if __name__ == '__main__':
             print(s[:-1])
             s = ''
             for item in acc_type_list:
+                print(item)
                 acc_record[item] = np.mean(np.array([modelopera.accuracy(
                     algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))
                 s += (item+'_acc:%.4f,' % acc_record[item])

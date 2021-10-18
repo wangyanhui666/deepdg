@@ -20,7 +20,7 @@ def get_params(alg, args, inner=False):
              initlr}
         ]
     else:
-        if ('DANN_RES_C' in args.algorithm):
+        if ('DANN_RES_C' in args.algorithm) or ('DANN_RES_A' in args.algorithm):
             params = [
                 {'params': alg.featurizer_a.parameters(), 'lr': args.lr_decay1 * initlr},
                 {'params': alg.bottleneck_a.parameters(), 'lr': args.lr_decay2 * initlr},
