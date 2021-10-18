@@ -20,11 +20,19 @@ def get_params(alg, args, inner=False):
              initlr}
         ]
     else:
-        params = [
-            {'params': alg.featurizer.parameters(), 'lr': args.lr_decay1 * initlr},
-            {'params': alg.bottleneck.parameters(), 'lr': args.lr_decay2 * initlr},
-            {'params': alg.classifier.parameters(), 'lr': args.lr_decay2 * initlr}
-        ]
+        if ('DANN_RES_C' in args.algorithm):
+            params = [
+                {'params': alg.featurizer_a.parameters(), 'lr': args.lr_decay1 * initlr},
+                {'params': alg.bottleneck_a.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.classifier.parameters(), 'lr': args.lr_decay2 * initlr}
+            ]
+            return params
+        else:
+            params = [
+                {'params': alg.featurizer.parameters(), 'lr': args.lr_decay1 * initlr},
+                {'params': alg.bottleneck.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.classifier.parameters(), 'lr': args.lr_decay2 * initlr}
+            ]
     if ('DANN' in args.algorithm) or ('CDANN' in args.algorithm):
         params.append({'params': alg.discriminator.parameters(),
                       'lr': args.lr_decay2 * initlr})

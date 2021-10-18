@@ -10,7 +10,7 @@ from alg.opt import *
 from alg import alg, modelopera
 from utils.util import set_random_seed, save_checkpoint, print_args, train_valid_target_eval_names, alg_loss_dict, Tee, img_param_init, print_environ
 from datautil.getdataloader import get_img_dataloader
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
@@ -74,7 +74,6 @@ def get_args():
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--split_style', type=str, default='strat',
                         help="the style to split the train and eval datasets")
-    parser.add_argument('--data_dir', type=str, default='/output/log/', help='data dir')
     parser.add_argument('--task', type=str, default="img_dg",
                         choices=["img_dg"], help='now only support image tasks')
     parser.add_argument('--tau', type=float, default=1, help="andmask tau")

@@ -20,7 +20,7 @@ class DANN_RES_C(Algorithm):
 
         self.featurizer_a = get_fea(args)
         self.bottleneck_a = common_network.feat_bottleneck(
-            self.featurizer.in_features, args.bottleneck_a, args.layer)
+            self.featurizer_a.in_features, args.bottleneck_a, args.layer)
         self.featurizer_b = DANN.featurizer
         self.bottleneck_b = DANN.bottleneck
         self.classifier = common_network.feat_classifier(

@@ -3,7 +3,7 @@ from alg.algs.ERM import ERM
 from alg.algs.MMD import MMD
 from alg.algs.CORAL import CORAL
 from alg.algs.DANN import DANN
-from alg.algs.DANN_RES import DANN_RES_c
+from alg.algs.DANN_RES import DANN_RES_C
 from alg.algs.RSC import RSC
 from alg.algs.Mixup import Mixup
 from alg.algs.MLDG import MLDG
