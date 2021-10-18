@@ -18,7 +18,7 @@ def get_args():
     parser.add_argument('--alpha', type=float,
                         default=1, help='DANN dis alpha')
     parser.add_argument('--batch_size', type=int,
-                        default=4, help='batch_size')
+                        default=32, help='batch_size')
     parser.add_argument('--beta1', type=float, default=0.5,
                         help='Adam hyper-param')
     parser.add_argument('--bottleneck', type=int,

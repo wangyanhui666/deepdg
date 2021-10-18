@@ -46,7 +46,7 @@ def alg_loss_dict(args):
     loss_dict = {'ANDMask': ['total'],
                  'CORAL': ['class', 'coral', 'total'],
                  'DANN': ['class', 'dis', 'total'],
-                 'DANN_RES_C': ['class', 'dis', 'total'],
+                 'DANN_RES_C': ['class', 'total'],
                  'ERM': ['class'],
                  'Mixup': ['class'],
                  'MLDG': ['total'],

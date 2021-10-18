@@ -45,7 +45,7 @@ class DANN_RES_C(Algorithm):
         opt.step()
         if sch:
             sch.step()
-        return {'total': loss.item(), 'class': classifier_loss.item(), 'dis': disc_loss.item()}
+        return {'total': loss.item(), 'class': classifier_loss.item()}
 
     def predict(self, x):
         return self.classifier(self.bottleneck(self.featurizer(x)))
