@@ -74,6 +74,7 @@ def get_args():
     parser.add_argument('--save_model_every_checkpoint', action='store_true')
     parser.add_argument('--schuse', action='store_true')
     parser.add_argument('--seed', type=int, default=0)
+    parser.add_argument('--shownet',action='store_true')
     parser.add_argument('--split_style', type=str, default='strat',
                         help="the style to split the train and eval datasets")
     parser.add_argument('--task', type=str, default="img_dg",
@@ -150,7 +151,7 @@ if __name__ == '__main__':
                 acc_record[item] = np.mean(np.array([modelopera.accuracy(
                     algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))
                 s += (item+'_acc:%.4f,' % acc_record[item])
-                writer.add_scalar('acc/{}'.format(item), step_vals[item], epoch)
+                writer.add_scalar('acc/{}'.format(item), acc_record[item], epoch)
             print(s[:-1])
             if acc_record['valid'] > best_valid_acc:
                 best_valid_acc = acc_record['valid']
@@ -160,7 +161,9 @@ if __name__ == '__main__':
                 save_checkpoint(f'model_epoch{epoch}.pkl', algorithm, args)
             print('total cost time: %.4f' % (time.time()-sss))
             algorithm_dict = algorithm.state_dict()
-
+    if args.shownet==True:
+        all_x = torch.cat([data[0].float() for data in minibatches_device])
+        writer.add_graph(algorithm,all_x)
     save_checkpoint('best_model.pkl',best_algorithm,args)
     print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)

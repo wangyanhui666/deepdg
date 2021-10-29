@@ -9,7 +9,7 @@ from torchvision.datasets import ImageFolder
 
 class ImageDataset(object):
     def __init__(self, dataset, task, root_dir, domain_name, domain_label=-1, labels=None, transform=None, target_transform=None, indices=None, test_envs=[], mode='RGB'):
-        print(os.path.abspath(root_dir))
+        print(os.path.abspath(root_dir+domain_name))
         self.imgs = ImageFolder(root_dir+domain_name).imgs
         self.domain_num = 0
         self.task = task
