@@ -131,3 +131,6 @@ def img_param_init(args):
         elif args.dataset == 'VLCS':
             args.num_classes = 5
     return args
+
+def tSNE():
+    pass

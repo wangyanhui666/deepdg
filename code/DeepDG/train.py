@@ -5,12 +5,12 @@ import sys
 import time
 import numpy as np
 import argparse
-
+import copy
 from alg.opt import *
 from alg import alg, modelopera
 from utils.util import set_random_seed, save_checkpoint, print_args, train_valid_target_eval_names, alg_loss_dict, Tee, img_param_init, print_environ
 from datautil.getdataloader import get_img_dataloader
-# from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
@@ -42,6 +42,7 @@ def get_args():
                         default=1, help="groupdro eta")
     parser.add_argument('--layer', type=str, default="bn",
                         choices=["ori", "bn"], help='bottleneck normalization style')
+    parser.add_argument('--logdir',type=str,default=None,help='tensorboard logdir path')
     parser.add_argument('--inner_lr', type=float,
                         default=1e-2, help="learning rate used in MLDG")
     parser.add_argument('--lr', type=float, default=1e-2, help="learning rate")
@@ -99,7 +100,7 @@ if __name__ == '__main__':
     args = get_args()
     set_random_seed(args.seed)
 
-    # writer = SummaryWriter('runs/fashion_mnist_experiment_1')
+    writer = SummaryWriter(args.logdir)
     loss_list = alg_loss_dict(args)
     train_loaders, eval_loaders = get_img_dataloader(args)
     eval_name_dict = train_valid_target_eval_names(args)
@@ -130,7 +131,7 @@ if __name__ == '__main__':
             minibatches_device = [(data)
                                   for data in next(train_minibatches_iterator)]
             step_vals = algorithm.update(minibatches_device, opt, sch)
-
+            print('training cost time: %.4f' % (time.time() - sss))
         if (epoch in [int(args.max_epoch*0.7), int(args.max_epoch*0.9)]) and (not args.schuse):
             print('manually descrease lr')
             for params in opt.param_groups:
@@ -141,6 +142,7 @@ if __name__ == '__main__':
             s = ''
             for item in loss_list:
                 s += (item+'_loss:%.4f,' % step_vals[item])
+                writer.add_scalar('loss/{}'.format(item),step_vals[item],epoch)
             print(s[:-1])
             s = ''
             for item in acc_type_list:
@@ -148,15 +150,19 @@ if __name__ == '__main__':
                 acc_record[item] = np.mean(np.array([modelopera.accuracy(
                     algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))
                 s += (item+'_acc:%.4f,' % acc_record[item])
+                writer.add_scalar('acc/{}'.format(item), step_vals[item], epoch)
             print(s[:-1])
             if acc_record['valid'] > best_valid_acc:
                 best_valid_acc = acc_record['valid']
                 target_acc = acc_record['target']
+                best_algorithm = copy.deepcopy(algorithm)
             if args.save_model_every_checkpoint:
                 save_checkpoint(f'model_epoch{epoch}.pkl', algorithm, args)
             print('total cost time: %.4f' % (time.time()-sss))
             algorithm_dict = algorithm.state_dict()
 
+    save_checkpoint('best_model.pkl',best_algorithm,args)
+    print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)
 
     print('DG result: %.4f' % target_acc)

@@ -78,7 +78,7 @@ class DANN_RES_A(Algorithm):
         all_z_a = self.bottleneck_a(self.featurizer_a(all_x))
         all_z_b = self.bottleneck_b(self.featurizer_b(all_x)).detach()
         # feature fusion
-        all_z = all_z_b+self.args.mu*all_z_a
+        all_z = (1-self.args.mu1)*all_z_b+self.args.mu1*all_z_a
 
         all_preds = self.classifier(all_z)
         classifier_loss = F.cross_entropy(all_preds, all_y)

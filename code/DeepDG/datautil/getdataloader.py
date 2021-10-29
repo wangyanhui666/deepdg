@@ -53,7 +53,8 @@ def get_img_dataloader(args):
         batch_size=64,
         num_workers=args.N_WORKERS,
         drop_last=False,
-        shuffle=False)
+        shuffle=False,
+        )
         for env in trdatalist+tedatalist]
 
     return train_loaders, eval_loaders

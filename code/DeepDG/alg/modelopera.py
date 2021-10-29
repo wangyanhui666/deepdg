@@ -20,6 +20,7 @@ def accuracy(network, loader):
     network.eval()
     with torch.no_grad():
         for data in loader:
+            print(data)
             x = data[0].cuda().float()
             y = data[1].cuda().long()
             p = network.predict(x)
