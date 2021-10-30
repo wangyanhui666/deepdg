@@ -127,12 +127,21 @@ if __name__ == '__main__':
     best_valid_acc, target_acc = 0, 0
     print('===========start training===========')
     sss = time.time()
+    time1=0
+    time2=0
     for epoch in range(args.max_epoch):
         for iter_num in range(args.step_per_epoch):
+            sss1=time.time()
             minibatches_device = [(data)
                                   for data in next(train_minibatches_iterator)]
+            sss2=time.time()
+            time1+=sss2-sss1
             step_vals = algorithm.update(minibatches_device, opt, sch)
-            print('training cost time: %.4f' % (time.time() - sss))
+            sss3=time.time()
+            time2+=sss3-sss2
+        print('read data time{}'.format(time1))
+        print('update time {}'.format(time2))
+        print('training cost time: %.4f' % (time.time() - sss))
         if (epoch in [int(args.max_epoch*0.7), int(args.max_epoch*0.9)]) and (not args.schuse):
             print('manually descrease lr')
             for params in opt.param_groups:

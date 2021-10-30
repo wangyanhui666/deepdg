@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 101, in <module>
+    args = get_args()
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 95, in get_args
+    args = img_param_init(args)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\utils\util.py", line 111, in img_param_init
+    args.domains = domains
+UnboundLocalError: local variable 'domains' referenced before assignment

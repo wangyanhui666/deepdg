@@ -1,8 +1,11 @@
 # coding=utf-8
+import io
+
 from torch.utils.data import Dataset
 import os
 import numpy as np
 from datautil.util import Nmax
+from PIL import Image, ImageFile
 from datautil.imgdata.util import rgb_loader, l_loader
 from torchvision.datasets import ImageFolder
 
@@ -15,9 +18,14 @@ class ImageDataset(object):
         self.task = task
         self.dataset = dataset
         imgs = [item[0] for item in self.imgs]
+        self.x = []
+        for i in imgs:
+            with open(i, 'rb') as f:
+                self.x.append(f.read())
         labels = [item[1] for item in self.imgs]
         self.labels = np.array(labels)
-        self.x = imgs
+        print('+++++++++++++++++++++++++++++++')
+        print('len_x',len(self.x))
         self.transform = transform
         self.target_transform = target_transform
         if indices is None:
@@ -52,7 +60,8 @@ class ImageDataset(object):
 
     def __getitem__(self, index):
         index = self.indices[index]
-        img = self.input_trans(self.loader(self.x[index]))
+        img_data=self.x[index]
+        img=self.input_trans(self.loader(img_data))
         ctarget = self.target_trans(self.labels[index])
         dtarget = self.target_trans(self.dlabels[index])
         return img, ctarget, dtarget

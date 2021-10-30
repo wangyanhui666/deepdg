@@ -1,4 +1,5 @@
 # coding=utf-8
+import io
 from torchvision import transforms
 from PIL import Image, ImageFile
 ImageFile.LOAD_TRUNCATED_IMAGES = True
@@ -42,13 +43,11 @@ def image_test(dataset, resize_size=256, crop_size=224):
     ])
 
 
-def rgb_loader(path):
-    with open(path, 'rb') as f:
-        with Image.open(f) as img:
-            return img.convert('RGB')
+def rgb_loader(img_data):
+    img=Image.open(io.BytesIO(img_data))
+    return img.convert('RGB')
 
 
-def l_loader(path):
-    with open(path, 'rb') as f:
-        with Image.open(f) as img:
-            return img.convert('L')
+def l_loader(img_data):
+    img=Image.open(io.BytesIO(img_data))
+    return img.convert('L')
