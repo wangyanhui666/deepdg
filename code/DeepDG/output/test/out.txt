@@ -20307,3 +20307,3592 @@ Traceback (most recent call last):
   File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 107, in <module>
     print(train_loaders.dataset.x[0])
 KeyboardInterrupt
+Environment:
+	Python: 3.9.7
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 8.4.0
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\art_painting
++++++++++++++++++++++++++++++++
+len_x 2048
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+b'\xff\xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00\xff\xdb\x00C\x00\x02\x01\x01\x01\x01\x01\x02\x01\x01\x01\x02\x02\x02\x02\x02\x04\x03\x02\x02\x02\x02\x05\x04\x04\x03\x04\x06\x05\x06\x06\x06\x05\x06\x06\x06\x07\t\x08\x06\x07\t\x07\x06\x06\x08\x0b\x08\t\n\n\n\n\n\x06\x08\x0b\x0c\x0b\n\x0c\t\n\n\n\xff\xdb\x00C\x01\x02\x02\x02\x02\x02\x02\x05\x03\x03\x05\n\x07\x06\x07\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\xff\xc0\x00\x11\x08\x00\xe3\x00\xe3\x03\x01"\x00\x02\x11\x01\x03\x11\x01\xff\xc4\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\xff\xc4\x00\xb5\x10\x00\x02\x01\x03\x03\x02\x04\x03\x05\x05\x04\x04\x00\x00\x01}\x01\x02\x03\x00\x04\x11\x05\x12!1A\x06\x13Qa\x07"q\x142\x81\x91\xa1\x08#B\xb1\xc1\x15R\xd1\xf0$3br\x82\t\n\x16\x17\x18\x19\x1a%&\'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz\x83\x84\x85\x86\x87\x88\x89\x8a\x92\x93\x94\x95\x96\x97\x98\x99\x9a\xa2\xa3\xa4\xa5\xa6\xa7\xa8\xa9\xaa\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xff\xc4\x00\x1f\x01\x00\x03\x01\x01\x01\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\xff\xc4\x00\xb5\x11\x00\x02\x01\x02\x04\x04\x03\x04\x07\x05\x04\x04\x00\x01\x02w\x00\x01\x02\x03\x11\x04\x05!1\x06\x12AQ\x07aq\x13"2\x81\x08\x14B\x91\xa1\xb1\xc1\t#3R\xf0\x15br\xd1\n\x16$4\xe1%\xf1\x17\x18\x19\x1a&\'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x92\x93\x94\x95\x96\x97\x98\x99\x9a\xa2\xa3\xa4\xa5\xa6\xa7\xa8\xa9\xaa\xb2\xb3\xb4\xb5\xb6\xb7\xb8\xb9\xba\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xff\xda\x00\x0c\x03\x01\x00\x02\x11\x03\x11\x00?\x00\xfd\xfc\xa2\x8a(\x00\xa2\x8a(\x00\xaf\x8a?\xe0\xb3?\xf0Z\x1f\x83\xbf\xf0I\xcf\x85vq\xcb\xa4\x8f\x15|M\xf1Ll\xbe\x0c\xf0M\xbc\xd8i9+\xf6\xab\x829H\x15\xf8\xe3\xe6r\n\xafF+\xf6\x8e\xa1{\x16\x9da>\xa1?\xdc\x82\x16\x91\xf1\xe8\xa0\x93\xfc\xab\xf9A\xf1\xdf\xc5o\x10\x7f\xc1D\x7f\xe0\xa9\x1f\x19?k\xef\x8aWM\xa8Yh\x1e\'\x9fG\xf0U\xb4\xa4\xb46\xb6v\xf2\xc9\r\xb8@xR"\x8dd p^wn\xf5\xe6\xe7\x19\x9d,\x9f-\xa9\x8b\xa8\xae\xa2\xb6\xee\xde\x89|\xdf\xe1s\xbf+\xcb\xeaf\x98\xf8a\xa0\xec\xe4\xf7\xec\x96\xad\xfd\xc6\xb7\x8d\xbe.\xff\x00\xc1V?n/\x1a_\xfct\xfd\xa3\xff\x00n\xcf\x1fx\'\xfb_\x06\xcb\xc1\x9e\n\xf1\x05\xe5\x8d\x95\x95\xbf;c[xgH\xe3\xeb\xd4\x87v\xfe#\xd2\xb1n\xbfe\xff\x00\x8a\xba\xb0?\xf0\x90~\xdc?\x18/\x89m\xccf\xf1\x8d\xcbd\xfa\xfc\xd2\x1ek\xd9(\xaf\xc3q<m\xc4\x98\x8a\xaeq\xac\xe0\x9fH\xa4\x92\xfc\x1b\xfb\xd9\xfb\x06\x1f\x84r\x1a\x14\x94].f\xba\xb6\xee\xff\x00\x14\x8f\x19\xb6\xfd\x96~\'i_?\x87\xff\x00m\xaf\x8b\xd6Rn\r\xbe\x1f\x18\\\x8eA\xe0\xfc\xb2\x0ekg\xc3\xba7\xfc\x14\x87\xe1\x9d\xe2j\x1f\n?\xe0\xac\x7f\x19\xec\x8c-\x98,\xaf<_\xa8\xc9o\xc7@\xd1\xb5\xd3F\xe3\xea\x84{W\xa6\xd1YS\xe3>&\xa6\xee\xb1\r\xfa\xa8\xbf\xfd\xb4\xd2|)\xc3\xf5\x15\xbd\x82^\x8eK\xf54\xbe\x1c\xff\x00\xc1g\x7f\xe0\xe0\x7f\xd9a\x96\xfb]\xf8\x9f\xe1\x1f\x8dZ<\x0c\xa6k\x1f\x10h0\x8b\x81\x08?2\xa4\x96\xcbm)r277\x99\x83\xce\x0fC\xf7o\xec9\xff\x00\x07e\xfe\xc8\xbf\x1b<Ai\xf0\xb7\xf6\xcf\xf8y\xaa|\x12\xf1T\xcc\xb1\x1b\xadZCq\xa4I!8\xc0\xb8\xda\xad\x10\xf7\x91\x14\x0fS_\x9e\xda\xce\xb7\xa3xwN\x93W\xd7\xf5[{+XW2\xdc\xddL\xb1\xa2\x0fvb\x00\xaf \xf1g\x87\xbe\x16\xfe\xd3/u\xa1x{\xe1\xfe\xa7\xe3\x90\x0e?\xe2\x92\xf0\xd5\xde\xab$M\xec\xf6qI\xb4\xfbf\xbe\xd3\x87\xf8\xe38\xc5\xcf\x93\x11C\xda/\xe6\x84]\xfe\xe5t\xfe\xf4|\x9ew\xc2\x19^\x1a\x1c\xf4+r>\xd3j\xdf~\x8f\xf3?\xab\xbf\tx\xc3\xc2\x9e>\xf0\xed\xa7\x8b\xfc\x11\xe2K\x1d_J\xbe\x88Kg\xa8\xe9\xd7K43!\xe8U\xd4\x90kJ\xbf\x96\xef\xd8\x97\xfe\x1f\x9d\xff\x00\x04\xe5\xf1,Z\xef\xec!\xf0\x87\xe3\x17\x88<\x13%\xd9\xfbo\xc3\xdf\x1ax\x16\xfa+\'\\\xe4\x95\x8e\xe1P\xa7p\x19\x02\x9f\x98\x9es\x9a\xfd\x12\x7f\xf89\x13\xf6\xf8\xf8mi\x08\xf8\xe3\xff\x00\x04)\xf8\xc7\x1c\x89\x007\x97:%\x95\xe3@\x18}\xe2\x1b\xec\xb2*\x8c\xf4\x04\xd7\xe9\xf4+G\x11IT\x8aj\xfd\x1ai\xfc\xd3?=\xadJT*86\x9d\xbb4\xd7\xde\x8f\xd7\xfa+\xf2\xc3\xe1_\xfc\x1d\xc1\xff\x00\x04\xe3\xd6\xfcI\x17\x82?hO\x01|G\xf8U\xac\x10>\xd7\x17\x89<:e\x86\xd0\xfaH\xc8D\xa3\xfe\xfds_\x7f\xfe\xcc\xff\x00\xb6\xb7\xec\x9b\xfbc\xf8y\xbcM\xfb0~\xd0>\x17\xf1\xa5\xbcq\x89."\xd1uD{\x8be=\x0c\xb0\x1cK\x0e{oQ\x9a\xd8\xc8\xf5\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80(\xf8\x9a\xd2MC\xc3z\x85\x84#\xe7\x9e\xc6X\xd3\xeaP\x81\xfc\xeb\xf9%\xfd\x8d,\xa5\xf0?\xc6O\x8d\xbf\x075pWT\xf0\xef\xc4\x8b\xf8\xafT\xae9[\x89`?\xf8\xf4\r\xc7j\xfe\xba+\xf9\x88\xff\x00\x82\xb4\xfc\x04\xb9\xfd\x84\x7f\xe0\xbd\x9e*hmE\xa7\x85>6i\x91\xf8\x87GXP\xac^t\xe0\xac\xe5\xcfB\xff\x00k\xb7\xbbl\x0eq:\xe7\xad|\xd7\x17\xe0\xe5\x8e\xe1\xda\xf0\x8e\xe9s/\xfbu\xdf\xf2\xb9\xef\xf0\xc6*8L\xf6\x8c\xe5\xb3|\xbf\xf8\x12\xb7\xe7cN\x8a+\xa7\xfd\x9e\xbfg_\xda\x7f\xf6\xc6\xf1%\xc7\x86\xff\x00e?\x82\xf7>#\xb6\xb1\x9d\xa0\xd5<U\xa8\\\x8b=\x1e\xcae8h\x9a\xe1\x81\xf3d\x1c\xe5#\r\x82\x08$\x1e+\xf0\x1c\x06[\x8e\xcd+\xfb\x1c-79yt\xf3od\xbdY\xfbV7\x1f\x83\xcb\xe8\xfb\\L\xd4c\xe7\xd7\xd1n\xfeG\r\xe2\xaf\x17xw\xc1:<\x9a\xf7\x89\xf5D\xb5\xb6\x8f\x03s\x02Y\xd8\x9c\x04E\x19.\xc4\x90\x02\x80I$\x00+\xea\xbf\xd9\x1b\xfe\x08\xbd\xfbm~\xd7\xd6\x96\xbe4\xf8\x99\xa87\xc0\xff\x00\x03\\\xed\x92)\xb5M1n\xfcM\xa8\xc2@9\x8a\xceC\xe5X\x03\xd9\xae<\xc7\x1d\xe1\x15\xef?\xb0\xaf\xfc\x11_\xf6\xbe\xfd\x98>3\xff\x00\xc3E\xfcI\x9b\xe0\xb7\x8d<Gm$g\xc3v\xfa\xe2\xeaM\x1f\x87\x17\xf8\xe4\xb6TR\x8dp{L\xc3+\xfc8\xeb_\xa8\xfa\x13\xebri\x16\xef\xe28m\xa3\xbe1/\xda\x92\xd1\x98\xc4\x1f\x1c\xed-\xce3\xd35\xfa\xf7\x0fp\x16\x0b\x07N5\xb3\x04\xaaT\xfe_\xb3\x1f\xfeI\xfa\xe9\xd93\xf3\x0c\xf3\x8d1x\xa9\xbaX\x17\xc9\x0f\xe6\xfbO\xff\x00\x91^\x9a\xf9\xa3\xe4\xaf\xd9\xeb\xfe\x08M\xff\x00\x04\xd1\xf8\x00\xf6\xfa\xd5\xef\xc0X\xbe"x\x8a\x02\x8c|S\xf1V\xe9\xb5\xeb\xbf1[p\x924\xb8\x06\xde\xd8\x83\xcf\xfa<Q\x0e\x07\x1c\n\xfa\xc7D\xf0\xa7\x85\xfc5g\x1e\x9d\xe1\xcf\x0eX\xd8[\xc4\xa1b\x86\xce\xd1"DQ\xd0\x00\xa0\x00*\xfd\x15\xfa\x15:t\xe9AB\x11I.\x89$\xbe\xe5c\xe1\xe79\xd4\x93\x94\xdbm\xf5n\xef\xf1\nGD\x91JH\x81\x81\xea\x08\xcd-\x15d\x9e}\xf1\xbb\xf6T\xfd\x9c\xff\x00h\xdf\rM\xe1?\x8d\xdf\x04|)\xe2\x9b\t\x94\x87\xb5\xf1\x06\x81oy\x19\xfa\xac\xa8G\xe3\xd4c\x83_\x98\xdf\xb5\xd7\xfc\x1b\x07\xfb;M\xe2\xb7\xf8\xc3\xff\x00\x04\xee\xf8\xb1\xe2\x7f\xd9\xd7\xe2]\x83\x9b\x8d"\xf3\xc3\x1a\xc5\xcbi/7c\xb0?\xda-s\xca\x86\x82@\xa8\x18\x9f)\xfaW\xe9\xcf\xedW\xfbC\xf8c\xf6O\xfd\x9e\xbcU\xfbCx\xc3L\xba\xbd\xb0\xf0\xc6\x9b\xf6\x97\xb2\xb2M\xd2\xdc\xc8\xce\xb1\xc7\x12\xfa\x16\x91\xd0g\xb0$\x9e\x95\xf8\x8b\xfbA\xff\x00\xc1R?\xe0\xa1\xdf\xb5N\xa6\xfa\x86\xa5\xf1\x89\xbe\x18\xe8n\xecm<5\xe08c\x17\x11\xc4x\x0b=\xe4\xca\xcc\xed\x8eN\xc5P\x0fC^6o\x9fey\x1c\x14\xb1s\xb3{$\xae\xdf\xcb\xf5vG\xab\x96d\xb9\x8eo6\xb0\xd0\xba[\xb7\xa2_?\xf8s\xd7?eO\xf8.\x8f\xed\x9b\xff\x00\x04\xe4\xf8\xd7e\xfb\x10\x7f\xc1y\xfc\x18\xb6\xf1L\xfeW\x85\xbe9\xe9v\xeam/\xe0\x07\x0b-\xc9\x88\x08\xe6O\xfal\x8a\x92/Ic\xde\x19\xab\xee\xc3\xff\x00\x05\xd8\xff\x00\x82A\x03\x8f\xf8x?\xc3?\xfc(\xe2\xff\x00\x1a\xfc\r\xf8\xc9\xf0\x96/\x8bqGu\xf1\xa7\xc5\xfe%\xf1\xc2A3K\x10\xf1g\x89\xef/\x04.\xddY\x11\xe5\xd8\x99\xc0\xce\xd0+\x86\xff\x00\x86]\xfd\x9f\xcay\x7f\xf0\xab4\xcc\x7f\xba\xdf\xfcU|\xec|@\xca\xaa+\xc2\x9c\xda\xff\x00\xb7W\xea{\x92\xe0\xac\xc6\x0e\xd3\x9cS\xf9\xff\x00\x91\xfd!\xe8_\xf0Z\x0f\xf8$\xef\x89\'\x8e\xd7J\xff\x00\x82\x87\xfc#ie`\xb1C\'\x8e,\xe3v\'\xa0\n\xce\t5\xeb>\x0b\xfd\xad?e\xdf\x88\xc8\xb2\xf8\x0f\xf6\x87\xf0^\xae\xac2\xad\xa7\xf8\x92\xdaPG\xaf\x0f_\xca\xb5\xc7\xec}\xfb8\\!A\xf0\xbe\xce<\xff\x00\x14sJ\x0f\xfe\x85X:\xbf\xec\r\xfb=j\x8ed\x83J\xd4m\x0e\x0e\x05\xb5\xf9\x0b\xf9\x10kxq\xd6S\'\xefBk\xe4\x9f\xe4\xccg\xc1\xf9\x94W\xbb(\xbf\x9b_\x9a?\xb0\r;Z\xd1\xf5x\xc4\xbaN\xadmt\x84d5\xbc\xea\xe0\xfe*MY\xaf\xe4;\xc3\xff\x00\x04\xbe7|7x\x9b\xe0\xbf\xed\xa5\xf1?\xc2\xf1\xdb\xe0\xc1k\xa7\xf8\xa2\xe9"\\t\xf9RU\x18\xf6\xc6+\xd3t\x7f\xf8(\x97\xfc\x16\xff\x00\xf6k\xd2n<O\xe0\xbf\xdb\xfbR\xf16\x9f\xa5[\xb4\xc3F\xf1\x05\x8cW"TP\t\xdc]7\x12\x00\'\xefW\xa5\x87\xe2\xac\x8f\x13%\x15V\xcd\xf7M\x7f\xc08+\xf0\xe6oB.N\x9d\xd2\xec\xd3?\xaaJ+\xe4\xbf\xf8"\xa7\xfc\x14Q\xbf\xe0\xa6\x9f\xb0w\x86\xff\x00h\x1d~;x<Uo$\x9ag\x8cm-c\xd9\x1a_\xc5\x8d\xce\x8b\x92B0 \x8c\xfb\xd7\xd6\x95\xf4G\x86\x14QE\x00\x14QE\x00\x14QE\x00\x14QE\x00\x14QE\x00\x15\xf8\xdb\xff\x00\x07\x91~\xcf\x0b\xac\xfe\xca?\x0c\xbfl\x8f\x0fY\xbbk_\r|r,\xa5hW\xefZ^\'\x99\xbaC\xd7jIh\xa0z\x19\x8f\xad~\xc9W\xe3\x97\xfc\x1d\xd9\xe3\xaf\x14x\x8b\xc2\x9f\xb3W\xecag\xabMe\xa0\xfc[\xf8\xa4\xf1x\x82kyJ9[y,\xa0\x8c{\x8f\xf8\x98H\xd8<eT\xe3\x8aR\x8a\x94\\^\xccqn2Mn\x8f\x9d\xbf\xe0\x9d?\xf0O\x9f\xdaO\xfe\n\x97\xe1\xdb_\x1b\xf8\x0b\xc4Qx\x07\xe1\x82\xc6\x91j\x9f\x10\xb5\r5\xa7\xbb\xd4\xe5\xda<\xd84\xbbv*\xacA\xe0\xdcK\x98\xd4\xf4I\x0f\x15\xfa\x9d\xf0\x0b\xfe\x08\x99\xfb9|\x03\xf8Q\xa3| \xd2~=|q\xd44\xcd\x0e\xcd-\xec\x14|]\xd4\xf4\xe4\x8c\x01\xcb\x08t\xe9m\xe1Vc\x96b\x10e\x89\'\x92k\xe9\xaf\x80\x7f\x08<\x13\xf0\x07\xe0\xaf\x85\xfe\x0b\xfc9\xd0\xed\xb4\xdd\x13\xc3Z%\xbd\x86\x9fgg\x10H\xd1\x11\x00$(\xe0d\xe5\x8f\xb95\xf1\xcf\xfc\x15\xbb\xfe\nm\xe3\x0f\xd9/[\x83\xe1O\xc3MF-3Q}1o/uI!W\x91C\x93\xb5c\x0e\n\x8e\x06I \xf5\xc7\x18\xaf+(\xc92\xfc\x92\x83\xa7\x85\x85\xaf\xbb\xea\xfd_\x95\xf4[#\xd1\xcc\xf3lvmYT\xc4J\xf6\xd9t^\x8b\xf3{\xb3\xd1|C\xfb\x1a\xfe\xd7\xbf\xb3\xfd\xac\xfe1\xfd\x8b\xbfmO\x13j\xf2\xdbfo\xf8W\x9f\x1b\xaf\xe4\xd7\xf4\x8dD\x05?\xb8\x17\xcc\x0e\xa1dO\x18\x91$\x95T\xf3\xe4\xbf*{\xff\x00\xd8\xb7\xf6\xda\xd0?k/\x0ekzG\x89\xbe\x1f\xea\x7f\x0f\xfe"x*\xfc\xe9\xff\x00\x10\xbe\x1d\xf8\x82d{\x9d\x1a\xe8\x0c\x89#\x99?wwg*\x91$7Q\xfc\x92F\xcap\xa7*?\x19\xff\x00a\xdf\xf89\x1b\xf6\x9c\xb0\xff\x00\x82\x96\xf8\x13\xf6r\xf8\xaf\xe3/\xf8N\xbc\r\xf1\x1f\xc46>\x1d\x9e\xda{H\x12\xebF\xbd\xbb\xb8[{{\x88d\x89\x10\xb2\xf9\x92\xaf\x98\x8f\xbb\xe5\x1f.\x0f\x07\xef?\xdb\xb7\xf6o\xd4\xbfi/\xf8)w\x81\xfe\t\xfc\x19\xf8\x89\xabxB\xe7U\xf0\x1d\xe1\xf8\xd9\xa9xzs\x0c\xb7\xde\x14i\x8f\xd9l\xcb\xaf1\xca\xf3\x89\xd5d\xfb\xca\x84\x80pEz\xc7\x9a{w\x8a\x7f\xe0\xa3\x1e&\xf8\xb7\xe3\xbdO\xe0\xff\x00\xfc\x13\x9f\xe03\xfcb\xd5\xf4]BM?\xc4\xde:\xbc\xd7SI\xf0_\x87n\xd1N\xf8.52\x92\xc9yp\x87hk{\x18.\x19\x0b\x01#E\xd6\xadX\xfc\x13\xff\x00\x82\xabx\xc2\x15\xd4<}\xfbt\xfc:\xf0\xa4\xce\x99}/\xe1\xff\x00\xc1\xf34p7\xf7~\xd1\xa9\xdfN\xd2\x8f\x7f.<\xfa\n\xf7\xff\x00\x85\xff\x00\x0b\xfe\x1e\xfc\x15\xf8{\xa3\xfc(\xf8Q\xe1\x0b\x1d\x03\xc3\x9a\x05\x8aY\xe9\x1a>\x9b\x00\x8e\x1bhW\xa2\xaa\x8e\xe4\xe4\x92ybI$\x92M`\xfcp\xfd\xa5\xbe\x0c~\xce\xba8\xd6~+\xf8\xce\r<:\x96\x86\xd8\x02\xf3J\x07]\xa894\x01\xe2\xba\xef\x82\xff\x00\xe0\xae\xbf\t\x93\xfbs\xc0\xdf\x1f~\x10|X\xb4\x81\xc3O\xe1\xef\x19x"\xef\xc3\xb7\x93\xc6\x07+\x1e\xa1aq<Q\xb9\xecZ\xcd\x87c\x80w\r\xdf\xd9\xcf\xfe\n+\xe0\x7f\x8a\xff\x00\x12\xa2\xfd\x9c~9\xfc8\xd6\xbe\x11|Z\x92\xd5\xee-\xfc\x0b\xe2\xf9\xe1\x915x\x93\xfdd\xfa]\xf4\x0c\xd6\xfa\x8cj9"6\x12\xa8\xe5\xe2L\x1c`\xfc>\xff\x00\x82\xcf\x7f\xc1=> \xfcX\xd2\xbe\n\'\xc6\xf8\xf4_\x10k\xb2\x18\xb4;o\x11Y\xbd\x92j\x12\x8cf(\xa4\x7f\x95\x9f\x91\xf2\xe4\x1eEu\xff\x00\xb6\xc7\xec\x8b\xf0\xbb\xf6\xa9\xf8o\'\x81\xbcuoqlL\xcby\xe1\xdf\x11i\x13\x985\r\x03R\x8f\xe6\x86\xfa\xcau\xf9\xa0\x99\x18\x06\x0c\xa7\x9c`\xe4\x12(\x03\xdbu\xed\x07D\xf1F\x8fq\xe1\xef\x12i6\xf7\xf67q\x18\xee\xac\xee\xe1\x12G*\x1e\xaa\xcax"\xbe^\xf8\x81\xff\x00\x04`\xfd\x82\xbcw\xa9\xcb\xacA\xf0\xd6\xfbC\x9af-"\xe8Z\xd4\xf6\xf1d\xf7\x11n(\xbf\x82\x8a\xe9?\xe0\x9b\xff\x00\xb4\x87\xc4\xbf\x8e\x1f\t\xb5\xcf\x87\x9f\xb4\x10\xb6\x1f\x13\xbe\x16x\xa2\xe3\xc2~<\x96\xd16E\xa8O\n\xa4\xb6\xba\x8ci\x81\xb1n\xec\xe5\xb5\xba\xda\x06\x10\xce\xc8>\xed}\x11\\X\xcc\xbb/\xcc"\x96*\x94gm\xb9\x92v\xf4\xea\xbe\xf3\xaf\x0b\x8f\xc6\xe0[xz\x92\x85\xfb6\xbf\xaf\xb8\xfeh>1i\xfao\x87\xbe\'\xfcL\xf0\x1e\x8a$:\x7f\x85~#\xf8\x83@\xd2\xcc\xcf\x99\x1a\xda\xc7R\x9e\xda\x16s\xc6\\\xa4JX\x80\x01$\xf0+\xcf\xab\xd2\xbfj-\x0e\xf7\xc2\x1f\xb5\xdf\xed\x07\xe0\xfdQvMm\xf1\xb3\xc4wI\x19<\x88n\xef\xe5\xbb\x84\xfe1L\x8d\xf8\xd7\x9a\xd7\xe1\x18\xfc5<\x1ek\x89\xa3\x08\xf2\xc65$\x92\xec\xba~\x0c\xfd\x8f\t\x88\x9e+.\xc3\xd5\x9b\xbc\x9c\x15\xdfw\xd4(\xa2\x8a\xe76\ne\xd5\xb47\x96\xd2Z\\ h\xe5B\x8e\xa7\xb8#\x04S\xe9\xb2\xc8\x90\xc4\xd3Hp\xa8\xa4\xb1\xf4\x02\x85{\xe8\x0fc\xed\x8f\xf83\x0b\xc4Z\xce\x9f\xa4\xfe\xd1\x1f\x0b\xeen]\xec\xac\xbcUauk\x0f\x98JB\xd8\x9dHQ\xdb9\x19\xf5\xc0\xaf\xdc\xaa\xfc2\xff\x00\x83/\xb4{\xcdF\xc3\xf6\x8f\xf1\xe4\xe0\xec\x93\xc5zu\xb26\xd2\x15\xf2\xb7\r\x91\xeb\x8d\xa3\xf3\xaf\xdc\xda\xfe\x87\xa3\xcd\xecc}\xec\xbf$~\x1fV\xde\xd6V\xda\xef\xf3aE\x14V\xa6aE\x14P\x01E\x14P\x01E\x15[W\xd64\x8f\x0f\xe9\xb3k:\xf6\xa9oegl\x85\xee.\xae\xe6X\xe3\x89GR\xcc\xc4\x00=\xcd\x00Y\xa2\xbe\n\xfd\xab?\xe0\xe5/\xf8$\xaf\xec\xa3\xaa]xcY\xfd\xa1\xd3\xc5\xba\xd5\xa3:K\xa5x\x1e\xc5\xf5\x12\xb2)\xc1\x8d\xa5A\xe5#\x03\xc6\x19\xc5|\x97\xe2?\xf8=\x8f\xf6-\xb1\xbad\xf0\xef\xec\x8b\xf1J\xe6\x1c\xfe\xeek\xd7\xd3\xe0\xde3\xd4\x01p\xdcc\x9f\xcb\xa5\x00~\xd4\xd7\xe4\x07\xfc\x1e\x1f\xa3|.\xd2\xff\x00c\xff\x00\x86\x1f\x1a\xaf\xfe(\xe9\x9a\x07\xc4_\x04\xfc@\xfbg\xc3\xdd>\xe9\xb7\\j`\xacOt!\x8c\x02O\x96\xd1Z;9\xf9\x17\xe5\x0cAu\x07\xc7|]\xff\x00\x07\x98x\xa7\xe2\xdf\x8b\xec>\x19~\xc5\xff\x00\xb0\xaa\xdc\xea\xda\xa0\xf2\xed\xaf<\x7f\xe2\xe8\xad\x929}\x0cp\x82\xa5}\xcc\xc9U|\'\xfb\t\xff\x00\xc1h\xbf\xe0\xa5?\xb7W\x82?\xe0\xa1\xbf\xb7o\xec\xed\xf0\xab\xc5:\x07\x82,\x11|#\xe0\x1d;\xe2T\x16\x9a\x18\x95$i#y\x16#\x7f&D\x8edrF\xf7t\x88d"\x05\x00\x1f\xaa\x1f\xf0J\xaf\xdb\xef\xc2\xbf\xb7w\xec\xbf\xa0x\x8e\xff\x00M\xbc\xf0\xf7\x8ft\x9d\x16\xd2/\x1b\xf83[\xb6{k\xfd:s\x18\xdb3E*\xab\x98e\x03zI\xb7k\x02q\xd2\xb9\x0f\xf8*\xd7\xfc\x11o\xe0\'\xfc\x15?N\xd3u\x9f\x16x\xef\xc4>\n\xf1~\x8fi\xf6K/\x14xju\x0f5\xae\xe6qo<N\nK\x18gf\x1c\x06\x04\x9c\x11\x9a\xe3\xbfh\xbf\xd9+\xf6\xff\x00\xfd\xa4\xf5\xdd+\xe2y\xfd\x9d\xbe\x11\xf8\x03\xc7\xde\x1f\x87\xcb\xf0\xe7\xc4\x0f\x01\xfcr\xd64\xfdkO\x8f\xfex4\xb1\xe8f+\xbbs\xc0kk\x98\xe6\x81\xbb\xc6k\xcf\xae\x13\xfe\x0e\xb2\xf8S\xa1\x8d7L\x9b\xf6p\xf8\x91\x1c2m[\xdb\xcbY\x93T\x96,\xf0X\xa4\xda}\xb3\xc9\x8e\xa5c\x89I\xce\x15G\x00\x02\x9f\xfc\x13c\xfe\r\x80\xfd\x90\x7f\xe0\x9d\x7f\x1d,?j_\x1f|Q\xd6\xfe$x\xb7A\x99\xa7\xf0\xe7\xf6\xcd\xbcp\xdaX\xdc`\x85\xb8XS&IW$\xa9f!X\x06\x00\x15\x04z\x97\xec\r\xfbL|\x19\xfd\xa5?\xe0\xac_\xb4O\x88>\x1a\xf8\x85u\xb1a\xe1}\x0e\xc3O\xd7-\xa0cgsoo\xba\x1b\x84\xb5\x9f\x1b.\x12;\xc4\xb8B\xf1\x92\xbb\x95\xb0H\xe6\xbc3\xc7\x1a\xcf\xed\x05\xe3\xeb\t\xec?\xe0\xb0\xd7\x7f\x1et\xdf\x08\xba\xb2k\xbe\x12\xf07\xc3\xc4\xd3\xfc\'}\t\x1bZ+\xfb\xed\x1e\xe6\xfe\xee{R\t\xdd\x1b]C\x1b("De\xc8>\xa1\xe2=\x7f\xe0\xf6\x97\xa8\xf8\x07\xf6\xc8\xff\x00\x82m\\\xf8[^_\x85ZChZ\xff\x00\xc3\xef\x064Q\x1b\xff\x00\n\x9f\x99\xec\xe0\xb5\x8fo\x975\xb9\xdd$HW\x19g\x18\xcd\x00~\x8c\xd7\xf3\xfb\xff\x00\x05\xdd\xfd\xb2o~\x0c~\xda\x1e.\xf8{\xf1o[\xb9\xd3.\x06\xd9\xb4\x14\xbc\xb7\x95c\xb8\xd3\xd8f\'\x85\xb6\x94q\x8c\x02\x14\xe4\x1e\x08\x06\xbfs~\x00~\xd0\xbf\x08\xff\x00i\xdf\x86v\x1f\x16\xbe\x0bx\xc6\xdbX\xd1\xef\xe3\xc8x\x9b\x12\xdb\xc88xf\x8c\xfc\xd1J\x87*\xc8\xc0\x10A\x04W+\xfb^~\xc0\xdf\xb1\xd7\xed\xe9\xe0\xd8\xbc\t\xfb\\\xfe\xcf\xfa\x0f\x8d\xacm\xb2le\xd4bx\xae\xec\x89\xea`\xba\x85\x92x\t\xef\xe5\xba\xe7\xbd\x00\x7f\x18\x9f\xb4g\xc7\xef\x10\xfe\xd0^?\xd2l\xfc\x1c\x97\xf7\x12\xda^m\xd2\x05\xaa9\xb8\x9e\xe6F@\x9eZ\xaf\xcd\xbbr\xa8P>l\x9fZ\xfe\xc8\xff\x00d\x0b\x0f\x8b\xfag\xec\'\xf0\xc2\xc3\xf6\x84\x91\x9b\xc6\xb0\xf8F\xc1u\xf3!\xf9\xbe\xd1\xe5\x8c\x83\x9es\xb7\x19\xcf9\xcdy\xd7\xec\xb1\xff\x00\x04+\xff\x00\x82N~\xc4~?\x8b\xe3\x07\xc0\xbf\xd9\x1bD\xb1\xf1-\xa3n\xb1\xd7u\xedN\xf3V\x9a\xc5\xb0F\xeb\x7f\xb7M*\xdb\xbe\t\x1b\xe3Ur\t\x05\x88\xe2\xbb\x0f\xdb[\xf6\xd0\xf0o\xec\xfb\xa1\xd9\xe9\xd6:e\xcf\x89<_\xad\xcd\xf6?\x03\xf8\x13G\x1ef\xa1\xaf_\xb7\x08\x91\xa0\xe5#\x07\x97\x95\xb0\x88\xa0\xb1 \n\x00\xe2\x7fb\xb9\x92\xfb\xfe\nW\xfbO\\\xe8#\xfe%\xf6\xd0xF\xd7U(\x84+j\xc3G\x8aG\xc9\xe8\xcc-d\xb2\x07\x1d0\x01\xe4b\xbe\xc2\xaf\x08\xff\x00\x82z\xfe\xcb\x1e(\xfd\x97\xbe\x08]/\xc5}j\xdbU\xf8\x8f\xe3\xaf\x10]x\xaf\xe2f\xadd\x0f\x91>\xb1xC<0\xe4\x93\xe4[D\xb0\xdaE\x9e|\xabX\xfat\xafw\xa0\x0f\xc1\x1f\xf8.\'\xc2I\xbe\x0e\xff\x00\xc1O<Y\xac\xb4l\xbaw\xc5\x0f\x0bi\xbe#\xb0", \xba\xb7\x88X\\ l`\xb7\xfa2\xc8GQ\xe6\x83\xd0\x8a\xf96\xbfc\xff\x00\xe0\xe3\x8f\xd9gW\xf8\xb7\xfb\'\xe9\x1f\xb4o\x80\xf4\x99.\xbcE\xf0\x9fS{\xf9b\xb7\xce\xfb\x8d&`\xa9y\x18\x00|\xe4\x05\x8d\xc0=6\xb1\xe2\xbf\x1a\xb4\xedB\xcfV\xd3\xe0\xd54\xeb\x85\x96\xde\xe6%\x96\x19P\xe4:0\xc8#\xf05\xf9\x0f\x19\xe5\xf2\xc2\xe6\xcf\x10\x97\xbbV\xcf\xfe\xdeJ\xcf\xf2L\xfd;\x85q\xd1\xc4\xe5\xaa\x8b~\xf5=>M\xdd~\xa8\x9a\x8a(\xaf\x91>\x98+\x0b\xe2~\xb2\xbe\x1f\xf8s\xaek%\xf6\x9b}*vS\xe8\xdb\x08\x1f\xa9\x15\xbb^O\xfbl\xf8\x81t\x1f\xd9\xdbZ\x8f\xcd\xd8\xd7\xed\x15\xaa\x10\xd89.\x1b\x8f\xc1\rve\xf4>\xb3\x8f\xa5K\xf9\xa5\x15\xf8\xa3\x97\x1bW\xd8`\xeaT\xed\x16\xff\x00\x06~\xd0\x7f\xc1\xa0\x1f\x0b\xae|#\xff\x00\x04\xba\xbb\xf8\x8d\xa9\xe9\xa6\xde\xef\xc5\xfe<\xbf\xb8.\xca\x01\x9a\x18\x82\xaco\xee\x0e\xf6\xc5~\xacW\xca\xdf\xf0D\x7f\x837_\x01\x7f\xe0\x95\xbf\x05\xbe\x1d\xeap\x04\xbd\x87\xc1\xd0\xdc_m\x18\r,\xa5\xa4\xcf\xfd\xf2\xcb_T\xd7\xf4\x02\xd1\x1f\x8a\xee\x14QE\x00\x14QE\x00\x14QE\x00x\xc7\xed\xeb\xfbw|\x05\xff\x00\x82v~\xce\x9a\xc7\xed\x1d\xf1\xff\x00\xc4\x02\xdbN\xd3\xe3)\xa7\xe9\xd0\xb07:\xa5\xd1\x07e\xb4*z\xb3\x1e\xa7\xa2\x8eO\xbf\xf3\x93\xf1\x9b\xf6\xe2\xfd\xbf\x7f\xe0\xbf_\x115\x1b\xff\x00\x1e\xfcE\xbc\xf8o\xf0CK\xbdx\xe1\xf0\xc7\x87\xae]c\x9f \x81\x13\x90G\xda\xa5\xd8\xdf1\x7f\x91s\xf7zW=\xff\x00\x07E\x7f\xc1A\xfcQ\xfbi\x7f\xc1H\xb5_\xd9\xcf\xc3Z\xeb\xff\x00\xc2\x15\xf0\x97R\x7f\x0eiVI#\x08\xe5\xd4\xd5\xc4w\xb7\x0e\xbd\x0b\xf9\xe1\xa3\x0c:\xa4I^\xb9\xf0KM\xd1~\r\xfc\x16\xf0\xef\xc3\xbf\x0eF\x96\xd6\xf6:d^o\x97\xc3I+(i\x18\x9eI;\x89\xe7\xd3\x1e\x94\x01{\xe1\x87\xecq\xfb&|\x07\xd2\xa3\xb2\xf0\xcf\xc2m*\xe6\xe1P\x07\xd4u\xb8\x05\xd4\xf2\x9fS\xbc\x11\xf9\n\xd7\xf1\'\x86~\x0f\xeaV\xcdiu\xf0\xa7\xc3\x92\xa6\x08\x02M\x12\xdc\x05\x18\xed\x84\xe3\xf3\xac\r_\xc7\x91\xc6\x18n\xe9\xea\x7f\xcf\xf3\xae[Z\xf1\xe99>~q\xd0\xe7\xe9\xfe{\xd0\x07\x96\xfe\xd0\x9f\xf0O\xbf\xd9\xdf\xe2M\xbd\xc6\xa3\xe0\xbb\x01\xe1m\\\xa91\xcd\xa7\x8c\xdb\xb3\xf5\xf9\xe3\'\x1c\xfa\x8a\xf9\xd7\xe0\x97\xed\x9d\xff\x00\x05\x08\xff\x00\x82P\xfcZ\x16\x1f\x05\xbe7k~\x1dkG\xf3\x13K\xfbSO\xa5j\x11\x16\'q\xb7rcec\x9c\xe0\x03\x90A<W\xd6:\xaf\x8e\xf9m\xd3`\xfa\x93\xfe\x7f\x9dxG\xed\x8b\xe1\xfd+\xe2g\xc3+\x8b\xb6\x85[Q\xd1\xb3qe8\x03v\xde\x8e\x84\xff\x00t\x8c\x1cz\xa8\xa0\x0f\xdf\x0f\xf8!\xe7\xfc\x1c_\xf0\x8b\xfe\nn\xb6\xdf\x01~5\xd8\xd9\xf8;\xe2\xfcV\xb9\x8e\xc1$\xc5\x96\xbd\xb5r\xedl[\x95\x93\x00\xb1\x88\xf6\xce3\x8cW\xe9\xbd\x7f\x03^\x02\xf1\xe7\x8c\xbe\x17x\xd3K\xf8\x8b\xf0\xf3\xc4\xb7\xba6\xb9\xa2\xdfEy\xa5j\x9au\xcbC=\xac\xf1\xb0d\x91\x1d\x08e`@ \x83\x9a\xfe\xd1\xbf\xe0\x8e\xdf\xb7\xc8\xff\x00\x82\x93\x7f\xc1>\xfc\x05\xfbO\xea\xd6\xd1[\xf8\x8a\xfa\xc1\xac|_k\x02\x04D\xd5m\x9c\xc1r\xe8\x80\x9d\x91\xc9$fTRI\t"\x03\xcd\x00}?^#\xf1\xe7\xfe\t\xe7\xfb-|~\xd5G\x8c\xb5\x7f\x01\x7f\xc2;\xe2\xd8\x89{O\x1bx6s\xa5\xea\xd0\xc9\xfd\xe3<\x18\xf3~\x92\x07\x1e\xd5\xed\xd4P\x07\xe7\xf6\xb1\xfb\x00\xfcZ\xf8\t\xf1A\xfe!\xe8_\x18|E\xa2\xcd|BK\xf1[\xc0\xd0F\x93\xc8\xc0\xae\xdf\xed\xed \xa9\xb7\xbfV\x03i\xbb\x89VE#\xe7\x041t\xf5[m\x1b\xfe\x0b\x01\xe1\xcd)!\xd0~(\xfc\r\xf1\xcc\x0c3m\xaa\xeaZ\x1e\xa1\xa7M,\x7f\xc2\xce-\xe61\xee#\xae\xd0\x07\xa5}V\xca\xac\xa5YA\x04`\x82:\xd4vvV\x9a}\xba\xdaX\xdb$1/\xdd\x8e5\xc0\x1f@(\x03\xe5\x0b\xff\x00\x82?\xf0U\x8f\x8b2Ge\xe3\xaf\xdaK\xe1\xa7\x80l$R\xb7R\xf8\'\xc2\xd77\xf7\xc3\x8c\x0f-\xefe1\xa1\xe4\xf3\xb4\x9e\x07\xbdzW\xec\xd1\xfb\x08\xfc\x16\xfd\x9a\xb5\xbb\x9f\x88Vr\xea\xbe+\xf1\xce\xa3\x19MO\xc7\x9e/\xbd7\x9a\x9c\xca\xdfz4v\xe2\x08\x8f\xfc\xf3\x8c*\xf6\xe6\xbd\xaa\x8a\x00(\xa2\x8a\x00\xc0\xf8\x97\xa3i\xbe \xf0u\xde\x8b\xac\xd8\xc7sgu\x19\x86\xea\xdee\xca\xcb\x1b\xa9VR;\x82\t\x15\xfc\xe7\xfe\xde\x1f\xb1\xae\xbb\xff\x00\x04\xfc\xfd\xa7/~\x14\x1b9O\x80\xbcYqq\xa9\xfc4\xd5J\x9f-c\'|\xfac7A,%\x8b\xa2\xf7\x89\xb8\xcf\x96\xd8\xfe\x8e\xfc`@\xd0e\xcfr+\xe7?\xdb#\xf6<\xf81\xfbr\xfc\x0b\xd4\xbe\x03|l\xd2\xa5{+\xa7K\x9d+V\xb1}\x97\xba5\xfcGt\x17\xb6\xb2\x7f\x04\xb1\xb78?+\xa9dp\xc8\xec\xa7\xca\xce2\xaa9\xbe\x06T\'\xa3\xde/\xb3\xff\x00.\x8f\xc8\xf4r\xbc\xc6\xaeY\x8bU\xa3\xaa\xd9\xae\xeb\xfa\xd5y\x9f\xcf\xfd\x15\xd6\xfe\xd2\xff\x00\xb3G\xc7/\xd8s\xe2\x81\xf87\xfbG\xe9\xc9\x89\xa4e\xf0\xc7\x8d-b+\xa7x\x8a\x00~W\x8d\x8f\xfa\xa9\xb1\x8d\xf01\xdc\xa78\xc8\xe6\xb9*\xfcO\x1b\x81\xc5e\xd8\x87F\xbcm%\xf7?4\xfa\xa3\xf5\xac&3\x0f\x8e\xa0\xaa\xd1\x95\xd3\xfc<\x9ff\x15\xe1\xff\x00\xb6f\x98\xbe:\xbe\xf8y\xf0d\xbb\x03\xe2\xcf\x1aZ\xda\x00\x83\x93\xbaH\xe2\xe3\xdf\xf7\xf5\xee\x15\xc0\xe9^\x0f\x8f\xe2\xaf\xfc\x14\xbb\xf6o\xf8i#6\x1f\xc76\xb7\x85A\xc7\xfa\xbb\x84\x97\xff\x00hW\xad\xc2\xb4\x95\\\xfa\x8a}\x1b\x7frg\x9b\xc4u\x1d<\x9a\xad\xba\xd9}\xed\x1f\xd5\xd7\xc1\xcf\n\xc3\xe0_\x84~\x16\xf0U\xbc{\x13I\xf0\xed\x95\x98\\c\x1e\\\x08\x9f\xd2\xbaJ\x00\n\x02\xa8\xc0\x1d\x05\x15\xfbY\xf90QE\x14\x00QE\x14\x00QE\x14\x01\xfc0\xfe\xdc\x97\xba\xcd\x87\xed\xd3\xf1[Q\xd5\xbc\xc3\xa8C\xf17X\x92\xe3\xcf\xfb\xfeh\xbe\x94\x9d\xde\xf9\x1c\xd7\xdb\xff\x00\x0f>5Y\xf8\xe3\xe1\xbe\x8d\xe2m>\xf0:\xdci\xf1o\xc3}\xd9\x15B\xb0?\xf0 k\xc8\xbfn\xcf\xd9?\xe2\xf7\xedy\xfbB\xfe\xd7\xbf\xb7G\xc1\xbf\x07@\xde\x10\xf0\x17\xc5\xfdFMn\xd2\xc9\x18\xca\x90\\\xdf\xdc\x7f\xa4c\xa6\xd4\x01\x19\xcf\xac\xa3\x03\xd3\xe6\xef\xd9\xff\x00\xf6\x89\xd4\xfe\x13J\xfe\x1f\xd5\x8c\xb3\xe8\x97Rn\x9249{w\xfe\xfa\x0f\xe6;\xfdE\x00}\xcf\xab\xf8\xedX\x1c\xcf\xf8f\xb9\x8d[\xc6\xec\xa0\xbb\xcc\x14s\xf7\x8e+\xcc\xe2\xf8\xc3\xa2\xf8\x9bO]G\xc3\xfa\xb4r\xc0\xe3\x86\x8d\xf2\xe3\xd8\x83\xca\x9fl\n\xc2\xd5\xbcp\xad\xbb\x12\x9c\xf7\xc9\xcf\xf9\xfc\xe8\x03\xd05_\x1e\xa8,\xc1\x99\xbd\x0b\x1c\n\xe0~\'|C\x8a\x1f\x08\xeaOus\xf2\xb5\x9c\x89\xb4p2\xc3h\xfa\xf2k\x94\xd7<|\x96\xc8e\xba\xbdX\xd0rK\xb7\xf9\xfeU\xe5\xdf\x10\xfe"\xc9\xe2b4\xdd:V\xfb*\x9c\xbb\x91\x8f4\xfe<\x80(\x03\x93\xaf\xe9\xa7\xfe\x0c\xa5mp\xff\x00\xc1<\xbe$\xad\xf9\x9c\xd9\x8f\x8b\xd3\xfd\x83\xcd-\xb4\x0f\xec\xdb\x1d\xdb3\xc6\xdd\xdb\xb3\x8e7n\xef\x9a\xfej|\x15\xe0\xbf\x16|F\xf1v\x99\xe0\x1f\x01\xf8r\xf7W\xd6\xb5\x9b\xe8\xac\xf4\xad/M\xb5y\xee.\xee$`\x89\x14q\xa0,\xec\xcc@\x00\x02I5\xfd\xa3\x7f\xc1\x1b?`I?\xe0\x9b?\xf0O\x8f\x01\xfe\xcc\xba\xe4\xf0\xcf\xe2KK\x16\xd4<as\x03\xab\xa3j\xb7Ng\xb8\x8d\x1c\x01\xe6G\x1b\xb9\x89\x1f\x00\xb2F\xa4\xf5\xa0\x0f\xa8\xe8\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00\xc5\xf1\xd4\xe2=\x1cE\x9e^A\x8f\xc2\xb8\xda\xdf\xf1\xf5\xf8\x9a\xfe;\x14n!\\\xb0\xf7?\xfdlV\x05\x00q\xdf\x1e\xbe\x08|\x14\xfd\xa1~\x18\xea_\r?h\x1f\x01\xe9>!\xf0\xcd\xcc-%\xed\x9e\xaf\x00h\xe3\n\t\xf3U\xba\xc4\xea\x06C\xa9\x0c1\xc1\xaf\xe6\xb9<\x0b\xfbT|w\xfd\xa6>1[\x7f\xc1/~\x00x\x87\xe2\x8f\xc2/\x87\xde(M>\xcc\xc9:\xcfso\x1b\xab\xa8e\xb8%|\xe8\xcc\x96\xf7\x051\xb9\xb64y\' \x9f\xd4_\xf8.\xf7\xfc\x14\xb7\xc6\xb6W6\x1f\xf0J\x9f\xd8Ed\xf1\x17\xc6\xbf\x8a\x0e\xbaf\xaa4k\x8c\xcb\xa0ZM\xc6\xd2S\xeeL\xeaI\xe4\x8d\x89\xf3s\x9cW\xdd_\xf0Ho\xf8&\xff\x00\x82\xbf\xe0\x97\x7f\xb1W\x87\x7fg-\x08\xc1u\xafH?\xb4\xfco\xac\xc2\xbf\xf2\x10\xd5eU\xf3H8\x19\x8d\x02\xacI\xc0\xca\xc6\t\x00\xb1\xaeLf\x03\x07\x8f\xa7\xc9\x88\x82\x92\xf3\xe9\xe8\xf7_&t\xe1q\x98\xac\x14\xf9\xe8M\xc5\xf9~\xbd\x19\xfc\xef\xc7\xf0\xe3\xfe\nc\xa9]\xff\x00\xc2?\xa2\xff\x00\xc14\xbe"\xb6\xa8\xc7dq\xcf\xa6\xba\xc5\xbf\xd0\xbe1\x8f|\xd7\xd9\x1f\xf0H\xdf\xf8 \xcf\xfc\x147\xc5_\xb6\xdf\x81?o?\xdb{H\xd3>\x1d\xe8\xfe\x06\x9c\xdc\xe9\x1e\x10\xf3\x84\xda\x85\xd3\x14\x95B:\xa1" \x0c\x85\x8b\x12I\xe0\x01\xd6\xbf}\xe8\xae<\x0eE\x95e\xb5}\xae\x1e\x9d\xa5\xde\xed\xbf\x95\xd9\xd5\x8c\xce3\x1c}?gZ\xa5\xe3\xda\xc9~AE\x14W\xaey\x81E\x14P\x01E\x14P\x01E\x14P\x07\xe2\xef\xfc\x1a\xef\xa7\xf8p\xfcc\xfd\xb2?g\xff\x00\x18X\xda\xde\\[\xfcO\xbb]_N\xb9\x8c:\xcbn\xf2Kn\xca\xeax*Ln0}\xeb\xc1\x7f\xe0\xb2\xff\x00\xf0iw\x8e\xb4\x9f\x12\xea\xdf\xb4W\xfc\x13\x17L\x8fT\xd1\xeeL\xb7z\x9f\xc2\xc7\x94-\xd5\xa3\xf2\xc7\xfb=\x8f\x12\xc6y\xc4$\x86S\x80\xb9\x07\x0b\xec\x7f\xb1\xfd\xca\xff\x00\xc1:\xff\x00\xe0\xe9\xcf\x8c\x9f\x02<E\xfe\x81\xe1\xef\xda\x0e\t5\xbd\n\xea\xe1\xb6\xad\xe5\xdd\xc3\x1b\xd4\x8a,\xf5\x02Y\xeec\xc7c\x11\x02\xbfnh\x03\xf8-\xf8\x8d\xf0\xab\xe3/\xc0\x1f\x16\xdcxC\xe2\x8f\x815\xff\x00\t\xeb\x16\xb34S\xd9\xea\xb62\xda\xca\x19N\x08\xf9\x80\xdc3\xdcdVI\xf1\xaf\x8a\xdb\xefk\xb3\x9f\xabW\xf7]\xf1\x9f\xf6b\xfd\x9d\xff\x00h\x9d*M\x17\xe3\xa7\xc1?\x0c\xf8\xae\xdeX\xfc\xb7]oG\x8av\xdb\xe8\x1d\x97p\x1fC_0\xf8\x93\xfe\r\xd7\xff\x00\x827\xf8\x96\xeb\xedr~\xc4~\x18\xb29\xff\x00W\xa6\xf9\x90\'\xe4\xad@\x1f\xc7\r\xe6\xa1}\xa8He\xbd\xbb\x92R[\'{g\x9a\xf6O\xd9\x0b\xfe\t\xdf\xfbe\xfe\xdd~.\xb7\xf0\x87\xec\xc5\xf0\x17]\xf1\x1bN\xf8}N;F\x8a\xc6\x01\x92\x0bIp\xe0F\xaa\x08\xc19\xe2\xbf\xad\x9f\x86_\xf0A\xff\x00\xf8$\x8f\xc2]V\rw\xc2\x9f\xb0\xef\x82\xde\xf6\xd9\xc3Au\xa8X\x9b\x97C\xea<\xc2G\xe9_Rx7\xc0\xbe\t\xf8w\xa2G\xe1\x9f\x00xCL\xd14\xe8\x7f\xd5X\xe96\x11\xdb\xc2\xbe\xa4$`\x0c\xfb\xe2\x80?4\x7f\xe0\x86\x7f\xf0n/\xc2\xdf\xf8&\x8c\xb6\x9f\xb4?\xc7\xeb\xeb/\x18|`{lZ\xcf\x12n\xb1\xf0\xf6\xe5\xc3\xad\xbe\x7f\xd6K\x82T\xcazs\xb4w\xaf\xd4:(\xa0\x02\x8a(\xa0\x02\x8a(\xa0\x02\xb2|uq\xe3{o\t_\xcb\xf0\xdfL\xd3o5\xd1n\xc3K\x83X\xbbx-\x1al|\xbek\xc6\x8e\xea\x99\xeaUX\xe3\xa05\xad_;~\xd7\x9f\xb5\'\x8b4\xff\x00\x1di\x7f\xb1\xaf\xec\xbd<\x17\x9f\x16\xfc_h\xd3}\xa9\xe0\xf3\xad\xbc#\xa5\xe7l\xba\xbd\xe0\x1c\x00\xb9\xc4Q\x12\x0c\xb2\x15Q\x80I\x00\x1c\xfe\x89\xfbZ~\xd2\x9f\x08~>\xf8[\xe1w\xed)\xa2x/]\xf0\xdf\x8e\xfcG\'\x87\xb4_\x15\xf8\x02{\x9f\xf8\x95k+\x03\\\x0b\x1b\xc8g^CG\x1c\xb8\x95\x18\xe1\xa2eeS\xc5}C\xa9\xea\x10\xe9vR^\xcf\xd1\x07\x03=Oa^y\xe1\xff\x00\xd9\x8f\xe1/\x83|\t\xe0\xaf\x08]\xdb\xcf{k\xe0\x1dHj\xdae\xe6\xa39\x92y\xf5O.U{\xf9\x9c\xf3$\xf2\x1b\x8b\x87v?y\xe7s\xde\xbc\xcb\xfe\n#\xfbl\xe9\x7f\xb1\x97\xec\xc5\xe2\xcf\xdawZ\xf8}\xabx\x9a\xc3\xc2zs\xdc\x8d\x17I\x968\x9eb:\x17\x96B\x16$\xce2\xd8f\x03\xee\xa3\xb1\n@=+Y\xd6-\xad\xa1\xb9\xd7u\xab\xe8\xad\xe0\x8dZ[\x9b\x99\xe4\t\x1cj9,\xccxP=M~Z\xff\x00\xc1@\xff\x00\xe0\xba\xbe5\xf8\x91\xf1\x17\xfe\x18\x13\xfe\x08\xdb\xe1i~%|]\xd7\xa7k\x0b\x8f\x18i\xb6\xde~\x9b\xe1\xe59Y&F#d\x92 \xc9\xf3\x1f\xf7Q\xe3sn\xc0F\xf8\x93\xe1?\xfc\x14\x0b\xf6\x8b\xff\x00\x83\x89\xff\x00k\xfbo\xd9+\xe3G\xed\x83\xa6\xfc\x01\xf8w\xa9I\x9d;\xc1\x9a\x0cr\x89\xb5\xf1\x93\xfe\x88\xb3\xf4\x92m\xa39\x95\x82\xf2v\xa9\xe8?}\x7f`O\xf8&\x7f\xec\x89\xff\x00\x04\xda\xf8e\x1f\xc3\x8f\xd9\x8f\xe1\x95\xb6\x9d$\x90\xaa\xea\xde \xbaQ.\xa3\xa9\xb0\xe4\xb4\xd3\x91\xb8\x8c\xf3\xb4aG\x18\x1c\n\x00\xf9\xdf\xfe\x08\xb1\xff\x00\x04<\xf0\x87\xfc\x13\xa7O\xbd\xfd\xa1\xbe=\xeb\xeb\xe3\xcf\x8f\x9e.W\x9f\xc4\xfe4\xd4\x1d\xae\x1a\xc5\xa6\xf9\xa5\x82\xdeI2\xdf1\'|\xbfy\xfb\xf1\x81_\xa0\xd4Q@\x05\x14Q@\x05\x14Q@\x05\x14Q@\x05\x14Q@\x05\x14Q@\x1f\x93_\xf0tw\xecu\xf1\n\xf7\xe1\xcf\x80\xff\x00\xe0\xa8\x9f\xb3\x95\x9c\xc9\xe3\xef\x80\xfa\xa4S\xeaS\xd8\x92\xb3\xcd\xa4y\xdeg\xde\x07!#\x91\x9f d\x919\xf4\xaf\xbc?\xe0\x9b\xdf\xb7\x1f\xc3\xaf\xf8(\x7f\xec\x81\xe1\x1f\xdas\xe1\xe6\xa3\x0b\x9dZ\xc1b\xd7lca\xbbO\xd4Q@\x9e\x07^\xab\x86\xf9\x80?\xc2\xca{\xd7\xb3\xf8\x9b\xc3z\x17\x8c|;}\xe1?\x13\xe9p\xde\xe9\xda\x95\xa4\x96\xd7\xd6w\t\xb9&\x89\xd4\xab#\x03\xd4\x10H\xaf\xc2?\x16Z\xfcu\xff\x00\x83Y?o[\xff\x00\x89~\x1d\xf0\xce\xaf\xe2\x9f\xd9\x0b\xe2\xd6\xae\xbf\xda\xf6\x96Y\x91\xbc7t\xecH*\xa7\xe5I#\xdcJt\x12\xc7\x94\xc8eS@\x1f\xbdTW)\xf0G\xe3\x87\xc2\x9f\xda?\xe1n\x8f\xf1\xa3\xe0\x97\x8e,<E\xe1\x9dz\xd1nt\xcdWN\x9c<r\xa1\x1d\x0e9V\x07\x86S\x82\xa4\x10@5\xd5\xd0\x01E\x14P\x01E\x14P\x01E\x14P\x01A!Af8\x03\xa95\x9f\xaax\x97J\xd2\xd5\x84\x93\x87\x90\x0f\xf5hr\x7f\x1fJ\xfc\xaf\xff\x00\x82\xa0\xff\x00\xc1\xc0\xef\xe1O\x1e\xa7\xecI\xff\x00\x04\xd3\xf0\xb8\xf8\xad\xf1\xab[\x99\xac\xa1M\tM\xd5\x8e\x8b!\xe0\xbb\xb2q3\xafR\x01\xd8\xb8\xcb\x1e\xd4\x01\xf5\xef\xed\xc1\xff\x00\x05\tO\x83~\'\xd2\xbfe\xaf\xd9\xa6\xcfJ\xf1g\xc7\x1f\x19B\xe7\xc3~\x1c\xbc\xbfX\xadt\x9b`B\xc9\xaa\xea/\x90a\xb4\x8bp8\x1f<\xad\x88\xd0d\x92\xbc\x97\xc3/\x11\xfc\t\xff\x00\x82wx~m\x02\xf3\xc7S\xfcb\xfd\xa0\xbe$^-\xd6\xb8\x9a;\xc76\xb1\xe2mD\xf0\x11P\x1d\xb6V1d\xaa\xef+\x14H\tc\xd6\xbf\x07\x7f\xe0\xb0\xbf\xf0H\xcf\xdb\x17\xf6\x1e\xf8!\xf0\xe3\xf6\xfa\xfd\xa6\xfe2k\xbe%\xf8\x8f\xe3\xcf\x16^\'\xc5\rsO\xbf|x{\xcc\x8a\xdd\xec\xad\xa3\x91H%\x8a\x8b\xd0Xa\x07\x96\x8a\xa3\xd7\xc5>\r\xfe\xd1\x7f\x1f?f\x9bO\x17^|\x08\xf8\xed\xae\xd9A\xa9\xb6\x9a\xff\x00\xda\x1an\xa2\x16\xee\xfd\xe7;P\xcdx\xca\xd3y`\x9c\xb2+\x05\xc8\xce8\xae<V:\x8e\x11\xa54\xf5\xec\xbc\xd2\xfd~\xedO\xa3\xc8x_1\xe2(T\x96\x16QJ\r_\x9aVi8\xcaW\xb2M\xb5h\xb5t\x9f\xbc\xd2\xdd\x9f\xd7\xb6\xa9\xa2x\xc3X\xb4\x8e\xe7TkT\x90F\x0b\xda[L\xcc\x88\xd8\xe4\x02Tn\xe7<\x903\xe8:W\xc6\xff\x00\xf0Y_\x11~\xcf\xb6\xdf\xf0O\x0f\x8a\x7f\x0e?h?\x89v~\x1c\xb7\xf1O\x84/t\xed\x18\xca<\xdb\x99\xb5\x06\x89\xbe\xcc\xb0\xdb\xa9\xdf;\xf9\xc1\x0e\xc5\xeb\x8e\xa3\xad~X\xfc#\xff\x00\x82\xd1\xff\x00\xc1[\xfe\x1f\xfc\x15\xff\x00\x859\xab|\x7f\xd1/f\x8e\xf2F\xb7\xf1f\xa3\xa3}\xb3U\x8a\xd9\x80\xdbo\xe69Tm\x87;d+\xbb\x04\x03\x9cf\xbev\xf8\xad\xf1\x1f\xc4\x1e5\xf1<\xbf\x19\x7fh\xbf\x8bz\x97\x895\xb0\x1b:\xf7\x8a\xb5?0\xc0\x18\xe4\xac*p\x91\x03\xfd\xd4PO\xbdx\xd8\xae(\xcb\xe9F\xd4/9=\x92O\x7f_\xf2L\xfd\'#\xf0+\x8b\xb1\xb5\xf9\xf37\x1c-\x08\xfcS\x9c\x93|\xabv\xa3}4\xd9\xceQK\xafc\xc4>)|1\xf1<_\n\xb4O\x8a\xdaJZ\xe8>5\xf0\x88\x8bQ\xb3\x9fK\x828E\xb1G\x12,K\x81\x8f\xdd\x9cm\xea89\xcek\xfa\x81\xff\x00\x82$\xfe\xdf\x9a\x87\xfc\x14\x8b\xfe\t\xe5\xe0\xef\xda\x13\xc4\xdae\xc5\xb7\x88\xad\xb7\xe8\x9e*i\xa2*\xb7\x1a\x85\xaaF\x1ex\xc9\x03z\xc8\xaf\x1b\x92\x00\x1b\xd9\xd4}\xda\xfc\x7f\xfd\x88\xbf\xe0\x8d\xff\x00\x17?\xe0\xa0\xf6W>-\xfd\xa0t-w\xc0_\x08V\xceG\x81\xaeb6\xba\xaf\x89$\xd8J\x18\xa3q\xba\x1b`pw8\x0c\xf8\xe0c\x93\x81\xff\x00\x04\xba\xff\x00\x82\xbd\xfcV\xff\x00\x82"|_\xba\xfd\x90?iH.|O\xfb?\xcf\xe2{\xbbM\x1f^\xb6\xb7\x1fi\xd0\x1cN\xc9\xe6\xe1G\xcc\xa4(/\x19\xe7\xa9^\x98\xaa\xc8\xe7[\x0bB4\xb1mFU\x1bp\x8b\xde\xdb\xb5\xaf\xad\xd2\xbd\xed\xf3<\xcf\x16\xb1\\=\x9a\xf1\x17\xb4\xc9?y\x1a4\xe1\n\xb5U\xad9\xafuKD\x93\xd1ZRI)=\xb4I\x9f\xd2\x9d\x15\xce\xfc(\xf8\xb1\xf0\xe3\xe3\x97\xc3\xdd+\xe2\xb7\xc2O\x19Xk\xfe\x1e\xd6\xed\x16\xe7L\xd5t\xdb\x81$S\xc6\xc3 \x82;\xfa\x83\xc8=k\xa2\xaf\xa3?&\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n\xe5\xbe4\xfc\x13\xf8S\xfbE|0\xd6>\x0c|m\xf0&\x9f\xe2O\x0ck\xf6mk\xaa\xe8\xfa\x9c\x02H\xa7\x8c\xfe\xaa\xc0\xe0\xab\x02\x19H\x04\x10@5\xd4\xd1@\x1f\x87?\x11\x7f\xe0\x9f\xbf\xf0T\xbf\xf87\xd3\xe2\x96\xad\xfbA\x7f\xc1*\xafu\x0f\x8c?\x00\xb5\t\xda\xef\xc4\xff\x00\x07ui\x9e{\xad5A\xc9)\x1a\xfc\xcf\x85\xe0\\@<\xc0\x06$\x8d\x80\xc9\xfb\x0f\xfe\t\xff\x00\xff\x00\x07\x1e~\xc0\x1f\xb7\r\xb5\x97\x845\xbf\x18\'\xc3_\x88n\x16+\xff\x00\x01x\xe2\xe1m&\x17\x18\xf9\x92\xday\x02\xc5v2\x0e\x00+)\x03-\x12f\xbf@\xeb\xe4\x7f\xdb\xab\xfe\x08u\xff\x00\x04\xdb\xff\x00\x82\x84=\xce\xbb\xf1\xbf\xf6~\xb1\xb1\xf1=\xc8%\xbce\xe1\\i\xfa\x931\xc6ZG\x8cl\x9c\x9d\xaa7J\x8e\xd8\x18\x04P\x07\xd3\xf6\x1e>\xf0\xc6\xa3\x02\xdc\xdb\xdf\x13\x1b\x8c\xab\x85\xdc\x08\xf6+\x91V\x93\xc4\xda\x0b\x8c\x8dN1\xf58\xaf\xc8\x0b\x9f\xf87g\xfe\nE\xfb\';\x9f\xf8&\xbf\xfc\x15\xd7\xc5\x1aF\x95\x1b\x93k\xe1\x8f\x1cF\xf7\x16\xf0F>\xecQ\xaby\xb1\x0fL\xec\\\xfaP\xde\x13\xff\x00\x83\xb7>\x15]\x9d>\r+\xe0w\x8f,`p\xab\x7fr\xd1\xc75\xca\x81\xc9\xda\xb2&\xd3\xf8P\x07\xec\x03x\x9bBN\xba\x9cG\xe8sPM\xe3O\x0f\xc42\xb7-!\xf4H\xcf\xf5\xc5~J\xaf\xc6\xaf\xf8:i\xd8\xe9\xe3\xf6\x1a\xf8H\xb2\x8c\x8f\xb56\xb0|\xbc\xfa\xe3\xcd\xaa\x10xk\xfe\x0e\xe0\xf8\x99r-nt\x1f\x81\x9e\x0b\xb4\x98\x9c\xdd\xc2Q\xa5\x81OO\x95\xa5}\xc4}(\x03\xf5\xa6\xf7\xe2\x1ch\x18\xd9X\x1c\x01\xf7\xe6|c\xf0\x1f\xe3_"~\xdd\xbf\xf0[\xef\xd8S\xf6\x12\xd3\xeel\xfe6\xfc|\xb4\xbe\xf1\n\'\xee<\r\xe0\xe2\x97\xfa\xb4\xccG\x08b\x8d\x80\x84\x1f\xefL\xe8=\xcd|\xa7/\xfc\x10\xcb\xfe\x0ba\xfbNE&\x99\xfbf\xff\x00\xc1e5\r3D\xbc`nt\xaf\x87\xf6/m"\xaft\xcc+\x00e\xed\x82\xc4\x1e\xf5\xf5\x07\xec9\xff\x00\x06\xe9\x7f\xc11\xbfa\xfb\x9b\x7f\x14i?\x07W\xc7~)\x88\x87o\x12\xf8\xfbm\xfb\xac\x9dK\xc7\x0b/\x95\x1f<\x83\xb5\x98\x7fz\x80>\x0e\x9b\xc5\x7f\xf0\\\x9f\xf88:\xe5\xfc)\xf0k\xc1W\x1f\xb2\xf7\xec\xdb\xa9,\x91j>*\xd676\xa3\xaeZ\x96\xc7\x1f\xea\xa7\xbb\xdc\xb9\xfd\xd4>U\xbf\xdfY&r\x13?\xa6\xdf\xf0M_\xf8#\xdf\xece\xff\x00\x04\xba\xf0H\xd2~\x03\xf8 _\xf8\xa2\xee\xd9c\xd7\xfc\x7f\xae\xa2M\xabjl9;\xa4\xc7\xee\xa3-\x92"L(\xf7<\xd7\xd4\xb1E\x15\xbcK\x04\x11*"(TD\\\x05\x03\xa0\x03\xb0\xa7P\x07\xe7_\xfc\x1c\xd3\xfbe|\x15\xfd\x9b?\xe0\x9c\xda\xb7\xc1\xbf\x1f\xfc>\xb1\xf1\xa7\x8a>/\xcc|?\xe0\x9f\x08](v\x92pU\x9e\xfc `\xe4[\x96\x8b\x052|\xd9\xa1\x18*Z\xbf\x17|\x11\xff\x00\x046\xfd\xb3|5\xe0\xedO\xc1\x1e\x07\xf8e\xafx\xdf]\xd3\xbc\x15a}\xf1[\xc3\x9au\xe5\xa0\xba\xd1\xda\xfd\x0c\xd61\xe9\xd0\xbb\x86\xba\x92(\x95\xbc\xd1\xbb;\x88\x08\xa7\x91_M\xfe\xd5\x7f\xb4\xa7\x82\xff\x00l\x0f\xf88[\xc4\xff\x00\x1b~/\xd8\xdd\xf8\x8b\xe1\x7f\xec\xb3mk\xa5xc\xc3:b\xf9\xc7]\xf1\x0bJ\x12\xde\xca8\xc9\xda.$\xbe\x96\xe1\x8bv\x8fL\xdc\xdc!\xc7\xdb\xba\xcf\xc0\xdf\xf8*\'\xc5\x7f\x8d\x92\xfe\xdb>\n\xf8\xbd\xe0\x8f\x82\xde.\xd6<0\xba]\xff\x00\x84\xb4\xbd*]^\x0b\xdbU;\xa0[\xf7\x91\x95^h\x86\x02\xb4J6\xe4\xaeH&\xbc\x1c\xf37\xc9r\xeaJ\x9e:\xa5\xb9\xb5I&\xe5\xa3\xdd$\x9bV}{\xe9\xae\xc7\xbd\xc3\xf5\xb3|\x16>8\xbc\x02\xf7\xa3\xa3\xbd\xb9Zi\xa7\x19&\xd2jQm5\xd9\xde\xe9\xd9\xaf\xcd?\xf8\'?\xfc\x13\x0f\xf6\x8d\xf8\xc7\xfbZxo\xe0\x97\xfc\x142\xcf\xe3\x17\x81|\x1f\xe3\x1d:\xfcx[W\x83\xc3\xd6~\x1a\xbf\xba\xd4l\xbc\x87\x96\x07\xb5\xbe\xb5\x96\xe1\xe0h\xa7BgQ\x18\r\x95Vc\xc8\xfd\xbe\xfd\x98\xff\x00\xe0\x8a_\xf0M\xff\x00\xd9OZ\xb6\xf1\x8f\x81?g\xbbMk\xc4v\xa7t\x1e\'\xf1\xb5\xec\xda\xd5\xf4O\x8c\x17\x89\xee\xd9\xc4\x04\x8e\xbePA\xed_\x9e_\xb3\xf7\xed\xaf\xfb]\xfe\xcc\x7f\xf0S\xeb?\x12\xff\x00\xc1Y-t\xdf\x1a]K\xa3\xc7\xa3x?\xc5\x9e\x1dg\xb6\xb0\xf0\xee\x9du:E%\xe5\xb5\xa1\x1b]e\xb8Xc\xb8wc4m\xe4\xe0\x045\xfbo\x0c\xd1\\D\xb3\xc1 tu\x0c\x8e\xa7!\x81\xe4\x11W\x92b2<v\x15W\xcb\xa5\x19\xc7\xf9\xa2\x92{_]\x16\xeb\xc9~\x0e\xdd\\E\x9fq>e\x88\x943*\xd5,\xf5P\x95J\x92\x8a\xe9d\xa59mn\xb7~{\x1c\xee\xb3\xe0+i\x10\xbe\x90\x8a\xab\x8c5\xb1\xfb\xa4z\x0fO\xa5\x7f8\xdf\xf0Po\xd9\xf3N\xf0?\xed+\xf1\x1f\xe0\xa7\x8e\xbc<n,[_\xb8\x94\xc1{\x1f\x12\xc59\xf3\xd5\x94\xfby\x98\x0c9\x05z\xe4W\xf4\xbb_\x96\x9f\xf0p7\xec\x8c\xd7Z\x9e\x83\xfbXxwI-\x04\x91.\x8d\xe2i\xe2^`m\xc4\xda\xca\xd8\xfe\x12\xcd$d\x9f\xe2x\xc5y\x1co\x86\xa9<\xae8\xaaw\xbd)si\xbaOF\xfeZ2\xb8F\xbc#\x98\xbc<\xedj\x8a\xda\xec\xda\xd5/\x9e\xa8\xfc\xad\xff\x00\x82y\xff\x00\xc1J\xbfi\xbf\xf8!\xc7\xc54\xb7\xb5}G\xc7\x7f\xb3\xfe\xb7~\x0e\xb7\xe1\x89\xa6-6\x92X\xf34\x04\xf1\x1c\x83\xf0I1\xc8\x06\xbf\xa5\x7f\xd9W\xf6\xb0\xf8\x0b\xfbj|\x14\xd2?h\x0f\xd9\xc7\xe2\x05\xa7\x88\xbc5\xac\xc2\x1a\x1b\x8bw\x02Ky07A4}b\x95\t\xc3#r=\xc1\x04\xff\x004\x9a\xfe\x81oq\x04\xfa\x1e\xb9c\x1c\xf0L\x85&\x86d\xdc\x92!\xf5\x07\xa8\xae_\xf6T\xfd\xa7\xbfj\x7f\xf8#G\xc6\xe9>>\xfe\xcaz\x85\xce\xb5\xf0\xefS\x9dO\x8e~\x1d\\\xcc\xcdo4@\xf3"\xaf\xf0\xba\x8c\xed\x90r\xbd\x1b"\xb9\xb8o\x8b!\x8cQ\xc3c%i\xf4\x97Iz\xf6\x7f\x83\xf2f\xf9\xf7\rO\n\xe5_\n\xbd\xde\xb1\xeb\x1fN\xeb\xf2\xf3G\xf5\x93Ex\x07\xfc\x13\xb7\xfe\nG\xfb5\xff\x00\xc1K\xbe\x06\xda|f\xfd\x9f\xbcW\x1c\xb2\x08\xd5u\xcf\x0f\xdcH\x05\xe6\x939\x1f4R\xa7P3\xd1\xba\x1a\xf7\xfa\xfb\xb3\xe3\x82\x8a(\xa0\x02\x8a+\xf1\x9b\xfe\x0ee\xfd\xaf\xbf\xe0\xaf_\xf0O?\x8a\x1e\r\xfd\xa8?eo\x8d\xe3L\xf8Cq\x1cV\x17\xda4\x1a5\xbc\xf1G\xa8\x83\x92/\x0c\x91\x97+/E(\xeb\xd3\x1dFh\x03\xf6f\x8a\xfc\xb8\xff\x00\x82#\xff\x00\xc1\xc7_\x0e\xff\x00\xe0\xa1z\x95\xaf\xec\xd9\xfbRh\xd6^\x04\xf8\xc0mVM60\xc6=?\xc4\x89\xb4\x12m\xcb\x9f\xdd\xcb\x8f\x9b\xca$\xe4gi8"\xbfQ\xe9&\x9a\xba\x1bM;0\xa2\x8a)\x88(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00+\x1b\xe2.\xb9\xff\x00\x08\xc7\xc3\xfds\xc4\x9b\xc2\xfd\x83G\xb9\xb8\x0cN0R&a\xfc\xabf\xb8o\xdan+\x99\xff\x00g_\x1c\xc5h\x18\xca\xde\x14\xbf\x08\x14\xf3\x9f!\xe8\x03\xf9\xfd\xff\x00\x82,~\xcb\x7f\x13\xbfj\xff\x00\xd8\xc3\xe3\'\xfc\x14\x1b\xe1?\x84%\xd7|s\x07\xedAk\xe2\x86\xf0\xea\xba\x99\xb5\x98ll\xee\xa4\x9e\xce"\xe4/\x9d\xe5\xeb\xf3\xc8\x9c\x8d\xcf\x1a.y\x15\xfa5\xe1\xcf\xf8+/\xecky\xe1\xf9-\xfcK\xfbR\xf8\x17\xc2Z\xa5\x910j\xbe\x1f\xf1\xdf\x88m\xb4]cK\x9dxxn,\xef$\x8eX\xddO\x1c\xa6\x0fbk\xca\xbf\xe0\xcb\x87\x81\xbf\xe0\x95\xbe2X\x93\x0c\xbf\x1c\xf5_3\x9e\xa7\xfb\'G\xe7\xf2\xc7\xe5_\xab\x9a\xf7\xc3\x8f\x87\x9e*\xd4\xe1\xd6\xfcO\xe0=\x17R\xbc\xb6 \xdb\xdd\xdf\xe9p\xcd,Dt\xda\xee\xa4\xaf\xe0k\xe1x\xb7\x81p\xbcU^\x9e#\xeb5(T\x8cyy\xa1\xca\xef\x1b\xde\xcdKM\x1bm5g\xa9\xee\xe59\xed\\\xaa\x12\xa7\xec\xe38\xb7{J\xfa=\xae\x9a\xfc\x8f\xc3\xbf\x1f\\\xf8\xef\xfe\x0bQ\xfbf\xf8C\xc0\x7f\xb1o\xc3\xddkU\xf8W\xe0\xdb{\x8b_\x14|j\xbb\xd2&\xb6\xd1d\x92k\xdb9\xae\xa3\xb5\x9eU_\xb52\x0b\x08\xe3P\x80\x96y]\x87\xc8\x8a\xcf\xfb\xa9\xa2i6\xfa\x0e\x8bg\xa1\xda3\x18\xac\xadc\x82"\xe7$\xaa(Q\x9f|\n\xb4\x00P\x15@\x00\x0e\x00\xa2\xbd\xbe\x1b\xe1\xbc\xb7\x85\xb2\xd8\xe0\xf0w\xe5V\xbb\x93\xbb\x93W\xd5\xf4\xea\xf6V8\xb3,\xcb\x13\x9ab]j\xd6\xbfe\xb2\xf2\xfc\x02\xb0~\'|5\xf0o\xc6\x1f\x87\xfa\xb7\xc3\x1f\x88:4z\x86\x8d\xadY=\xb5\xf5\xac\xa3\x86F\x1dA\xec\xc0\xe1\x81\x1c\x82\x01\x1c\x8a\xde\xa2\xbd\xd9\xc25 \xe3%t\xf4i\xf5L\xe1\x8c\xa5\t)E\xd9\xadQ\xfc\xff\x00~\xdf?\xb0\x8f\x8f\xff\x00c\xdf\x89\xf3\xf8;\xc56\x92\xdd\xf8~\xfaW\x93\xc2\xde$H\xff\x00ww\x17]\x8c@\xc2\xca\xa3\x86O\xc4d\x10k\xe6MCO\x92\xd6g\xb1\xbc\x88\x11\x82\x08a\x90\xca\x7f\x985\xfd9|g\xf8\'\xf0\xc3\xf6\x82\xf0\x05\xef\xc3/\x8b\x9e\x12\xb6\xd64{\xe5\xc4\x96\xf3\xae\x1a6\x1fvH\xdc|\xd1\xba\x9eC)\x04W\xe4\xff\x00\xed\xb1\xff\x00\x04+\xf8\xd9\xf0\xfe[\xcf\x15~\xcd\xf2\x1f\x19\xe8J\xc6K}4\xb2\xae\xa9j\xbf\xdc+\x80\xb3\x8fB\x98oU\x18\xc9\xfc\x7f;\xe0\xfcnW^U\xb01u(\xbdyV\xb2\x87\xcbw\x1f5\xaa\xea\xb4\xbb\xfdC)\xe2\x8c&cER\xc5\xc9B\xaa\xd2\xefH\xcb\xe7\xb2~ON\xcf\xa1\xf9Q\xe0\x0f\x11~\xd2_\xf0O?\x8eP~\xd7\xbf\xb0g\x88\xe6\xd3\xb5\x1bY<\xcf\x10xIr\xd6\x9a\xac\x19\xcb\xc6b\xe8\xeaFr\x9d{\xaf<W\xf41\xff\x00\x04\x87\xff\x00\x82\xd2~\xcd\x1f\xf0V_\x85\xa6\xf3\xc1\x17i\xe1\xdf\x88\x9a%\xb2\x7f\xc2a\xf0\xff\x00P\x98\x0b\x8bG\xc0\x06{|\xf3=\xb36p\xe3\x95?+\x80pO\xe1\xdf\x8c<\x17\xe3\x0f\x87\xba\xc4\xde\x1f\xf1\xdf\x85\xf5\r\x1e\xf6\t\x0cr\xdbjV\x8f\x0b+\x0e\xa3\xe6\x03?\x85x\xdf\x8a~\x1c|P\xf8A\xf1kN\xfd\xad\x7fc\x9f\x18\xdc\xf8G\xe2.\x83q\xf6\xa8\xe6\xd3d\xf2\xd6\xf8\x8f\xbc\x18\x0e\ta\xc3)\xf9d\x07\x91\x9eO\xb1\xc3\xbcW*-a1\xefM\x94\x9e\xeb\xca^^}:\xf7<\xbc\xf7\x86\xe3U<N\rk\xbb\x8a\xd9\xf9\xc7\xfc\xba\xf4\xec\x7f^4W\xe7\x17\xfc\x11\'\xfe\x0b\xef\xf0\xb7\xfe\nE\xa1\xc5\xf0+\xe3\x82Z\xf87\xe3n\x91\x0f\x95\xa9h\x17\x0f\xe5C\xac\x14\x18i\xadw\x7f\x17v\x8b\xa8\xed\x91_\xa3\xb5\xfaJi\xab\xa3\xe0\x9ai\xd9\x85x\xc7\xfc\x14#\xf6L\xf0o\xed\xbf\xfb\x1d\xf8\xf3\xf6k\xf1\xae\x9c\x97\x10\xf8\x87A\x9d,\\\xa8/\x05\xda\xa1hdB~\xeb\x07\x00g\xb6M{=\x14\xc4\x7f\x15_\x0f~\x12x\xcfZ\xd05\xaf\x02\xdaj\x93h\x9f\x15~\rx\x9akm;R\xd3\xee\x0cr\xc7$3H<\xa1 \xc18\x9a)6\xb7\x18;z\x02s\xfd"\xff\x00\xc1\xbc\x1f\xf0Ws\xff\x00\x05)\xfd\x99\xa5\xf8y\xf1\x83R\x8e?\x8b\xff\x00\x0ea\x8e\xcf\xc6\x16\xaf\xb5$\xd4a\x1f$z\x80\x8cc\x01\x88\n\xfc\x00\x1f\x81_\x9a\xbe#\xfd\x824?\x1e\x7f\xc1\xcb\x1f\x1c\x7fe\x93\xe2\xd9<\'\xa5x\xbb\xc3\xd2x\x8fB\x9e\xd6\xc1gV\x9c\xa5\x9c\xae\xcd\x1e\xf4\xce[\xed\x9c\x83\xd4\xe7\x9a\xd6\xf8\xf9\xfb>k?\xf0n\xff\x00\xfc\x14\xd3\xe0\xb7\xed\x95\xe0\x0f\x1djz\xc7\x80\xbc}vtO\x88\xf2\x9bo&9\x9d\xc8Y\x97\xc8F \x92\x87\xccR\xc5\xb6\xb7 \xe6\xbcl\x1d,~\x1b1\xadM\xc6\xf4%\xefE\xddh\xdf\xc5\x1bof\xf5\xec\xae\xfb\x9e\xae*\xa6\x0e\xbe\x02\x94\xd3\xb5e\xee\xc9Y\xea\x96\xce\xfb^\xday\xfc\x8f\xe8\x92\x8a\x8a\xc2\xfa\xcfT\xb1\x87S\xd3\xae\x92{{\x88\x96X&\x89\xb2\xb2#\x0c\xab\x03\xdc\x10A\xcd\x15\xec\x9eQ-\x14Q@\x05\x14Q@\x05\x14Q@\x05\x14Q@\x05\x14Q@\x05fx\xdbD\x1e%\xf0n\xad\xe1\xc23\xf6\xfd2{l\x7f\xbf\x1b/\xf5\xad:(\x03\xf1w\xfe\r\x0f\xf1E\xb7\xc2\xcb\x9f\xda\x87\xf6\x0c\xb8w[\x9f\x86\xff\x00\x15\xde\xe6?5\xc1\xf3C\xb4\xf6\x0f\x8fR\xa7M]\xc7\xfd\xb5\xaf\xda*\xfc$\xd4<o\xe1\x9f\xf8%o\xfc\x1d\x9d\xa8A{\xe2X\xad\xfc\x1f\xfbD\xf8Z\xd9\xae\xedRv\x8e\x1d>\xe6\xf0\xf9q\xb4\xab\x92$\x91\xaf4\xf96\x9c\x02\x05\xf1\x03\xb9?\xbb`\x822\r\x00\x15\xce\xf83\xe2>\x93\xe3?\x11x\x87\xc3V1\xed\x9f\xc3\xba\x82\xda\xdd\xfc\xd9\xc9d\xdc\x0f\xb7\x19\xae\x8a\xbew\xfd\x8c<B|E\xf1\xf7\xf6\x82u`R\xc3\xe2$V \x83\x9c\x18\xedT\x91\xff\x00\x8f\x8a\x00\xfa"\x82@\x19&\x8a\xf9\x83\xfe\n\x9f\xf1O[\xd0\xbe\x11\xf8?\xf6v\xf0}\xeb\xc1\xab\xfcm\xf8\x8f\xa4\xf8!\xa6\x86FG\x8fL\xb8v\xb8\xd5\x8a\xb2\xfc\xc8\xe7K\xb6\xbfUpAVe \x82\x05\x00}5e{e\xa9ZG\x7f\xa7]\xc5q\x04\xc8\x1a)\xa1\x90::\x9e\x84\x11\xc1\x1e\xf5-W\xd2t\xcbM\x17K\xb6\xd1\xec#\t\x05\xac\t\x14J;*\x80\x07\xe8+\x84\xfd\xa5\x7fj?\x83?\xb2o\x80\x13\xe2\x17\xc6_\x13\x1b8n\xafc\xb1\xd1\xb4\xcbKv\xb8\xbe\xd5\xef\xa4\xcf\x97iio\x182\\L\xf88D\x04\xe0\x12p\x014\x01[\xe3?\xc2\xbf\x87~7\xd4\x02\xf8\xdf\xc0\xbaF\xaf\x1c\xb1\xe4\rKN\x8eb=pYI\x1f\x85x\xf6\xa5\xff\x00\x04\xfc\xfd\x8a5\x8b\xe6\xd4u\x1f\xd9\x9b\xc2\x92L\xc7,\xff\x00\xd9\xf8\xc9\xfa\x02\x05W\x93\xc4\xdf\xf0T\x0f\xdaq\x93\xc4\xde\x08\xf8_\xe0\x0f\x81\xfe\x19dcb\xff\x00\x11\xadn<G\xe2+\x98\xc9\xf9]\xf4\xfb+\xab[k2G;^\xeaV\x1d\x19\x01\xae\xeb\xe1\xd7\x85~8xm\xfc\x9f\x8a?\x18t\x7f\x13(LHm|\x15\xfd\x9b \x7fU+w"\x85\xff\x00d\xab\x1f\xf6\xab\n\xb8\\-wz\x94\xe3/T\x9f\xe6\x8d\xa9\xe2q\x14U\xa16\xbd\x1b_\x93?*\xff\x00\xe0\xe1O\xf8&\x17\x80\xfc\'\xe0\xef\x04~\xd6_\xb1\xef\x84\xed~\x1d\xf8\xbf\xc3:\xd0\x86}{\xc3(m\x8e\xe6\x19\x81\xe5d\xe4~\xf1Q\x03\xf5\xcb\x81\xc8\xe2\xbdS\xfe\x08u\xff\x00\x07\x16A\xfb@j\xb6?\xb1\x1f\xfc\x14R\xee\x0f\x0b\xfc[\xb1\x0bi\xa4x\x96\xf8\xac6\xbe$ aC\x9f\xba\x97\x04w\x07l\x9dG&\xbfC\xfe)\xfc/\xf0G\xc6\x8f\x87\xba\xb7\xc2\xdf\x88\xda*j\x1a.\xb7d\xf6\xb7\xf6\xacpJ0\xc6U\x87(\xe3\xaa\xb0\xe5H\x04\x1c\x8a\xfc\x15\xff\x00\x82\xa8\x7f\xc1\x1a|o\xf0{Yk\xbdF\xda\xfa\xfbD\x82\xe0\xbf\x84\xbe"\xe9p~\xfa\xdc\x03\xb9#\xb9\x08\x07\x97 \xe3#\x85$\x16B\x01\xaf\x13\x1d\x8d\xc5d\xf8\xa5VQ\xe6\xc3I$\xec\xb5\xa6\xd6\x97\xb2\xfb/\xf0g\xad\x83\xc2a\xf3\\;\xa7\x19r\xd7Wj\xefI\xad\xf7\x7fi~(\xfe\x95\xa8\xaf\xe7\x87\xfe\t[\xff\x00\x07\x16\xfe\xd1_\xb0\x7f\x8b\xb4\x8f\xd9C\xfe\n\x93\xaa_x\xbf\xe1\xdd\xc4\xa9i\xe1\xaf\x8a\xb83\xdfi1\xf0\xaa.[\xef][\xaf\x19-\x99\xa3\x1d\xdd@Q\xfb\xe9{\xf1\xaf\xe1}\xaf\xc1\xf9\xfe<\xc5\xe3]>\xe3\xc2p\xe8\xad\xaa\xff\x00n[\xdd+\xdb\xbd\xa8\x8f\xcc\xf3\x15\xc1\xc1\x05z}k\xdd\xa1^\x8e&\x92\xabJJQ{4y\x15\xa8\xd5\xc3\xd4t\xeaE\xa9-\xd3?\x1d\xf5\x96\x83\xc7\x7f\xf0x\x05\xc1\xf0\xbc\xaa\xdf\xf0\x8c|$\x90kb\x13\x9d\xad\xf6w\xe1\xfd\x0f\xfaL?\x98\xafx\xff\x00\x83\x8f\xff\x00g\xeb/\x8e\xbf\xf0J/\x88\x1a\xa6\xcd\xb7\xfe\x07\x8e/\x12X\\\xaae\xa2\x16\xcc\x1e@\x0fm\xc80Mx\x07\xfc\x1b\xc7\xe1\xdd{\xf6\xdc\xff\x00\x82\x8b\xfe\xd5_\xf0Xo\x10i\xf3G\xa4k\x97o\xe1o\x06\\\xca\xbf\xbb\xbc\x85\xe4\x85\x99\xd4\x11\x90\xf1\xdb\xd8\xd8\x83\xd3\x1fi#\x9ek\xf4S\xf6\xf1\xf0\xd6\x9f\xe3/\xd8\xaf\xe2\xa7\x85uXRKk\xff\x00\x02j0\xcc\x92\x0c\xab)\x81\xb85\xa9\x91\x89\xff\x00\x04J\xfd\xab\xb4/\xda\x03\xfe\tI\xf0?\xe2O\x89\xb5\xe8\xe1\xbf>\x0bM.\xe9n\xe6\xfd\xe36\x9f4\xba~\xf6=\xcb}\x97v{\xee\xa2\xbf\x1a\xff\x00\xe0\x95\x9f\xb5\'\xc4?\x87\xbf\xb07\xc3\xef\x07\xe8\x97\xd7)kg\x06\xa0"T\xba\n\x06\xedF\xe9\xcf\x1b\x0e9c\xde\x8a\x00\xfe\x95(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x91\x98*\x96c\x80\x06I4\x01\xf87\xfbY|\x0b\xf0\x9f\xed\xf7\xff\x00\x07N\xf8\x9b\xe0\x06\xbdz\xbb|=\xf0X[\xc3|\x8a\x1aM"\xf9`K\x8bk\xa4\xf4x\xa5\xbc\x86Q\xf8z\xd7\xeb\x1f\xfc\x13\xa7\xf6\x8b\xf1/\xc6\x7f\x83\x97?\x0e\xbe.\xc0,\xbe%|5\xbf>\x1c\xf1\xf6\x9a\xdc\x1f\xb4\xc26\xc7t\x99\xfb\xd1N\x80:\xb7C\xf3zW\xe6_\xfc\x11\x93\xec\xbf\xb57\xfc\x1c\x93\xfbb~\xd7\xd6\x13H\xf6\x9e\x13\xb5>\x18Ud\xca\xb4\x86hl\xc3\xe4\x8f\xfa\x83>\xdfP\xc7\xad}\xff\x00\xfbs\xfc4\xf8\x89\xfb9\xfcQ\xb1\xff\x00\x82\x93\xfe\xcd\x1e\x12\xbc\xd6u}\x06\xc8Y|W\xf06\x91l\x1e\xe3\xc6\x1e\x1e\x1f{\xc8\\\x8d\xd7\xd6\xdf\xeba\xea_g\x95\xd1\xe8\x03\xebz\xf9_\xfe\t\x90\xd6z\xd7\x88\xbfh\x9f\x1cY\x10WT\xfd\xa15x\xf2\x0f\xfc\xf1\xb4\xb2O\xe6M{?\xc3_\xdag\xe1\'\xc6o\x85:W\xc6\x7f\x85^%\x8fZ\xf0\xee\xb9\xa5\xa6\xa1\xa5\xeav\x84\x18\xe5\x81\x97v\xeeyR9\x0c\x8c\x03+)V\x00\x82\x07\x8a\x7f\xc1\x1a\xa1\xbc\xd4?b\xe8\xfe!\xea\x11"\xcf\xe3\x1f\x1bk\xba\xcc\x8f\x188\x93}\xec\x91+s\xea\xb0\xaf\xe5@\x1fVW\xc4\x9f\xf0Qk\xe5_\xdb\x1f\xf6N\xd5\xf5\t6\xd8\xc5\xf1\xb7P\xb6\xcb\x1e<\xf7\xf0\x96\xbc"\xfcwg\x15\xf6\xcc\xd2yP\xbc\x9f\xddRk\xe1O\xf8+\xde\xad\xa5\xe8\xff\x00\xb3n\x8f\xe3=;Q#\xc6\xfa7\xc5\x1f\r\xea\x7f\x0ct\x9bx\xcb\xddk\x9a\xdcZ\x94L4\xc8\x11pK\\\xdb}\xaa\x16l\x85H\xe4\x92G!\x11\xcd\x00}yk\xe3\x8d^(\x84\x0e\x91\xc8\xc3\x80\xec9\xaf\x98\x7fb\xbf\x0e\xa7\xed\x89\xfb^|K\xfd\xb9~)\x14\xd4\xed|\x05\xe2{\x8f\x01|!\xd3\'@\xf0i\x11Z\xc5\x19\xd4\xf5\x18\x87 \\\\\\\xca\xd6\xe5\xfe\xf2\xc7d\x14\x1c;\x03\xef\xdam\xc5\xc5\xc5\x95\xbd\xdd\xe5\xa3A3\xc4\x8f,\x0eA1\xb1\x00\x958$d\x1e85\xe1\xff\x00\xf0J\xbb\xeb?\x86\xbe0\xf8\xf5\xfb$j\x81-\xf5_\t|Y\xba\xf1\x1d\x85\xb6\x087\x1a>\xb9\x12^At3\xf7\x83]\xae\xa3\x16G\x00\xdb\x91@\x1f`\xd7%\xe3\xcd1-\xee\xd3Q\x85p&\x18|\x7fxw\xfc\xab\xad\xac\x0f\x88\x0e\x83N\x862~f\x97+\xf8\x0eh\x03\x92\xa8o\xf4\xfb\rV\xc6]3T\xb1\x86\xe6\xdat)=\xbd\xc4A\xe3\x91OUe`A\x1e\xc6\xa6\xa2\x86\x93Z\x86\xc7\xcd?\xb4G\xfc\x12\x0f\xfe\t\xeb\xfbN\xf8sT\xf0\xef\xc4\x8f\xd9\xdbJ\x88\xea\x96\xaf\x13^\xe9\x05\xedd\xb6vR\x16h\x82\x1d\x89"\x13\xb9H\\dr\x08\xc8\xaf\xc8\x0f\x0e~\xc6\xdf\xf0Y;_\x88\xfe+\xff\x00\x83y\xfe\x19\xfc@\xb9\x9f\xe1Y\xd5\xe3\xd6.<c{\x9cZ\xf8jV\xf9\x02\xb99\x10\xbe\t0\x8c\xfe\xf3+\xc0\x18\xaf\xe8V\xben\xfd\xa3\xd6\xdb\xe17\xfc\x14\x07\xf6y\xf8\xfd\xa6L-\xe7\xf1\x06\xa9{\xe0Moi#\xed\xb6\xf7H$\xb5F\x03\x86\xf2\xe6\xf3Xg8,qYR\xa1F\x82j\x9cTS\xd7D\x96\xbd\xf44\xa9Z\xadf\x9dI6\xd6\x9a\xbb\xfeg\xb7\xfe\xc9\x9f\xb2\x0f\xc2\x7f\xd8\x0b\xf6A\xf0\xdf\xec\xbb\xf0v\xc0E\xa5\xe8\x16I\x14\xb7l\x81d\xbf\xbbb\x1ak\x991\xd5\xdd\x81>\xc0*\xf4Q^U\xff\x00\x05?\xf8\x91i\xf0\x8f\xfe\t\xe1\xf1\x97\xe2%\xe0\xdc4\xcf\x87\xda\x8c\x88\x80\xe0\xbb\xf9$*\x8frM}9\xf1\x03PVht\xd4n\x87{\x8f\xd0\x7fZ\xfc\xa8\xff\x00\x83\xa7?h\xb7\xf8k\xff\x00\x04\xfb\xb3\xfd\x9e\xbc9\xaa4^!\xf8\xb1\xe2\x8b]&\xce\x18\x86Y\xad\x91\xc3\xcc\x18`\xe1Y~L\xfa\xf4\xadL\xcf\x1c\xff\x00\x82(\x7f\xc18\xf5\xbf\x8e_\xf0L?\x85\xbf\x14\xed4\xcf2=Z\xdbTe}\x84\xe7\xcb\xd5\xafb\xf5\xff\x00b\x8a\xfdz\xff\x00\x82v\xfe\xce\xbf\xf0\xc9\x7f\xb0\xc7\xc2\x9f\xd9\xd6k\x04\xb6\xbb\xf0\xb7\x82lm\xb5X"\x1f*\xdf\xb4b[\xbcp:\xdcI)\xf5\xe6\x8a\x00\xf6z(\xa2\x80\n(\xa2\x80\n(\xa2\x80\n(\xa2\x80\nl\xd3Eo\x13O<\xaa\x88\x8aY\xdd\xdb\x01@\xe4\x92OAN\xaf\xc8\xff\x00\xf88;\xf6\xed\xfd\xa2>"\xfcu\xf0?\xfc\x11{\xf6\n\xd6\xde\xd3\xc7\xdf\x13\xbc\xb3\xe3mn\xd1\xce\xfd+O\x97\xee\xc4YH0\xe6?\xde;\x1e\n2\x00\xc0\x9a\x00\xf5/\xdb\x8f\xfe\x0eV\xfd\x8f\xff\x00f\x8f\x89\x12\xfe\xcf?\xb3\x9f\x83\xbcA\xf1\xc7\xe2J\xcc`\x7f\x0f\xf8\n\xdf\xce\x82\xda^F\xd9\'\x00\x86\xc3`0@\xc4n\x06\xbc\x8a\xcf\xfe\n\t\xff\x00\x075~\xd1ZL\xda\xaf\xc2\x7f\xf8%\xd7\x84|\r\xa6\xdd\xc4\xcb\x04~/\xd6\x1f\xce1\xb2\x90\x18od9\xe7=+\xec\xef\xf8%\xf7\xfc\x12\x0f\xf6S\xff\x00\x82_\xfc%\xb3\xf0\xcf\xc3\x0f\x07\xd9\xea\x9e3\xba\xb6F\xf1_\x8f\xf5\x1bU{\xfdR\xe7\x1f9\x0e\xd91D\x18\xb6\xd8\xd4\xf0\x0f$\x92I\xfa\xa2\xfe\xfe\xcfK\xb1\x9fS\xd4nR\x1b{hZY\xe6\x91\xb0\xb1\xa2\x82Y\x89\xec\x00\x04\xd0\x07\xe3\xaf\xfc\x11\x13\xe1\x1f\xed\x1d\xff\x00\x04\x80\xf0\xb7\xc5o\x15\xfe\xdd\xdf\xb2G\x8eg\xf1O\xc4\xdf\x19>\xb5\xaf\xf8\xcb\xc1\x1adz\xb5\x94V\x91\xa6\xf4\x13\x18_zbk\x8b\xb7\xe8@\r\x9fZ\xfbf\xe7\xfe\x0b\x15\xfb\x04\xfcH\xf0\xbd\xbc\xff\x00\x08\xbe-]\xf8\xcaK\xc7*\xd6>\x14\xf0\xe5\xed\xf4\xf0\xba\x9c4r,q\x10\x8e\x0f\x041\x15\xcex+A\xf1\x87\xfc\x15\xd7P\xbc\xf8\x9b\xe3\xfdoS\xd0\xff\x00f\xfbMVK_\x05xSL\xbcky\xfe \x0byJ>\xab{,M\xbb\xfb=\xa5F\x16\xf0)\x02TO9\xf2\xb2 \x1f\\|6\xf8K\xf0\xc3\xe0\xef\x87a\xf0\x97\xc2\xaf\x00i\x1e\x1e\xd3m\xe3\t\x15\x9e\x91`\x90 \x03\xd7h\x19\xfa\x9eh\x03\xf27\xe3\x97\xed?\xe2\xcf\xd8\xff\x00\xc4^4\xf8\xb3\xfb\x1d\xfe\xce?\x17\xee\xbc\r\xe3\xbb\rBO\x17|4\xd4~\x1c^Z\xc3\xa6\xebS\xc3 \x1a\xce\x96\xf8"1,\xa5M\xc5\xbe\x02\xb3\x1f50\xcc\xe0\xfd\xef\xff\x00\x04\x8e\xf1\xf7\xc1\xddk\xf6\x1f\xf0\'\xc3\xcf\x86\x9e5\xb1\xbf\xd4<9\xe1\xf8\x93\xc4:Tl\xc9s\xa7]\xca\xcd4\xa9,2\x01"\x1f2G\x19a\x83\x83\x8a\xfar\xb2,\xbc\x01\xe0}7\xc4\xd2x\xcfM\xf0\x96\x9dm\xabM\t\x8amF\xde\xd1\x12iP\x9c\xedfP\x0b\x0c\x8e\xf9\xa0\x05\xf1v\xad\x15\x86\x98\xf6\xe1\xff\x00{0\xda\xaa\x0f z\xd7\xc5W\xb6\xbf\xf0\xba\xbf\xe0\xac\xb6\xfaV\xbc\x9e~\x91\xf0K\xe1R\xea\xda]\xab\xf3\x18\xd6\xb5\xbb\x89-R\xe7\x1f\xdf\x8a\xd2\xd2\xf60q\xc0\xbblW\xd6\xfe4\xb1\x96\xdbYiy+0\xdc\x99\xfdG\xe7_\x9f\x96p~\xd6_\x17?\xe0\xaa\xbf\x18|#\xfb\x19&\x8fa\xe1\xbb\xef\x05xcJ\xf1\xe7\xc6\rH}\xa6/\x0c^\xdaI\xa8\xc9&\x9dgjWm\xde\xa0\xd1]B\xdf3yP+o\x901(\x8c\x01\xf6\x0f\xc5O\x8e\x7f\x06\xbe\x07iK\xad|a\xf8\xa1\xa1\xf8n\xde@L\'W\xd4R\x16\x9b\x1d\xa3BwH}\x94\x13_\x17~\xd1\x9f\xb5\xdf\x84\xa4\xf8\xff\x00\xe0\xbf\xdbC\xf6\x13\xf0\'\x8f|s\xe3\x7f\x0e0\xf0\xef\x8a\xf4\x9d\x03\xc0\xf7\xa2\xcb\xc5>\x19\xb8\x99$\x96\x19\'\x924Q-\xab\x83qn\xfd\x01i\xe3\xc8\xf3\x89\xaf\xb2>\x03\x7f\xc15\xbff\x1f\x82z\x80\xf1\xae\xb5\xe1\xab\x8f\x1ex\xd6e\x07Q\xf1\xdf\xc4\x0b\x83\xaajw/\xdd\x83\xcd\x95\x88g\xa2F\xaa\xab\xd0\x01^\xfb\x04\x10[B\xb6\xf6\xd0\xa4q\xa0\xc2"(\x01G\xa0\x03\xa5\x00|\xc8\x7f\xe0\xaa\xdf\x05\xb4\xb8E\xd7\x8e~\x06|e\xf0\xdd\xba\xc2\x1e{\xbdg\xe1\x8d\xe2\xc3\x17\x1c\x82\xd1\x87\'\x1e\xc2\xb5<\x1f\xfbw~\xca\xdf\xb4?\x88W@\xf8g\xf1\xc3D\xba\xbfE\xc4z%\xe5\xc1\xb3\xbe\xc9\xeb\xfe\x8fp\x12C\xc8\xc7\nzW\xd15\xe6\xbf\x1c\xff\x00d\x1f\xd9\xb3\xf6\x8d\xd2e\xd3~/\xfc\x19\xf0\xfe\xb5#\xa1\x11\xde\xdc\xe9\xc8.#=\x8a\xcc\xa0:\x90y\xe0\xf1@\r \x83\x821Ex\x7f\x85\x7fg\xef\x8e?\xb2\xd6\xab\x16\x9f\xf0c\xe2F\xa3\xe3\x0f\x06Eu\x8b\xcf\x02\xf8\xe3Qk\x8b\xcb\x18:\x1f\xec\xedBC\xbdJ\xf0D\x17\x05\xe3ll\x0f\x0ew\xaf\xb7C \x9a%\x94#.\xf5\x07k\xae\x08\xcfb;\x1a\x00u|\xd1\xfbZ\xcf\xa7x\xeb\xf6\xde\xfd\x9b~\x0e\xa9\xf3.4\xdf\x13_\xf8\xce\xf5\x10\x9c\xc1\x05\x84*"s\x8e\xcd#:\x8c\xf5*k\xdc4?\x8d?\t\xbcE\xe2\xads\xc0\xbag\xc4-/\xfbo\xc36\xe2\xe3\xc4\x1a=\xcd\xc7\x91u\xa7\xdb\x9c\xed\xb8\x96\x19v\xba\xc0pq6<\xb3\xb4\xe1\x8e\x0e>}\xfd\x83~\xdb\xfbN\xfc]\xf1\xa7\xfc\x14gW\xb5\xb8\x8fF\xf1tI\xa0\xfc%\xb6\xba\x8d\x91\x97\xc36\xce\xde]\xee\xc7\x00\xa1\xbb\x94\xbd\xc0\x04d$\xaa;P\x07\xd5\xba\xb6\xa8\xb7\x13O\xaa\xea\x17\t\x12\x00^Y$p\xab\x1a\x01\x92I<\x00\x00\xeb\xed_\x8c\x7f\x02!\xb8\xff\x00\x82\xef\x7f\xc1{?\xe1p\xdaE%\xef\xc0\xbf\xd9\xc6`\xbaT\xcc\xb9\xb7\xd4\xae\xe2|\xa7^\x18K0\xdeT\x80\xc1+\xd1\xbf\xe0\xb8_\xf0R\xaf\x89?\x11\xfcua\xff\x00\x04o\xff\x00\x82qg\xc4_\x18>#\xcc4\xdf\x18_\xe9s\x16]\x02\xc1\xd0\xb4\xb6\xec\xe9\x9f.F\x8b/+\x7f\xcb(\x15\xb2\t\x90c\xf4\x1f\xfe\tA\xff\x00\x04\xdf\xf8q\xff\x00\x04\xc1\xfd\x91tO\xd9\xef\xc1\xae\x97\xba\xbb(\xbc\xf1n\xbcS\x12jz\x8b\x8c\xc9!<\x9d\x80\x92\x15s\xc0\xa0\x0f\xa5\xe8\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00(\xa2\x8a\x00+\xf1O\xfe\t\xc1i\xa6\xfch\xff\x00\x83\xa2\x7fjo\x8c>:\x8b\xcd\xd4\xbc\x03is\xa5\xe8\xaf+\x1f\xdd\xc0\xaemr\x17\xa1\xc4p&\x0fn\xd5\xfbY_\x84_\x18~9x\x03\xfe\t\x07\xff\x00\x07<x\xb7\xe3\x17\xed\x19\xe2\x84\xf0\xd7\xc2\xdf\x8c^\x0e7\xb7\x1a\xc4\xb6\x92L\x8d$\xb1(i\x19bF}\xabr\'S\xb4\x1c\xd0\x07\xeb\xaf\xecQ\xf1\xdf\xc4\xff\x00\xb4\x1f\xc1\rC\xf6\x82\xf1\x8e\xa1\x0cV\x1a\xaf\x89\xf5\x98\xf4m:(\x02\xae\x9faa{=\x88Vn\xb2;\xbd\xac\xb3\x16=\x04\xaa\xa0\r\xa4\x9f\t\xfd\xb0\xff\x00k\xaf\x10\xfcR\xff\x00\x82,x\x97\xf6\xa3\xf0\xba\xcb\xa2\xcf\xe3\x8f\x07\tt\x95\x81\xb16\x9f\r\xdc\x824\x05\xb9\x0c\xea\xa4\xe4\x8e\x0f\xa0\xaf\x0f\xff\x00\x82]\xff\x00\xc1h\x7f\xe0\x97\x9e\x02\xf8E\xe3_\x81>7\xfd\xb3\xfc+o\xa7\xe8\xdf\x13\xf5\xd3\xe1[\xadR;\x9bt\xd4\xf4\x8b\xe9\x85\xfaJ\xa2HWj\x89\xae\xeea\xc3\x00\x7fs\x9e\x84\x1a\xf2\xef\x07\xfe\xdf\x1f\xb0O\x88\xbf\xe0\x95\x9f\x16?\xe0\x9f\xfe \xfd\xb2\xfc\x0b\x0e\xab\xe0\xd9\xb5=\x17\xc0\x9a\x85\xd6\xaa\x04Z\xa5\x84r\x99t\xe9\xe28\xf9\x89\x8c(8\xe8\xdcP\x07\xe9\x1f\xc6\xcf\x886?\xb1?\xc1?\x85?\x03\xfe\x12i\x16\xc9u\xad\xf8\x8fF\xf0\x0f\x83\xe2\x9e2`\xb5\x8d-e\x91\xdd\x80\xfe\xe5\x9d\x8c\xfbs\xc1\x93`<\x13^\xf3\x18h`U\x96R\xe5Pnr1\xbb\x03\x93\xc5~^\xfe\xd7_\xf0T\x7f\xd8\x9b\xf6\x91\xfd\x84>\x18\xfe\xd1\xfe\x0c\xfd\xac\xbc\x04\xbe<\xf8\x7f\xac\xf8w\xe2\t\xf0|\xde-\xb5\x86\xf9\xe6\x8e\x06\x83Q\xb1\xf2\xa4u-(\xb6\xbb\xbd\n\x98\xf9\x9d\x14\x0e\xa2\xbe\xd5\xf8s\xff\x00\x05)\xfd\x80~)x{M\xd7</\xfbg|,\x91\xb5;\x18\xeeSO\x7f\x88\x1aj\xdc\xc4\x1dClx\x8c\xdb\xd1\x86pA\x00\x82(\x03_\xf6B\xfd\xa3\xee\xbfjO\x07x\xa3\xe2<:"XiZw\xc4_\x10xoF\x84\xb6e\x92=#Q\x9fL\x9ai\x08$~\xf2\xe2\xd2y\x13\x18\xc4o\x18#p5\xeb5\xf0W\xecs\xfbJ|\x06\xfd\x8f\xff\x00j\xef\x88\x7f\xb2\x07\x8a\xfe:\xf8VO\x0b|E\xf1\x96\xa7\xe3\xcf\x84Z\xfax\x96\xd6Ki\xce\xa3/\xda\xf5]-\xa4W\xda\x93\xc5}-\xc4\xca\xa4\xfc\xd0\xdc\xc7\xb7;[\x1fdM\xf1\xf3\xe0t\t\xe67\xc6\x1f\x0b\x91\x8e\x02k\xd6\xe7?\x93\xd0\x07\x9b\x7f\xc1H\xbe2\xea\x9f\xb3\xdf\xec\x7f\xe3\x1f\x8b\xde\x1c\x19\xd5\xf4\xdd7\xc8\xd1\x82\x90\x1b\xedw\x0e\x90D\xc3<e^@\xdf\xf0\x1a\xf3?\x83v\xb3\xfe\xc2>\x19\xfd\x9d\x7fa\x8f\x86\x1a\x15\xab\xeb\xdf\x10\xb5+\xdb\xff\x00\x1d\xf8\x82\xe9T\xb8h\xacg\xd4u;\xf6\x03\x06y\xa7\xbb\xf2m\xc6q\xb1n\x03r"\x08s\xff\x00\xe0\xab\x7f\x12\xfe\x1c|\\\xfd\x8a|s\xe1\xcf\x0b\xfcM\xf0\xcc\xb7\xba}\x9c:\x9d\x8d\x99\xf1\x05\xb6\xfb\x87\xb5\xb9\x8a\xe1\x94\x0f3\x92R6\xc0\xf5\xaeW\xf6\xcd\xfd\xa7>\x13\\xO\xf6n\xff\x00\x82\x98x?\xe2>\x8b>\x9b\xe0_\x10\xdaj>/\xb0\x87W\x84\xce\xbe\x1e\xd6t\xe9t\xfb\xa71+\x16?f\x96\xee\xde\xe5\xd4\x03\x85\xb4\x7fJ\x00\xfb\xc3\xc4\x1a\xd5\xa7\x86\xf4\x0b\xef\x11j\x04\xf9\x16\x16r\xdc\xcf\xb4s\xb1\x10\xb1\xfd\x01\xae\x03\xf6@\xf8\xdf\xac~\xd2_\xb3\xd6\x81\xf1\xd7V\xd3\xac\xed\x13\xc4\xdfi\xbb\xd3-\xac]\x9dR\xc7\xed2\xa5\xa9f`\t\x91\xa1X\xdd\xc6\x00Vr\xa3!w\x19\xf5O\xdaG\xf6\\\xd7|9%\xbe\xa1\xfbA\xf8\x1f\xec:\x95\x9b#4\x9e+\xb3P\xf1H\x98\xef\'pk\xe4\x9f\xf8\'\x1f\xed\xbd\xfb6\xfe\xcd\xa7\xc4\xff\x00\xf0O\x9f\x8d\x9f\xb4o\x81\xf4\xdb\xff\x00\x87\xfa\xb5\xe6\xa1\xe0]v\xef\xc5\xb6ka\xae\xf8f\xf6\xeei\xedL7\x06]\x9eu\xb3<\x96\xb2BHuXcp\n\xb8 \x03\xef\xaa+\xc55?\xf8)\'\xfc\x13\xd3Iv\x86\xf3\xf6\xe8\xf8>\xb2/X\xbf\xe1fi[\x87\xe1\xf6\x8a\xe6\xb5\xff\x00\xf8*7\xec\x0f4F\x0b/\xdb\x83\xe1\x0c(\xc3\x0c\xff\x00\xf0\xb2\xb4\xb2\xc7\xf2\x9f\x8a\x00\xf5/\x12M\x14\xfa\xdd\xc4\x90\x90T\xbfQ\xde\xa8\xd7\x88\xdc\x7f\xc1K\xbf\xe0\x9d\xf6\xe7\xf7\xdf\xb7/\xc2|\x93\xfc>>\xb0o\xe5)\xaa\xb7\x1f\xf0T\x8f\xf8&\xed\xaf\xfa\xef\xdb\xa3\xe1g_\xe1\xf1\x95\xab\x7f\'4\x01\xc2\xff\x00\xc1a\x7fc\x9f\x06\xfe\xd2\x9f\xb27\x8b>"[\xd8Io\xe3O\x01xSR\xd4\xf4=J\xc2\xfak9\xb5\x1b(\xed\xdaK\xed\x0ey\xa0t\x91\xec\xaf\xad\xd2Kib-\xb4\xf9\x8a\xf8\xca\n\xf8\xbf\xe3\xf7\xfc\x16\xbf\xe3_\xed\xb84\xaf\xd8\'\xfe\x08i\xf0\x87Q\xbf\xf1\x1e\xa7\xa6Ae\xac\xf8\xf6-?\xc9\xb1\xf0\xbc\x060\xae\xb0dl\x8f\xcb\x19\x1esaW\x1f(n\r{\x8f\xfc\x15\xbb\xfe\x0b-\xfb\x11x?\xfe\t\xd9\xf1^\xcb\xe0\x7f\xed?\xe0\xff\x00\x16\xf8\xbb\xc4\x1e\x13\xb9\xf0\xfe\x8b\xa3\xf8{[I\xeeL\x97\xeb\xf6G\x98\x05\xe8"\x8eg\x97?\xf4\xce\xbd\x83\xfe\r\xac\xfd\x8f\x9b\xf6P\xff\x00\x82U\xfc?\x9f\xc4\xde\x19\x82\xcf\xc5\x1e5\xb4\x7f\x10\xeb7\x0fa\xe4\xdd4wnf\x82\x19\xb2\x03\xee\x8e7U\xc3t#\xa0\xa0\r\xaf\xf8#?\xfc\x11?\xe0\xff\x00\xfc\x12\xcb\xc0\xd7\xbe8\xf1\x06\xa0\x9e3\xf8\xd1\xe2\xe8Y\xbcq\xf1\x16\xfc4\xb3\xbf\x98\xe2Y--\x9eL\xbaBd\x01\xdd\x8f\xcf3\xaa\xb3\x93\xb5\x02\xfd\xc7E\x14\x00QE\x14\x00QE\x14\x00QE\x14\x00QE\x14\x00QE\x14\x00W\x9c\xfc~\xfd\x90\x7feO\xda\xaa\xde\xc6\xdf\xf6\x98\xfd\x9b\xfc\x0f\xe3\xf4\xd2\xf7\x9d0x\xc7\xc2\xf6\xba\x8f\xd9\x0b}\xe3\x11\x9d\x1b\xcb\xcf}\xb8\xcd\x14P\x07\x89\xeb\x7f\xf0C\xbf\xf8$6\xb4\x18]\xff\x00\xc1;~\x16G\x9f\xf9\xf3\xf0\xbcV\xfe\x9f\xf3\xcbo\xa7\xf9\xcde\x9f\xf8 \xa7\xfc\x11\xd5\x81S\xff\x00\x04\xf8\xf8{\xc8\xed\xa7\xc9\xff\x00\xc7(\xa2\x808\xaf\x17\x7f\xc1\xb6?\xf0D\x9f\x15L\xb3\xea\x7f\xb0\x9e\x95\x0b+\x12\x06\x99\xe2\xedn\xc8s\xea-\xefP\x1a\xf9\xd3\xe3\xb7\xfc\x1b\xd7\xff\x00\x04\x80\xf024\xbe\x15\xfd\x91\x9a\xd1\x818+\xf1\x03\xc4\r\xfc$\xff\x00\x15\xf9\xf4\xa2\x8a\x00\xf9?\xe2?\xfc\x12C\xfe\t\xf5\xa1\xea\xb0\xc5\xa5\xfc\x06\x9a \xb6\xdb\xd7>2\xd6\x18\xabe\x86Ak\xb3\x8e\x00\xaf\x14\xbc\xff\x00\x82}\xfe\xc91]\xcb\x14\x7f\x0cn\x82\xac\x8c\x14\x7f\xc2U\xa9\xf03\xff\x00_4Q@\x1d\xbe\x8d\xff\x00\x04\xc6\xfd\x88\xef\xfc\x14\xba\xad\xe7\xc1\xdb\x99\'kfb\xe7\xc5\xda\xb7\'\x9e\xdfj\xc5a\xfc6\xff\x00\x82m~\xc6>!\xd4\xe6\xd35\x8f\x84w\x13[\xa5\xa1+\x0f\xfc%z\xa2\xa8\xf9\x94v\xba\x1d\x89\xe2\x8a(\x03\xd8\xfe\x1e\x7f\xc1!\xff\x00\xe0\x9e\x9a\xf6\x9d<\xba\xaf\xc0[\x89Z9\x82\xa7\xfcV\xba\xca\xe0c\xa7\x17\x82\xbd_\xc2\xdf\xf0B\xef\xf8%\x96\xaf\xa0\xdbj:\x8f\xec\xc3$\xb3\xba6\xe9\x0f\x8e\xf5\xd0O\xccGk\xefj(\xa0\x0fU\xd1\x7f\xe0\xdd\xaf\xf8#\x9d\xf7\xd8Z\xeb\xf6?.fx\xc4\xa4\xfcA\xf1\x0f\xcd\x923\xff\x001\n\xf4/\x0e\x7f\xc1\xb4\x1f\xf0D\x9b\xfdH[\xdd\xfe\xc5[\xd3a8\xff\x00\x85\x8f\xe2A\xfc\xb5\x1a(\xa0\x0e\x9e\xcb\xfe\r\x8e\xff\x00\x82\x1dY\xc8^/\xd8v&%pD\xbf\x11<G \xfc\x9bQ8\xad\x9d/\xfe\r\xbd\xff\x00\x82\'iv\xbfe\xb6\xfd\x844W]\xe5\xb3s\xe2}ff\xc9\xff\x00jK\xc68\xf6\xce\x05\x14P\x07I\xa1\xff\x00\xc1\x00\x7f\xe0\x8d\x9a%\xf5\xa5\xf5\x9f\xfc\x13\xf7\xc0\xd2=\xac\xc9$Kx\x977\x08\xc5H :K3,\x8b\xc7*\xe0\x86\x1c\x10A\xc5}\x9bggk\xa7\xda\xc7ccl\x90\xc3\x0ca!\x8a$\n\xa8\xa0`\x00\x07@\x07j(\xa0\t(\xa2\x8a\x00(\xa2\x8a\x00\xff\xd9'
+[<torch.utils.data.dataloader.DataLoader object at 0x00000270FFE1AF10>, <torch.utils.data.dataloader.DataLoader object at 0x00000270FFE344C0>, <torch.utils.data.dataloader.DataLoader object at 0x00000270FFE345B0>, <torch.utils.data.dataloader.DataLoader object at 0x00000270FFE346A0>, <torch.utils.data.dataloader.DataLoader object at 0x00000270FFE34790>, <torch.utils.data.dataloader.DataLoader object at 0x00000270FFE34880>, <torch.utils.data.dataloader.DataLoader object at 0x00000270FFE34970>]
+=======hyper-parameter used========
+==========================================
+algorithm:DANN
+alpha:0.1
+batch_size:1
+beta1:0.5
+bottleneck:256
+bottleneck_a:256
+checkpoint_freq:1
+checkpoint:None
+classifier:linear
+data_file:
+dataset:PACS
+data_dir:../../data/PACS/
+dis_hidden:256
+gpu_id:0
+groupdro_eta:1
+layer:bn
+logdir:./output/logs
+inner_lr:0.01
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:20
+mixupalpha:0.2
+mldg_beta:10.0
+mmd_gamma:1
+momentum:0.9
+mu:0.0
+net:resnet18
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+seed:2021
+shownet:False
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:./output/test
+weight_decay:0.0005
+step_per_epoch:1336
+domains:['art_painting', 'cartoon', 'photo', 'sketch']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:7
+domain_num:4
+
+===========start training===========
+read data time1.5794458389282227
+update time 34.96058535575867
+training cost time: 36.5440
+===========epoch 0===========
+class_loss:1.8928,dis_loss:0.5397,total_loss:2.4325
+train
+data to cuda time=0.7457201480865479
+predict time 0.05289292335510254
+caculate label time 1.888814926147461
+total eval time 8.609090089797974
+data to cuda time=0.4633219242095947
+predict time 0.02916431427001953
+caculate label time 1.3368279933929443
+total eval time 7.764163494110107
+data to cuda time=1.1271512508392334
+predict time 0.07862687110900879
+caculate label time 3.095505714416504
+total eval time 10.307304620742798
+valid
+data to cuda time=0.11663222312927246
+predict time 0.01000356674194336
+caculate label time 0.48470091819763184
+total eval time 6.4592390060424805
+data to cuda time=0.07181835174560547
+predict time 0.007967233657836914
+caculate label time 0.3558635711669922
+total eval time 6.211048603057861
+data to cuda time=0.22717833518981934
+predict time 0.018460988998413086
+caculate label time 0.8011870384216309
+total eval time 7.014065504074097
+target
+data to cuda time=0.81783127784729
+predict time 0.050305843353271484
+caculate label time 2.051868200302124
+total eval time 9.001994848251343
+train_acc:0.3370,valid_acc:0.3576,target_acc:0.1895
+total cost time: 91.9808
+read data time3.1861119270324707
+update time 67.51538109779358
+training cost time: 126.1462
+===========epoch 1===========
+class_loss:1.8382,dis_loss:1.2507,total_loss:3.0889
+train
+data to cuda time=0.7108733654022217
+predict time 0.044907569885253906
+caculate label time 1.8870820999145508
+total eval time 8.600144863128662
+data to cuda time=0.48090267181396484
+predict time 0.027924776077270508
+caculate label time 1.3442952632904053
+total eval time 7.777806043624878
+data to cuda time=1.118579387664795
+predict time 0.06680607795715332
+caculate label time 3.1331629753112793
+total eval time 10.450995683670044
+valid
+data to cuda time=0.10373115539550781
+predict time 0.008988618850708008
+caculate label time 0.4815554618835449
+total eval time 6.5389084815979
+data to cuda time=0.07284331321716309
+predict time 0.006013154983520508
+caculate label time 0.3514533042907715
+total eval time 6.270228385925293
+data to cuda time=0.23211979866027832
+predict time 0.015970230102539062
+caculate label time 0.8086528778076172
+total eval time 6.9823384284973145
+target
+data to cuda time=0.7758591175079346
+predict time 0.0548095703125
+caculate label time 2.0326507091522217
+total eval time 9.009304285049438
+train_acc:0.2624,valid_acc:0.2654,target_acc:0.1709
+total cost time: 181.8537
+read data time4.775244951248169
+update time 100.12489295005798
+training cost time: 216.0573
+===========epoch 2===========
+class_loss:1.6382,dis_loss:0.0695,total_loss:1.7077
+train
+data to cuda time=0.7033061981201172
+predict time 0.04590296745300293
+caculate label time 1.8823649883270264
+total eval time 8.96437668800354
+data to cuda time=0.4585857391357422
+predict time 0.031916141510009766
+caculate label time 1.3463575839996338
+total eval time 7.84508752822876
+data to cuda time=1.1116876602172852
+predict time 0.06881093978881836
+caculate label time 3.1352035999298096
+total eval time 10.475395917892456
+valid
+data to cuda time=0.10541892051696777
+predict time 0.007976770401000977
+caculate label time 0.5003089904785156
+total eval time 6.63600754737854
+data to cuda time=0.07583785057067871
+predict time 0.005984783172607422
+caculate label time 0.35890817642211914
+total eval time 6.194108486175537
+data to cuda time=0.23288393020629883
+predict time 0.018949270248413086
+caculate label time 0.8184161186218262
+total eval time 7.01887321472168
+target
+data to cuda time=0.754657506942749
+predict time 0.04986739158630371
+caculate label time 2.0454182624816895
+total eval time 8.953303813934326
+train_acc:0.3500,valid_acc:0.3539,target_acc:0.1553
+total cost time: 272.2103
+read data time6.337879419326782
+update time 132.46090006828308
+training cost time: 306.1140
+===========epoch 3===========
+class_loss:1.7350,dis_loss:0.3046,total_loss:2.0396
+train
+data to cuda time=0.6840529441833496
+predict time 0.04486656188964844
+caculate label time 1.8856568336486816
+total eval time 8.674162864685059
+data to cuda time=0.46950721740722656
+predict time 0.03290534019470215
+caculate label time 1.3589646816253662
+total eval time 7.922864198684692
+data to cuda time=1.372154951095581
+predict time 0.0846407413482666
+caculate label time 3.1512866020202637
+total eval time 10.990345239639282
+valid
+data to cuda time=0.12865495681762695
+predict time 0.009973764419555664
+caculate label time 0.4996175765991211
+total eval time 7.049462795257568
+data to cuda time=0.07583904266357422
+predict time 0.0069806575775146484
+caculate label time 0.35463905334472656
+total eval time 6.351592302322388
+data to cuda time=0.2194228172302246
+predict time 0.01496434211730957
+caculate label time 0.8103852272033691
+total eval time 7.170972585678101
+target
+data to cuda time=0.7432308197021484
+predict time 0.05066704750061035
+caculate label time 2.052358865737915
+total eval time 9.172645807266235
+train_acc:0.4047,valid_acc:0.4154,target_acc:0.1943
+total cost time: 363.5208
+read data time7.866494417190552
+update time 164.90870332717896
+training cost time: 397.5022
+===========epoch 4===========
+class_loss:0.6496,dis_loss:0.6248,total_loss:1.2744
+train
+data to cuda time=0.7116656303405762
+predict time 0.04384469985961914
+caculate label time 1.9021317958831787
+total eval time 8.850794553756714
+data to cuda time=0.4800300598144531
+predict time 0.034880638122558594
+caculate label time 1.3453023433685303
+total eval time 8.059189081192017
+data to cuda time=1.1392393112182617
+predict time 0.07384324073791504
+caculate label time 3.1418731212615967
+total eval time 10.608730792999268
+valid
+data to cuda time=0.10471916198730469
+predict time 0.008977413177490234
+caculate label time 0.48778629302978516
+total eval time 6.692965030670166
+data to cuda time=0.08178997039794922
+predict time 0.0069713592529296875
+caculate label time 0.35868334770202637
+total eval time 6.354994773864746
+data to cuda time=0.254077672958374
+predict time 0.01906585693359375
+caculate label time 0.7981793880462646
+total eval time 7.117106199264526
+target
+data to cuda time=0.7906208038330078
+predict time 0.04789018630981445
+caculate label time 2.0602731704711914
+total eval time 9.156227827072144
+train_acc:0.4461,valid_acc:0.4377,target_acc:0.2075
+total cost time: 454.4141
+read data time9.407962083816528
+update time 197.37111735343933
+training cost time: 488.4249
+===========epoch 5===========
+class_loss:0.9358,dis_loss:0.3851,total_loss:1.3209
+train
+data to cuda time=0.6970059871673584
+predict time 0.04886364936828613
+caculate label time 1.883756399154663
+total eval time 8.841379880905151
+data to cuda time=0.464496374130249
+predict time 0.033887624740600586
+caculate label time 1.3564629554748535
+total eval time 8.098920106887817
+data to cuda time=1.140228033065796
+predict time 0.07132625579833984
+caculate label time 3.1698923110961914
+total eval time 10.76456618309021
+valid
+data to cuda time=0.13538908958435059
+predict time 0.009972333908081055
+caculate label time 0.4880516529083252
+total eval time 6.747791051864624
+data to cuda time=0.08118486404418945
+predict time 0.00797724723815918
+caculate label time 0.37233781814575195
+total eval time 6.491482496261597
+data to cuda time=0.22561049461364746
+predict time 0.017007827758789062
+caculate label time 0.8036806583404541
+total eval time 7.220232009887695
+target
+data to cuda time=0.7698957920074463
+predict time 0.048879384994506836
+caculate label time 2.0433473587036133
+total eval time 9.172899007797241
+train_acc:0.4474,valid_acc:0.4467,target_acc:0.2358
+total cost time: 545.8418
+read data time10.964646816253662
+update time 229.90246486663818
+training cost time: 579.9347
+===========epoch 6===========
+class_loss:1.2764,dis_loss:0.8592,total_loss:2.1356
+train
+data to cuda time=0.7082457542419434
+predict time 0.050949811935424805
+caculate label time 1.8979341983795166
+total eval time 8.99439787864685
+data to cuda time=0.47757649421691895
+predict time 0.03094315528869629
+caculate label time 1.3666114807128906
+total eval time 8.06096363067627
+data to cuda time=1.1632533073425293
+predict time 0.07712483406066895
+caculate label time 3.146794080734253
+total eval time 10.817283153533936
+valid
+data to cuda time=0.126678466796875
+predict time 0.009973764419555664
+caculate label time 0.5019519329071045
+total eval time 6.768798112869263
+data to cuda time=0.08181619644165039
+predict time 0.008131265640258789
+caculate label time 0.36267805099487305
+total eval time 6.458839416503906
+data to cuda time=0.2539646625518799
+predict time 0.017951488494873047
+caculate label time 0.8036942481994629
+total eval time 7.215083360671997
+target
+data to cuda time=0.7885277271270752
+predict time 0.05485868453979492
+caculate label time 2.0557494163513184
+total eval time 9.279785633087158
+train_acc:0.5049,valid_acc:0.4924,target_acc:0.2188
+total cost time: 637.5997
+read data time12.545900583267212
+update time 262.6469488143921
+training cost time: 671.9375
+===========epoch 7===========
+class_loss:1.2809,dis_loss:0.5442,total_loss:1.8251
+train
+data to cuda time=0.7180020809173584
+predict time 0.04987978935241699
+caculate label time 1.9043972492218018
+total eval time 9.09726881980896
+data to cuda time=0.45626306533813477
+predict time 0.03578042984008789
+caculate label time 1.3470335006713867
+total eval time 8.07359528541565
+data to cuda time=1.189072847366333
+predict time 0.07785296440124512
+caculate label time 3.1436774730682373
+total eval time 10.981183767318726
+valid
+data to cuda time=0.13764429092407227
+predict time 0.009190082550048828
+caculate label time 0.4316396713256836
+total eval time 7.014836311340332
+data to cuda time=0.07382774353027344
+predict time 0.006987810134887695
+caculate label time 0.30814290046691895
+total eval time 6.126988410949707
+data to cuda time=0.22821903228759766
+predict time 0.014953136444091797
+caculate label time 0.717108964920044
+total eval time 6.698099374771118
+target
+data to cuda time=0.6599068641662598
+predict time 0.04447603225708008
+caculate label time 1.8086178302764893
+total eval time 8.282371520996094
+train_acc:0.5531,valid_acc:0.5495,target_acc:0.2231
+total cost time: 728.2737
+read data time13.921155452728271
+update time 292.6472055912018
+training cost time: 759.6502
+===========epoch 8===========
+class_loss:1.3137,dis_loss:0.8517,total_loss:2.1655
+train
+data to cuda time=0.6690225601196289
+predict time 0.0438237190246582
+caculate label time 1.6558432579040527
+total eval time 8.115302085876465
+data to cuda time=0.4162027835845947
+predict time 0.028934478759765625
+caculate label time 1.2049508094787598
+total eval time 7.4225873947143555
+data to cuda time=1.1410243511199951
+predict time 0.07381653785705566
+caculate label time 2.7886452674865723
+total eval time 9.96668028831482
+valid
+data to cuda time=0.10964751243591309
+predict time 0.007947206497192383
+caculate label time 0.43616271018981934
+total eval time 6.4088380336761475
+data to cuda time=0.06685638427734375
+predict time 0.005979299545288086
+caculate label time 0.3161814212799072
+total eval time 5.907998085021973
+data to cuda time=0.20949888229370117
+predict time 0.014955997467041016
+caculate label time 0.7365837097167969
+total eval time 6.681761026382446
+target
+data to cuda time=0.6361360549926758
+predict time 0.0458528995513916
+caculate label time 1.8062148094177246
+total eval time 8.23202919960022
+train_acc:0.4060,valid_acc:0.4112,target_acc:0.2114
+total cost time: 812.4348
+read data time15.23873257637024
+update time 322.06710147857666
+training cost time: 843.1741
+===========epoch 9===========
+class_loss:1.8197,dis_loss:0.5703,total_loss:2.3899
+train
+data to cuda time=0.5871350765228271
+predict time 0.04688453674316406
+caculate label time 1.670689344406128
+total eval time 7.997042417526245
+data to cuda time=0.4219968318939209
+predict time 0.028903484344482422
+caculate label time 1.2019968032836914
+total eval time 7.280142784118652
+data to cuda time=0.8948109149932861
+predict time 0.06247115135192871
+caculate label time 2.7891905307769775
+total eval time 9.68932557106018
+valid
+data to cuda time=0.11713457107543945
+predict time 0.009972572326660156
+caculate label time 0.4600543975830078
+total eval time 7.059933423995972
+data to cuda time=0.08225870132446289
+predict time 0.005984067916870117
+caculate label time 0.30849409103393555
+total eval time 6.432371616363525
+data to cuda time=0.20761466026306152
+predict time 0.015983104705810547
+caculate label time 0.7063090801239014
+total eval time 6.761133193969727
+target
+data to cuda time=0.7668094635009766
+predict time 0.05194711685180664
+caculate label time 2.0509355068206787
+total eval time 9.051816701889038
+train_acc:0.5580,valid_acc:0.5794,target_acc:0.1943
+total cost time: 897.5079
+read data time16.766215801239014
+update time 353.1419460773468
+training cost time: 930.1132
+===========epoch 10===========
+class_loss:1.3990,dis_loss:0.7756,total_loss:2.1747
+train
+data to cuda time=0.6365325450897217
+predict time 0.0408935546875
+caculate label time 1.7927813529968262
+total eval time 8.519249200820923
+data to cuda time=0.4228169918060303
+predict time 0.029963254928588867
+caculate label time 1.2159390449523926
+total eval time 7.559061050415039
+data to cuda time=1.1941032409667969
+predict time 0.07653260231018066
+caculate label time 2.850764274597168
+total eval time 10.171761989593506
+valid
+data to cuda time=0.09627938270568848
+predict time 0.008015871047973633
+caculate label time 0.4224429130554199
+total eval time 6.443130731582642
+data to cuda time=0.0927896499633789
+predict time 0.008976936340332031
+caculate label time 0.33760571479797363
+total eval time 6.270661354064941
+data to cuda time=0.20935273170471191
+predict time 0.018489599227905273
+caculate label time 0.7509679794311523
+total eval time 6.876010417938232
+target
+data to cuda time=0.6443428993225098
+predict time 0.04591536521911621
+caculate label time 1.8087341785430908
+total eval time 8.362672328948975
+train_acc:0.5701,valid_acc:0.5773,target_acc:0.2368
+total cost time: 984.3666
+read data time18.091490268707275
+update time 382.71317887306213
+training cost time: 1015.2690
+===========epoch 11===========
+class_loss:1.1518,dis_loss:0.3079,total_loss:1.4597
+train
+data to cuda time=0.613853931427002
+predict time 0.038985490798950195
+caculate label time 1.6990966796875
+total eval time 8.363234758377075
+data to cuda time=0.3985109329223633
+predict time 0.027932167053222656
+caculate label time 1.189227819442749
+total eval time 7.312183618545532
+data to cuda time=0.9986848831176758
+predict time 0.07277369499206543
+caculate label time 2.763169050216675
+total eval time 10.037204265594482
+valid
+data to cuda time=0.11223459243774414
+predict time 0.009001970291137695
+caculate label time 0.4444127082824707
+total eval time 6.249966621398926
+data to cuda time=0.0887136459350586
+predict time 0.006995201110839844
+caculate label time 0.31392383575439453
+total eval time 6.186858654022217
+data to cuda time=0.20316386222839355
+predict time 0.01894831657409668
+caculate label time 0.731250524520874
+total eval time 6.708657741546631
+target
+data to cuda time=0.6404871940612793
+predict time 0.04196476936340332
+caculate label time 1.8146765232086182
+total eval time 8.704009532928467
+train_acc:0.5984,valid_acc:0.5918,target_acc:0.2007
+total cost time: 1068.8904
+read data time19.521993160247803
+update time 413.7322657108307
+training cost time: 1101.3420
+===========epoch 12===========
+class_loss:0.9914,dis_loss:0.7337,total_loss:1.7252
+train
+data to cuda time=0.6030991077423096
+predict time 0.040915727615356445
+caculate label time 1.80464768409729
+total eval time 8.500702142715454
+data to cuda time=0.40700793266296387
+predict time 0.02890300750732422
+caculate label time 1.290177822113037
+total eval time 7.620336294174194
+data to cuda time=0.9338810443878174
+predict time 0.06293869018554688
+caculate label time 2.7674596309661865
+total eval time 9.71243691444397
+valid
+data to cuda time=0.10256671905517578
+predict time 0.007982254028320312
+caculate label time 0.43060922622680664
+total eval time 6.11786961555481
+data to cuda time=0.0688478946685791
+predict time 0.005984067916870117
+caculate label time 0.30817437171936035
+total eval time 5.913793325424194
+data to cuda time=0.18452048301696777
+predict time 0.01597285270690918
+caculate label time 0.706092119216919
+total eval time 6.456561803817749
+target
+data to cuda time=0.6349697113037109
+predict time 0.043607473373413086
+caculate label time 1.7931342124938965
+total eval time 8.205392122268677
+train_acc:0.5810,valid_acc:0.5706,target_acc:0.2461
+total cost time: 1153.9161
+read data time20.86232089996338
+update time 443.50603914260864
+training cost time: 1185.0353
+===========epoch 13===========
+class_loss:0.9881,dis_loss:0.7567,total_loss:1.7448
+train
+data to cuda time=0.6005973815917969
+predict time 0.044889211654663086
+caculate label time 1.6562697887420654
+total eval time 7.984829425811768
+data to cuda time=0.38645267486572266
+predict time 0.028925180435180664
+caculate label time 1.1893069744110107
+total eval time 7.226089239120483
+data to cuda time=0.9400556087493896
+predict time 0.06180000305175781
+caculate label time 2.7730565071105957
+total eval time 9.585648536682129
+valid
+data to cuda time=0.09750962257385254
+predict time 0.007970094680786133
+caculate label time 0.43097472190856934
+total eval time 6.074498176574707
+data to cuda time=0.06781911849975586
+predict time 0.006979942321777344
+caculate label time 0.310758113861084
+total eval time 5.842551231384277
+data to cuda time=0.18830466270446777
+predict time 0.01745915412902832
+caculate label time 0.7171633243560791
+total eval time 6.458147764205933
+target
+data to cuda time=0.6586453914642334
+predict time 0.038892507553100586
+caculate label time 1.8044593334197998
+total eval time 8.152724266052246
+train_acc:0.6504,valid_acc:0.6270,target_acc:0.2832
+total cost time: 1236.4175
+read data time22.168956756591797
+update time 472.6836585998535
+training cost time: 1266.9039
+manually descrease lr
+===========epoch 14===========
+class_loss:2.0620,dis_loss:0.6878,total_loss:2.7498
+train
+data to cuda time=0.5798609256744385
+predict time 0.04484128952026367
+caculate label time 1.648345947265625
+total eval time 7.944272994995117
+data to cuda time=0.4237048625946045
+predict time 0.027957677841186523
+caculate label time 1.187028169631958
+total eval time 7.288881301879883
+data to cuda time=0.9411730766296387
+predict time 0.06496357917785645
+caculate label time 2.758388042449951
+total eval time 9.585697889328003
+valid
+data to cuda time=0.10309100151062012
+predict time 0.007981300354003906
+caculate label time 0.43213987350463867
+total eval time 6.030228614807129
+data to cuda time=0.06891512870788574
+predict time 0.006956338882446289
+caculate label time 0.31040501594543457
+total eval time 5.852529287338257
+data to cuda time=0.1823885440826416
+predict time 0.01596975326538086
+caculate label time 0.7036821842193604
+total eval time 6.471055507659912
+target
+data to cuda time=0.6357529163360596
+predict time 0.0429534912109375
+caculate label time 1.8016698360443115
+total eval time 8.130364179611206
+train_acc:0.6316,valid_acc:0.6320,target_acc:0.2319
+total cost time: 1318.2595
+read data time23.45573115348816
+update time 501.8795111179352
+training cost time: 1348.7454
+===========epoch 15===========
+class_loss:0.5188,dis_loss:1.4896,total_loss:2.0084
+train
+data to cuda time=0.5606913566589355
+predict time 0.03591489791870117
+caculate label time 1.6692349910736084
+total eval time 7.939408302307129
+data to cuda time=0.41206836700439453
+predict time 0.02590012550354004
+caculate label time 1.1883203983306885
+total eval time 7.27153205871582
+data to cuda time=0.9777204990386963
+predict time 0.06727218627929688
+caculate label time 2.768080472946167
+total eval time 9.666019439697266
+valid
+data to cuda time=0.11372542381286621
+predict time 0.008007049560546875
+caculate label time 0.4240450859069824
+total eval time 6.136867523193359
+data to cuda time=0.06881499290466309
+predict time 0.00596165657043457
+caculate label time 0.3241558074951172
+total eval time 5.918683767318726
+data to cuda time=0.1889173984527588
+predict time 0.0169680118560791
+caculate label time 0.7018885612487793
+total eval time 6.463606119155884
+target
+data to cuda time=0.631176233291626
+predict time 0.03993082046508789
+caculate label time 1.809208631515503
+total eval time 8.180019855499268
+train_acc:0.7166,valid_acc:0.7029,target_acc:0.2666
+total cost time: 1400.3734
+read data time24.757288455963135
+update time 531.0792741775513
+training cost time: 1430.8790
+===========epoch 16===========
+class_loss:0.6241,dis_loss:0.8220,total_loss:1.4461
+train
+data to cuda time=0.6778295040130615
+predict time 0.04177570343017578
+caculate label time 1.7680580615997314
+total eval time 8.506527662277222
+data to cuda time=0.43250417709350586
+predict time 0.030923128128051758
+caculate label time 1.2988476753234863
+total eval time 7.81798243522644
+data to cuda time=1.1895999908447266
+predict time 0.07680344581604004
+caculate label time 3.4038805961608887
+total eval time 11.373748540878296
+valid
+data to cuda time=0.10821771621704102
+predict time 0.008975982666015625
+caculate label time 0.5042250156402588
+total eval time 6.940352439880371
+data to cuda time=0.07582759857177734
+predict time 0.005951642990112305
+caculate label time 0.35461854934692383
+total eval time 6.601006507873535
+data to cuda time=0.2538492679595947
+predict time 0.01836371421813965
+caculate label time 0.8106741905212402
+total eval time 7.334513902664185
+target
+data to cuda time=0.8036994934082031
+predict time 0.04887127876281738
+caculate label time 2.0564944744110107
+total eval time 9.383609294891357
+train_acc:0.7193,valid_acc:0.6982,target_acc:0.2842
+total cost time: 1488.8953
+read data time26.350063800811768
+update time 563.5035202503204
+training cost time: 1522.9182
+===========epoch 17===========
+class_loss:0.7925,dis_loss:0.5480,total_loss:1.3405
+train
+data to cuda time=0.7288999557495117
+predict time 0.04590606689453125
+caculate label time 1.8861315250396729
+total eval time 9.252000570297241
+data to cuda time=0.47699928283691406
+predict time 0.028896808624267578
+caculate label time 1.358123779296875
+total eval time 8.264487028121948
+data to cuda time=1.160890817642212
+predict time 0.07086920738220215
+caculate label time 3.160677433013916
+total eval time 11.042716026306152
+valid
+data to cuda time=0.11369585990905762
+predict time 0.009972572326660156
+caculate label time 0.49753355979919434
+total eval time 6.889964580535889
+data to cuda time=0.07886266708374023
+predict time 0.006043195724487305
+caculate label time 0.3617563247680664
+total eval time 6.657730579376221
+data to cuda time=0.23830008506774902
+predict time 0.020940065383911133
+caculate label time 0.8035829067230225
+total eval time 7.361847877502441
+target
+data to cuda time=0.783759593963623
+predict time 0.05143618583679199
+caculate label time 2.0424442291259766
+total eval time 9.334946393966675
+train_acc:0.7288,valid_acc:0.7019,target_acc:0.2915
+total cost time: 1581.7770
+read data time27.93409514427185
+update time 596.0113208293915
+training cost time: 1615.8757
+manually descrease lr
+===========epoch 18===========
+class_loss:1.5217,dis_loss:0.6861,total_loss:2.2079
+train
+data to cuda time=0.7139601707458496
+predict time 0.048882484436035156
+caculate label time 1.8910627365112305
+total eval time 9.222886562347412
+data to cuda time=0.48273515701293945
+predict time 0.03545713424682617
+caculate label time 1.3457655906677246
+total eval time 8.32092809677124
+data to cuda time=1.262512445449829
+predict time 0.07876300811767578
+caculate label time 3.1549956798553467
+total eval time 11.115848302841187
+valid
+data to cuda time=0.12606191635131836
+predict time 0.008973836898803711
+caculate label time 0.48790860176086426
+total eval time 6.912025213241577
+data to cuda time=0.07905840873718262
+predict time 0.005983591079711914
+caculate label time 0.35466957092285156
+total eval time 6.654492139816284
+data to cuda time=0.24434280395507812
+predict time 0.017978906631469727
+caculate label time 0.8010179996490479
+total eval time 7.401093244552612
+target
+data to cuda time=0.7649548053741455
+predict time 0.04787397384643555
+caculate label time 2.0623815059661865
+total eval time 9.350057363510132
+train_acc:0.7276,valid_acc:0.7106,target_acc:0.2754
+total cost time: 1674.9170
+read data time29.517884731292725
+update time 628.5279612541199
+training cost time: 1709.0233
+===========epoch 19===========
+class_loss:1.5041,dis_loss:0.3819,total_loss:1.8860
+train
+data to cuda time=0.6977717876434326
+predict time 0.04787707328796387
+caculate label time 1.8871996402740479
+total eval time 9.236949443817139
+data to cuda time=0.4258880615234375
+predict time 0.03294634819030762
+caculate label time 1.2486529350280762
+total eval time 8.21627140045166
+data to cuda time=0.9541985988616943
+predict time 0.06383776664733887
+caculate label time 2.8234200477600098
+total eval time 9.794877767562866
+valid
+data to cuda time=0.10179352760314941
+predict time 0.007940292358398438
+caculate label time 0.44281625747680664
+total eval time 6.527726173400879
+data to cuda time=0.06781220436096191
+predict time 0.007982254028320312
+caculate label time 0.3231017589569092
+total eval time 5.8677918910980225
+data to cuda time=0.1884911060333252
+predict time 0.01592540740966797
+caculate label time 0.7151732444763184
+total eval time 6.35893440246582
+target
+data to cuda time=0.6253690719604492
+predict time 0.045835256576538086
+caculate label time 1.8102459907531738
+total eval time 8.220542430877686
+train_acc:0.7420,valid_acc:0.7170,target_acc:0.2822
+total cost time: 1763.3019
+Best model saved!
+DG result: 0.2822
+Environment:
+	Python: 3.9.7
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 8.4.0
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\art_painting
++++++++++++++++++++++++++++++++
+len_x 2048
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+=======hyper-parameter used========
+==========================================
+algorithm:DANN
+alpha:0.1
+batch_size:1
+beta1:0.5
+bottleneck:256
+bottleneck_a:256
+checkpoint_freq:1
+checkpoint:None
+classifier:linear
+data_file:
+dataset:PACS
+data_dir:../../data/PACS/
+dis_hidden:256
+gpu_id:0
+groupdro_eta:1
+layer:bn
+logdir:./output/logs
+inner_lr:0.01
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:200
+mixupalpha:0.2
+mldg_beta:10.0
+mmd_gamma:1
+momentum:0.9
+mu:0.0
+net:resnet18
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+seed:0
+shownet:False
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:./output/test
+weight_decay:0.0005
+step_per_epoch:1336
+domains:['art_painting', 'cartoon', 'photo', 'sketch']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:7
+domain_num:4
+
+===========start training===========
+read data time1.210165023803711
+update time 38.72140049934387
+training cost time: 39.9326
+===========epoch 0===========
+class_loss:1.4533,dis_loss:0.4083,total_loss:1.8617
+train
+data to cuda time=0.4812471866607666
+predict time 0.058374643325805664
+caculate label time 1.8994107246398926
+total eval time 7.797365427017212
+data to cuda time=0.32962775230407715
+predict time 0.01699066162109375
+caculate label time 1.394136905670166
+total eval time 7.025736093521118
+data to cuda time=1.1145811080932617
+predict time 0.07806277275085449
+caculate label time 3.3130943775177
+total eval time 10.356903314590454
+valid
+data to cuda time=0.09577059745788574
+predict time 0.007954835891723633
+caculate label time 0.5256190299987793
+total eval time 6.260439872741699
+data to cuda time=0.06254196166992188
+predict time 0.0
+caculate label time 0.3452732563018799
+total eval time 5.618293285369873
+data to cuda time=0.18751072883605957
+predict time 0.015629291534423828
+caculate label time 0.8446965217590332
+total eval time 6.440259695053101
+target
+data to cuda time=0.4843251705169678
+predict time 0.046942710876464844
+caculate label time 2.1164121627807617
+total eval time 8.003509759902954
+train_acc:0.1858,valid_acc:0.1961,target_acc:0.1831
+total cost time: 91.5281
+read data time2.469586133956909
+update time 73.510329246521
+training cost time: 127.5785
+===========epoch 1===========
+class_loss:2.1694,dis_loss:3.4861,total_loss:5.6555
+train
+data to cuda time=0.48201513290405273
+predict time 0.02396869659423828
+caculate label time 2.048677921295166
+total eval time 8.010230302810669
+data to cuda time=0.33993077278137207
+predict time 0.020005226135253906
+caculate label time 1.5105037689208984
+total eval time 7.280003070831299
+data to cuda time=0.8597767353057861
+predict time 0.09475922584533691
+caculate label time 3.4053733348846436
+total eval time 9.9291250705719
+valid
+data to cuda time=0.08942937850952148
+predict time 0.0179595947265625
+caculate label time 0.48297882080078125
+total eval time 6.0359861850738525
+data to cuda time=0.0638427734375
+predict time 0.018167972564697266
+caculate label time 0.3460073471069336
+total eval time 5.725666046142578
+data to cuda time=0.16421723365783691
+predict time 0.009974002838134766
+caculate label time 0.8582634925842285
+total eval time 6.441867351531982
+target
+data to cuda time=0.4961202144622803
+predict time 0.07292771339416504
+caculate label time 2.1924452781677246
+total eval time 8.247050046920776
+train_acc:0.3432,valid_acc:0.3479,target_acc:0.2549
+total cost time: 179.3249
+read data time3.6608264446258545
+update time 109.1476058959961
+training cost time: 216.1564
+===========epoch 2===========
+class_loss:1.1089,dis_loss:0.5343,total_loss:1.6432
+train
+data to cuda time=0.4907681941986084
+predict time 0.025938034057617188
+caculate label time 2.0360682010650635
+total eval time 7.950411558151245
+data to cuda time=0.33870887756347656
+predict time 0.03364992141723633
+caculate label time 1.365617275238037
+total eval time 7.2702178955078125
+data to cuda time=0.8218045234680176
+predict time 0.051599979400634766
+caculate label time 3.317913293838501
+total eval time 9.784931182861328
+valid
+data to cuda time=0.12160491943359375
+predict time 0.007980585098266602
+caculate label time 0.5446274280548096
+total eval time 6.06276535987854
+data to cuda time=0.06972908973693848
+predict time 0.005984067916870117
+caculate label time 0.376284122467041
+total eval time 5.697271823883057
+data to cuda time=0.19440293312072754
+predict time 0.01199483871459961
+caculate label time 0.8200705051422119
+total eval time 6.379172086715698
+target
+data to cuda time=0.5414121150970459
+predict time 0.013956069946289062
+caculate label time 2.179013729095459
+total eval time 8.127423286437988
+train_acc:0.3607,valid_acc:0.3601,target_acc:0.1782
+total cost time: 267.4788
+read data time4.9374098777771
+update time 144.59892964363098
+training cost time: 304.2087
+===========epoch 3===========
+class_loss:1.7469,dis_loss:0.3264,total_loss:2.0733
+train
+data to cuda time=0.5182638168334961
+predict time 0.057207345962524414
+caculate label time 1.964306354522705
+total eval time 8.078511476516724
+data to cuda time=0.33644795417785645
+predict time 0.014959573745727539
+caculate label time 1.4519696235656738
+total eval time 7.271024227142334
+data to cuda time=0.8685784339904785
+predict time 0.0498349666595459
+caculate label time 3.4807939529418945
+total eval time 9.910362482070923
+valid
+data to cuda time=0.09251260757446289
+predict time 0.015606880187988281
+caculate label time 0.4914846420288086
+total eval time 5.959522247314453
+data to cuda time=0.06778979301452637
+predict time 0.00700688362121582
+caculate label time 0.36536478996276855
+total eval time 5.776947498321533
+data to cuda time=0.18751120567321777
+predict time 0.0
+caculate label time 0.8055799007415771
+total eval time 6.352942943572998
+target
+data to cuda time=0.5320394039154053
+predict time 0.05073261260986328
+caculate label time 2.207166910171509
+total eval time 8.236637353897095
+train_acc:0.4192,valid_acc:0.4319,target_acc:0.1602
+total cost time: 355.8389
+read data time6.202105283737183
+update time 180.26341915130615
+training cost time: 392.7701
+===========epoch 4===========
+class_loss:1.2734,dis_loss:0.3551,total_loss:1.6285
+train
+data to cuda time=0.5194664001464844
+predict time 0.0029878616333007812
+caculate label time 1.9756505489349365
+total eval time 7.852550268173218
+data to cuda time=0.3782958984375
+predict time 0.01994776725769043
+caculate label time 1.4469492435455322
+total eval time 7.232540130615234
+data to cuda time=0.867659330368042
+predict time 0.06090736389160156
+caculate label time 3.5178685188293457
+total eval time 10.031865358352661
+valid
+data to cuda time=0.09474921226501465
+predict time 0.008975982666015625
+caculate label time 0.5086379051208496
+total eval time 5.9992663860321045
+data to cuda time=0.07486462593078613
+predict time 0.005984306335449219
+caculate label time 0.3819763660430908
+total eval time 5.852505683898926
+data to cuda time=0.1745615005493164
+predict time 0.011964082717895508
+caculate label time 0.857266902923584
+total eval time 6.452386379241943
+target
+data to cuda time=0.530907154083252
+predict time 0.0
+caculate label time 2.1453025341033936
+total eval time 8.03394341468811
+train_acc:0.5251,valid_acc:0.5179,target_acc:0.2114
+total cost time: 444.2757
+read data time7.366728067398071
+update time 214.94398951530457
+training cost time: 480.1209
+===========epoch 5===========
+class_loss:0.9916,dis_loss:0.5593,total_loss:1.5509
+train
+data to cuda time=0.5101890563964844
+predict time 0.03322887420654297
+caculate label time 1.9966208934783936
+total eval time 7.847108602523804
+data to cuda time=0.35704517364501953
+predict time 0.024933338165283203
+caculate label time 1.4952106475830078
+total eval time 7.389911413192749
+data to cuda time=0.8182938098907471
+predict time 0.05984044075012207
+caculate label time 3.4283812046051025
+total eval time 9.850457906723022
+valid
+data to cuda time=0.10073184967041016
+predict time 0.007978677749633789
+caculate label time 0.5245938301086426
+total eval time 5.990780830383301
+data to cuda time=0.06981301307678223
+predict time 0.00698089599609375
+caculate label time 0.3777320384979248
+total eval time 5.786085605621338
+data to cuda time=0.2185499668121338
+predict time 0.014937877655029297
+caculate label time 0.9048206806182861
+total eval time 6.718918085098267
+target
+data to cuda time=0.549774169921875
+predict time 0.03150343894958496
+caculate label time 2.280395269393921
+total eval time 8.481050491333008
+train_acc:0.5381,valid_acc:0.5591,target_acc:0.2314
+total cost time: 532.2312
+read data time8.750139236450195
+update time 250.5580756664276
+training cost time: 569.2463
+===========epoch 6===========
+class_loss:2.4762,dis_loss:1.2207,total_loss:3.6968
+train
+data to cuda time=0.447634220123291
+predict time 0.03523087501525879
+caculate label time 1.937204122543335
+total eval time 7.809366703033447
+data to cuda time=0.34179186820983887
+predict time 0.021570205688476562
+caculate label time 1.3886816501617432
+total eval time 7.1591150760650635
+data to cuda time=0.855828046798706
+predict time 0.06052708625793457
+caculate label time 3.446979522705078
+total eval time 9.908291816711426
+valid
+data to cuda time=0.10931801795959473
+predict time 0.0
+caculate label time 0.4870297908782959
+total eval time 5.869152545928955
+data to cuda time=0.07085394859313965
+predict time 0.005976676940917969
+caculate label time 0.375866174697876
+total eval time 5.806598663330078
+data to cuda time=0.2193737030029297
+predict time 0.01595306396484375
+caculate label time 0.8357484340667725
+total eval time 6.652465343475342
+target
+data to cuda time=0.540107250213623
+predict time 0.052776336669921875
+caculate label time 2.2764370441436768
+total eval time 8.474653244018555
+train_acc:0.5494,valid_acc:0.5576,target_acc:0.2349
+total cost time: 621.0216
+read data time9.943838596343994
+update time 285.9327530860901
+training cost time: 657.5930
+===========epoch 7===========
+class_loss:1.7062,dis_loss:1.0666,total_loss:2.7728
+train
+data to cuda time=0.5170080661773682
+predict time 0.04459786415100098
+caculate label time 2.024759531021118
+total eval time 8.140960931777954
+data to cuda time=0.32293057441711426
+predict time 0.034102439880371094
+caculate label time 1.4912059307098389
+total eval time 7.264795541763306
+data to cuda time=0.7975118160247803
+predict time 0.1591968536376953
+caculate label time 3.163426637649536
+total eval time 9.646072149276733
+valid
+data to cuda time=0.09777021408081055
+predict time 0.00797891616821289
+caculate label time 0.5006580352783203
+total eval time 5.980199337005615
+data to cuda time=0.07084298133850098
+predict time 0.005984306335449219
+caculate label time 0.38297510147094727
+total eval time 5.755529403686523
+data to cuda time=0.20250749588012695
+predict time 0.015923500061035156
+caculate label time 0.8677706718444824
+total eval time 6.536353826522827
+target
+data to cuda time=0.5360383987426758
+predict time 0.05328083038330078
+caculate label time 2.2138803005218506
+total eval time 8.313963651657104
+train_acc:0.5643,valid_acc:0.5798,target_acc:0.2290
+total cost time: 709.3233
+read data time11.167290925979614
+update time 321.2019009590149
+training cost time: 745.8191
+===========epoch 8===========
+class_loss:1.4000,dis_loss:0.4346,total_loss:1.8347
+train
+data to cuda time=0.46440720558166504
+predict time 0.039214372634887695
+caculate label time 1.9397199153900146
+total eval time 8.061648607254028
+data to cuda time=0.3673667907714844
+predict time 0.003989219665527344
+caculate label time 1.389951467514038
+total eval time 7.229624032974243
+data to cuda time=0.9550638198852539
+predict time 0.09375166893005371
+caculate label time 3.2686562538146973
+total eval time 10.354044914245605
+valid
+data to cuda time=0.10935235023498535
+predict time 0.015621662139892578
+caculate label time 0.47221970558166504
+total eval time 5.87006688117981
+data to cuda time=0.0781099796295166
+predict time 0.0
+caculate label time 0.34476757049560547
+total eval time 5.626235246658325
+data to cuda time=0.17317748069763184
+predict time 0.0
+caculate label time 0.8279409408569336
+total eval time 6.359844207763672
+target
+data to cuda time=0.5352325439453125
+predict time 0.01662898063659668
+caculate label time 2.1258931159973145
+total eval time 8.029685258865356
+train_acc:0.6358,valid_acc:0.6542,target_acc:0.2734
+total cost time: 797.4258
+read data time12.3874032497406
+update time 355.5366711616516
+training cost time: 832.9807
+===========epoch 9===========
+class_loss:0.6225,dis_loss:1.2815,total_loss:1.9041
+train
+data to cuda time=0.4843103885650635
+predict time 0.04686403274536133
+caculate label time 1.9560105800628662
+total eval time 7.7589638233184814
+data to cuda time=0.3436164855957031
+predict time 0.015625476837158203
+caculate label time 1.3457257747650146
+total eval time 7.031144857406616
+data to cuda time=0.8310346603393555
+predict time 0.0
+caculate label time 3.2826220989227295
+total eval time 9.51337718963623
+valid
+data to cuda time=0.09380245208740234
+predict time 0.015615224838256836
+caculate label time 0.47144055366516113
+total eval time 5.8579723834991455
+data to cuda time=0.07810306549072266
+predict time 0.0
+caculate label time 0.344818115234375
+total eval time 5.587657928466797
+data to cuda time=0.18751096725463867
+predict time 0.0
+caculate label time 0.8122832775115967
+total eval time 6.39273738861084
+target
+data to cuda time=0.516740083694458
+predict time 0.04687952995300293
+caculate label time 2.1011509895324707
+total eval time 8.070466995239258
+train_acc:0.6692,valid_acc:0.6592,target_acc:0.2847
+total cost time: 883.2398
+read data time13.637928009033203
+update time 389.87252259254456
+training cost time: 918.8262
+===========epoch 10===========
+class_loss:0.5798,dis_loss:1.1016,total_loss:1.6814
+train
+data to cuda time=0.49976396560668945
+predict time 0.04684805870056152
+caculate label time 1.8770456314086914
+total eval time 7.780365228652954
+data to cuda time=0.2822892665863037
+predict time 0.031206369400024414
+caculate label time 1.377197504043579
+total eval time 7.012887239456177
+data to cuda time=0.780768871307373
+predict time 0.04689431190490723
+caculate label time 3.298532009124756
+total eval time 9.521574974060059
+valid
+data to cuda time=0.09375929832458496
+predict time 0.0
+caculate label time 0.4880497455596924
+total eval time 5.786714553833008
+data to cuda time=0.07813429832458496
+predict time 0.0
+caculate label time 0.32804417610168457
+total eval time 5.613749027252197
+data to cuda time=0.18865728378295898
+predict time 0.0
+caculate label time 0.8279061317443848
+total eval time 6.319559574127197
+target
+data to cuda time=0.5156221389770508
+predict time 0.03123164176940918
+caculate label time 2.0834903717041016
+total eval time 8.028095006942749
+train_acc:0.5551,valid_acc:0.5678,target_acc:0.2305
+total cost time: 968.9672
+read data time14.827204942703247
+update time 424.21797800064087
+training cost time: 1004.5175
+===========epoch 11===========
+class_loss:1.5869,dis_loss:0.5246,total_loss:2.1114
+train
+data to cuda time=0.47087669372558594
+predict time 0.0
+caculate label time 1.939497709274292
+total eval time 7.793215751647949
+data to cuda time=0.3436760902404785
+predict time 0.0
+caculate label time 1.4243028163909912
+total eval time 7.150336027145386
+data to cuda time=0.8020579814910889
+predict time 0.07809209823608398
+caculate label time 3.2061634063720703
+total eval time 9.509336948394775
+valid
+data to cuda time=0.10935592651367188
+predict time 0.0
+caculate label time 0.4842526912689209
+total eval time 5.84602427482605
+data to cuda time=0.07810163497924805
+predict time 0.0
+caculate label time 0.3280453681945801
+total eval time 5.565985918045044
+data to cuda time=0.20308494567871094
+predict time 0.015619993209838867
+caculate label time 0.7978205680847168
+total eval time 6.323995590209961
+target
+data to cuda time=0.5210952758789062
+predict time 0.062456369400024414
+caculate label time 2.052154541015625
+total eval time 8.042121410369873
+train_acc:0.6765,valid_acc:0.6799,target_acc:0.2871
+total cost time: 1054.8286
+read data time16.014665603637695
+update time 458.6628940105438
+training cost time: 1090.4767
+===========epoch 12===========
+class_loss:1.4883,dis_loss:0.8062,total_loss:2.2945
+train
+data to cuda time=0.4542088508605957
+predict time 0.015622138977050781
+caculate label time 1.988255262374878
+total eval time 7.781170606613159
+data to cuda time=0.32805466651916504
+predict time 0.031243085861206055
+caculate label time 1.3956882953643799
+total eval time 7.057067632675171
+data to cuda time=0.7833364009857178
+predict time 0.04686403274536133
+caculate label time 3.3210411071777344
+total eval time 9.531816720962524
+valid
+data to cuda time=0.10926699638366699
+predict time 0.015620708465576172
+caculate label time 0.4866476058959961
+total eval time 5.835153818130493
+data to cuda time=0.06246829032897949
+predict time 0.015645742416381836
+caculate label time 0.3436594009399414
+total eval time 5.646504640579224
+data to cuda time=0.20307350158691406
+predict time 0.0
+caculate label time 0.7810544967651367
+total eval time 6.358109951019287
+target
+data to cuda time=0.5154991149902344
+predict time 0.04686260223388672
+caculate label time 2.127531051635742
+total eval time 8.031694650650024
+train_acc:0.5089,valid_acc:0.5186,target_acc:0.2021
+total cost time: 1140.7962
+read data time17.18619680404663
+update time 493.0699610710144
+training cost time: 1176.3748
+===========epoch 13===========
+class_loss:1.5498,dis_loss:0.6726,total_loss:2.2224
+train
+data to cuda time=0.4572887420654297
+predict time 0.03123307228088379
+caculate label time 1.909348487854004
+total eval time 7.797271013259888
+data to cuda time=0.3436579704284668
+predict time 0.031240463256835938
+caculate label time 1.3459744453430176
+total eval time 7.124333143234253
+data to cuda time=0.7967088222503662
+predict time 0.015633583068847656
+caculate label time 3.307762861251831
+total eval time 9.520703792572021
+valid
+data to cuda time=0.09476971626281738
+predict time 0.0
+caculate label time 0.48543334007263184
+total eval time 5.871610164642334
+data to cuda time=0.06360650062561035
+predict time 0.0
+caculate label time 0.343717098236084
+total eval time 5.6841652393341064
+data to cuda time=0.18749642372131348
+predict time 0.015622615814208984
+caculate label time 0.8279116153717041
+total eval time 6.309953451156616
+target
+data to cuda time=0.5353648662567139
+predict time 0.04686164855957031
+caculate label time 2.0801913738250732
+total eval time 8.03601598739624
+train_acc:0.6154,valid_acc:0.5984,target_acc:0.2808
+total cost time: 1226.7500
+read data time18.420568466186523
+update time 527.3702762126923
+training cost time: 1262.2847
+===========epoch 14===========
+class_loss:0.2581,dis_loss:0.6664,total_loss:0.9245
+train
+data to cuda time=0.48650574684143066
+predict time 0.04686403274536133
+caculate label time 1.9396510124206543
+total eval time 7.817463397979736
+data to cuda time=0.3280506134033203
+predict time 0.03124260902404785
+caculate label time 1.3619463443756104
+total eval time 7.033112287521362
+data to cuda time=0.8447303771972656
+predict time 0.04685378074645996
+caculate label time 3.2202670574188232
+total eval time 9.587573766708374
+valid
+data to cuda time=0.10935473442077637
+predict time 0.0
+caculate label time 0.47035789489746094
+total eval time 5.813128232955933
+data to cuda time=0.07810091972351074
+predict time 0.0
+caculate label time 0.3470892906188965
+total eval time 5.62335467338562
+data to cuda time=0.17289400100708008
+predict time 0.046903371810913086
+caculate label time 0.767803430557251
+total eval time 6.325438022613525
+target
+data to cuda time=0.5155825614929199
+predict time 0.0
+caculate label time 2.1456589698791504
+total eval time 8.028024673461914
+train_acc:0.7124,valid_acc:0.7038,target_acc:0.3188
+total cost time: 1312.5909
+read data time19.65845799446106
+update time 561.7064533233643
+training cost time: 1348.1650
+===========epoch 15===========
+class_loss:1.0560,dis_loss:0.2952,total_loss:1.3512
+train
+data to cuda time=0.4701685905456543
+predict time 0.03123164176940918
+caculate label time 1.990828275680542
+total eval time 7.79767370223999
+data to cuda time=0.31244993209838867
+predict time 0.0156252384185791
+caculate label time 1.3930435180664062
+total eval time 7.074004173278809
+data to cuda time=0.8291993141174316
+predict time 0.07805418968200684
+caculate label time 3.2684175968170166
+total eval time 9.569422006607056
+valid
+data to cuda time=0.10933947563171387
+predict time 0.015624761581420898
+caculate label time 0.4859619140625
+total eval time 5.909487009048462
+data to cuda time=0.08016109466552734
+predict time 0.0
+caculate label time 0.34488940238952637
+total eval time 5.627114295959473
+data to cuda time=0.1887528896331787
+predict time 0.015622377395629883
+caculate label time 0.813481330871582
+total eval time 6.377358675003052
+target
+data to cuda time=0.4996817111968994
+predict time 0.046862125396728516
+caculate label time 2.080146074295044
+total eval time 8.043789386749268
+train_acc:0.7340,valid_acc:0.7330,target_acc:0.2773
+total cost time: 1398.5794
+read data time20.81758737564087
+update time 596.0787472724915
+training cost time: 1434.1108
+===========epoch 16===========
+class_loss:0.2533,dis_loss:0.3763,total_loss:0.6296
+train
+data to cuda time=0.4864938259124756
+predict time 0.0
+caculate label time 1.9700469970703125
+total eval time 7.778940916061401
+data to cuda time=0.31241583824157715
+predict time 0.03123950958251953
+caculate label time 1.3600261211395264
+total eval time 7.034547805786133
+data to cuda time=0.7968053817749023
+predict time 0.03124237060546875
+caculate label time 3.2539374828338623
+total eval time 9.600357294082642
+valid
+data to cuda time=0.07813549041748047
+predict time 0.015617132186889648
+caculate label time 0.48426222801208496
+total eval time 5.815524339675903
+data to cuda time=0.07811164855957031
+predict time 0.0
+caculate label time 0.34501147270202637
+total eval time 5.584102153778076
+data to cuda time=0.1729576587677002
+predict time 0.031241178512573242
+caculate label time 0.8123350143432617
+total eval time 6.299722194671631
+target
+data to cuda time=0.5336854457855225
+predict time 0.031242847442626953
+caculate label time 2.081202507019043
+total eval time 8.02970290184021
+train_acc:0.7449,valid_acc:0.7381,target_acc:0.3569
+total cost time: 1484.3162
+read data time21.897252559661865
+update time 630.5353457927704
+training cost time: 1519.8525
+===========epoch 17===========
+class_loss:0.4862,dis_loss:0.9905,total_loss:1.4767
+train
+data to cuda time=0.4705171585083008
+predict time 0.031246662139892578
+caculate label time 2.000736951828003
+total eval time 7.833270311355591
+data to cuda time=0.3644399642944336
+predict time 0.015648365020751953
+caculate label time 1.3434278964996338
+total eval time 7.038667678833008
+data to cuda time=0.844388484954834
+predict time 0.09372830390930176
+caculate label time 3.1748406887054443
+total eval time 9.552388668060303
+valid
+data to cuda time=0.11182308197021484
+predict time 0.01562190055847168
+caculate label time 0.5011100769042969
+total eval time 5.80463719367981
+data to cuda time=0.062459468841552734
+predict time 0.015648603439331055
+caculate label time 0.34642982482910156
+total eval time 5.57355523109436
+data to cuda time=0.1875133514404297
+predict time 0.016657114028930664
+caculate label time 0.8279516696929932
+total eval time 6.2747015953063965
+target
+data to cuda time=0.5311615467071533
+predict time 0.03123950958251953
+caculate label time 2.1292884349823
+total eval time 8.038950204849243
+train_acc:0.7425,valid_acc:0.7414,target_acc:0.3389
+total cost time: 1570.0311
+read data time23.115061283111572
+update time 664.8581063747406
+training cost time: 1605.5717
+===========epoch 18===========
+class_loss:1.1322,dis_loss:0.4742,total_loss:1.6064
+train
+data to cuda time=0.4526557922363281
+predict time 0.04692411422729492
+caculate label time 1.9574699401855469
+total eval time 7.766491651535034
+data to cuda time=0.3280787467956543
+predict time 0.031211137771606445
+caculate label time 1.3926565647125244
+total eval time 7.060602903366089
+data to cuda time=0.8321883678436279
+predict time 0.046875715255737305
+caculate label time 3.2203285694122314
+total eval time 9.562539100646973
+valid
+data to cuda time=0.10934901237487793
+predict time 0.0
+caculate label time 0.48429059982299805
+total eval time 5.81209135055542
+data to cuda time=0.062485456466674805
+predict time 0.0
+caculate label time 0.3604400157928467
+total eval time 5.59822678565979
+data to cuda time=0.18745875358581543
+predict time 0.01561880111694336
+caculate label time 0.815263032913208
+total eval time 6.345856189727783
+target
+data to cuda time=0.5011510848999023
+predict time 0.04702472686767578
+caculate label time 2.0857977867126465
+total eval time 7.996879577636719
+train_acc:0.7283,valid_acc:0.7232,target_acc:0.3027
+total cost time: 1655.7612
+read data time24.256412267684937
+update time 699.3621890544891
+training cost time: 1691.4066
+===========epoch 19===========
+class_loss:0.1764,dis_loss:2.0809,total_loss:2.2573
+train
+data to cuda time=0.4530448913574219
+predict time 0.07809042930603027
+caculate label time 1.8768482208251953
+total eval time 7.760802268981934
+data to cuda time=0.31244921684265137
+predict time 0.0312345027923584
+caculate label time 1.3619492053985596
+total eval time 7.021579027175903
+data to cuda time=0.7807786464691162
+predict time 0.046881675720214844
+caculate label time 3.2449707984924316
+total eval time 9.52077841758728
+valid
+data to cuda time=0.10926294326782227
+predict time 0.015593528747558594
+caculate label time 0.48436808586120605
+total eval time 5.9094061851501465
+data to cuda time=0.06245875358581543
+predict time 0.015591621398925781
+caculate label time 0.34372448921203613
+total eval time 5.620954990386963
+data to cuda time=0.17187952995300293
+predict time 0.0
+caculate label time 0.819000244140625
+total eval time 6.373832941055298
+target
+data to cuda time=0.5151646137237549
+predict time 0.01562047004699707
+caculate label time 2.0849106311798096
+total eval time 8.069035768508911
+train_acc:0.7585,valid_acc:0.7570,target_acc:0.3228
+total cost time: 1741.7454
+read data time25.335728645324707
+update time 733.6707494258881
+training cost time: 1777.1333
+===========epoch 20===========
+class_loss:1.1876,dis_loss:1.0308,total_loss:2.2184
+train
+data to cuda time=0.4842870235443115
+predict time 0.07838654518127441
+caculate label time 1.9235997200012207
+total eval time 7.773920297622681
+data to cuda time=0.37487363815307617
+predict time 0.0
+caculate label time 1.3468594551086426
+total eval time 7.069287538528442
+data to cuda time=0.8278725147247314
+predict time 0.015616893768310547
+caculate label time 3.1554410457611084
+total eval time 9.484604358673096
+valid
+data to cuda time=0.09372663497924805
+predict time 0.0
+caculate label time 0.48425912857055664
+total eval time 5.783078193664551
+data to cuda time=0.0780484676361084
+predict time 0.0
+caculate label time 0.3437223434448242
+total eval time 5.587390422821045
+data to cuda time=0.18882203102111816
+predict time 0.015621185302734375
+caculate label time 0.8004696369171143
+total eval time 6.343015909194946
+target
+data to cuda time=0.5151956081390381
+predict time 0.031243085861206055
+caculate label time 2.0959978103637695
+total eval time 8.042439222335815
+train_acc:0.7902,valid_acc:0.7757,target_acc:0.3472
+total cost time: 1827.2638
+read data time26.415087699890137
+update time 767.94176197052
+training cost time: 1862.6142
+===========epoch 21===========
+class_loss:0.4469,dis_loss:0.9646,total_loss:1.4115
+train
+data to cuda time=0.5183768272399902
+predict time 0.015646934509277344
+caculate label time 1.9373703002929688
+total eval time 7.810429334640503
+data to cuda time=0.343656063079834
+predict time 0.015615701675415039
+caculate label time 1.3785452842712402
+total eval time 7.07084059715271
+data to cuda time=0.8123865127563477
+predict time 0.09370779991149902
+caculate label time 3.1915125846862793
+total eval time 9.537049531936646
+valid
+data to cuda time=0.11049461364746094
+predict time 0.015622138977050781
+caculate label time 0.4686720371246338
+total eval time 5.853533983230591
+data to cuda time=0.06248736381530762
+predict time 0.0
+caculate label time 0.34496068954467773
+total eval time 5.621177673339844
+data to cuda time=0.21870827674865723
+predict time 0.0
+caculate label time 0.8005967140197754
+total eval time 6.316264867782593
+target
+data to cuda time=0.47226715087890625
+predict time 0.06250739097595215
+caculate label time 2.1126883029937744
+total eval time 8.009547233581543
+train_acc:0.7751,valid_acc:0.7520,target_acc:0.3091
+total cost time: 1912.8798
+read data time27.403000354766846
+update time 802.2184419631958
+training cost time: 1948.1600
+===========epoch 22===========
+class_loss:0.9199,dis_loss:0.5373,total_loss:1.4573
+train
+data to cuda time=0.45566773414611816
+predict time 0.06246805191040039
+caculate label time 1.927112102508545
+total eval time 7.8092944622039795
+data to cuda time=0.3436472415924072
+predict time 0.015619993209838867
+caculate label time 1.3762927055358887
+total eval time 7.0922651290893555
+data to cuda time=0.7655224800109863
+predict time 0.0312504768371582
+caculate label time 3.3324434757232666
+total eval time 9.491228103637695
+valid
+data to cuda time=0.10935020446777344
+predict time 0.01562047004699707
+caculate label time 0.47040700912475586
+total eval time 5.795361518859863
+data to cuda time=0.06252551078796387
+predict time 0.0156252384185791
+caculate label time 0.3308675289154053
+total eval time 5.605791330337524
+data to cuda time=0.20426678657531738
+predict time 0.015618324279785156
+caculate label time 0.8123569488525391
+total eval time 6.297865390777588
+target
+data to cuda time=0.48416852951049805
+predict time 0.09375381469726562
+caculate label time 2.064359664916992
+total eval time 7.999742269515991
+train_acc:0.7490,valid_acc:0.7336,target_acc:0.3037
+total cost time: 1998.2996
+read data time28.372884035110474
+update time 836.5689556598663
+training cost time: 2033.6200
+===========epoch 23===========
+class_loss:1.9549,dis_loss:1.5959,total_loss:3.5507
+train
+data to cuda time=0.4762156009674072
+predict time 0.07812333106994629
+caculate label time 1.9071521759033203
+total eval time 7.792999267578125
+data to cuda time=0.3280909061431885
+predict time 0.0624542236328125
+caculate label time 1.33009672164917
+total eval time 7.036831378936768
+data to cuda time=0.8005011081695557
+predict time 0.11130332946777344
+caculate label time 3.251422166824341
+total eval time 9.51553988456726
+valid
+data to cuda time=0.10937094688415527
+predict time 0.0
+caculate label time 0.486539363861084
+total eval time 5.844978094100952
+data to cuda time=0.06248927116394043
+predict time 0.0
+caculate label time 0.3449554443359375
+total eval time 5.646294355392456
+data to cuda time=0.17182230949401855
+predict time 0.0
+caculate label time 0.8065299987792969
+total eval time 6.345138788223267
+target
+data to cuda time=0.49988889694213867
+predict time 0.015619516372680664
+caculate label time 2.1119284629821777
+total eval time 8.03202772140503
+train_acc:0.7825,valid_acc:0.7647,target_acc:0.3174
+total cost time: 2083.8984
+read data time29.64026665687561
+update time 870.5902478694916
+training cost time: 2119.2026
+===========epoch 24===========
+class_loss:0.5176,dis_loss:0.9989,total_loss:1.5165
+train
+data to cuda time=0.4557054042816162
+predict time 0.015619993209838867
+caculate label time 1.9550085067749023
+total eval time 7.786030530929565
+data to cuda time=0.328021764755249
+predict time 0.015625953674316406
+caculate label time 1.362652063369751
+total eval time 7.069035053253174
+data to cuda time=0.7810134887695312
+predict time 0.09614038467407227
+caculate label time 3.2731432914733887
+total eval time 9.533165216445923
+valid
+data to cuda time=0.09376215934753418
+predict time 0.0
+caculate label time 0.48552727699279785
+total eval time 5.817997932434082
+data to cuda time=0.06246185302734375
+predict time 0.015650272369384766
+caculate label time 0.3291952610015869
+total eval time 5.612916469573975
+data to cuda time=0.20296669006347656
+predict time 0.0010349750518798828
+caculate label time 0.783771276473999
+total eval time 6.32478928565979
+target
+data to cuda time=0.4998641014099121
+predict time 0.062480926513671875
+caculate label time 2.0645623207092285
+total eval time 7.990895509719849
+train_acc:0.7703,valid_acc:0.7610,target_acc:0.2920
+total cost time: 2169.3687
+read data time30.830785512924194
+update time 904.723358631134
+training cost time: 2204.6923
+===========epoch 25===========
+class_loss:1.1371,dis_loss:1.0635,total_loss:2.2006
+train
+data to cuda time=0.46866369247436523
+predict time 0.0
+caculate label time 1.9549074172973633
+total eval time 7.7488672733306885
+data to cuda time=0.3301243782043457
+predict time 0.031243085861206055
+caculate label time 1.3602778911590576
+total eval time 7.024023056030273
+data to cuda time=0.8434662818908691
+predict time 0.015594244003295898
+caculate label time 3.180424928665161
+total eval time 9.563313484191895
+valid
+data to cuda time=0.11000895500183105
+predict time 0.001004934310913086
+caculate label time 0.48543262481689453
+total eval time 5.865459442138672
+data to cuda time=0.07812976837158203
+predict time 0.0
+caculate label time 0.34366536140441895
+total eval time 5.627833127975464
+data to cuda time=0.18743634223937988
+predict time 0.0
+caculate label time 0.8123195171356201
+total eval time 6.292996168136597
+target
+data to cuda time=0.5168633460998535
+predict time 0.03124213218688965
+caculate label time 2.0676474571228027
+total eval time 8.060579776763916
+train_acc:0.7962,valid_acc:0.7768,target_acc:0.3892
+total cost time: 2254.9066
+read data time32.032806158065796
+update time 938.8538174629211
+training cost time: 2290.2390
+===========epoch 26===========
+class_loss:0.6436,dis_loss:0.5680,total_loss:1.2115
+train
+data to cuda time=0.45305967330932617
+predict time 0.09372329711914062
+caculate label time 1.8768489360809326
+total eval time 7.817457437515259
+data to cuda time=0.32782840728759766
+predict time 0.04686307907104492
+caculate label time 1.3281877040863037
+total eval time 7.040326833724976
+data to cuda time=0.7563400268554688
+predict time 0.10974836349487305
+caculate label time 3.1925837993621826
+total eval time 9.464621305465698
+valid
+data to cuda time=0.09479975700378418
+predict time 0.0
+caculate label time 0.4686312675476074
+total eval time 5.82428503036499
+data to cuda time=0.07810831069946289
+predict time 0.0
+caculate label time 0.3308110237121582
+total eval time 5.63081431388855
+data to cuda time=0.1718606948852539
+predict time 0.0156252384185791
+caculate label time 0.8135159015655518
+total eval time 6.336571455001831
+target
+data to cuda time=0.5310988426208496
+predict time 0.04798579216003418
+caculate label time 2.0822954177856445
+total eval time 7.996950626373291
+train_acc:0.7783,valid_acc:0.7700,target_acc:0.3799
+total cost time: 2340.3969
+read data time33.09488368034363
+update time 973.0802793502808
+training cost time: 2375.6854
+===========epoch 27===========
+class_loss:0.5781,dis_loss:0.5575,total_loss:1.1356
+train
+data to cuda time=0.4374115467071533
+predict time 0.06247758865356445
+caculate label time 1.9392600059509277
+total eval time 7.783061981201172
+data to cuda time=0.3605833053588867
+predict time 0.0
+caculate label time 1.3809716701507568
+total eval time 7.071032285690308
+data to cuda time=0.7664508819580078
+predict time 0.062444210052490234
+caculate label time 3.160539388656616
+total eval time 9.522385358810425
+valid
+data to cuda time=0.09371614456176758
+predict time 0.0
+caculate label time 0.48426175117492676
+total eval time 5.9166576862335205
+data to cuda time=0.0625159740447998
+predict time 0.0
+caculate label time 0.34366536140441895
+total eval time 5.568716526031494
+data to cuda time=0.17185735702514648
+predict time 0.0
+caculate label time 0.8123378753662109
+total eval time 6.295204162597656
+target
+data to cuda time=0.5311682224273682
+predict time 0.06248307228088379
+caculate label time 2.053926706314087
+total eval time 8.092941045761108
+train_acc:0.7960,valid_acc:0.7800,target_acc:0.3735
+total cost time: 2425.9822
+read data time34.35999536514282
+update time 1007.0862419605255
+training cost time: 2461.2533
+===========epoch 28===========
+class_loss:0.1618,dis_loss:2.0806,total_loss:2.2424
+train
+data to cuda time=0.47527241706848145
+predict time 0.015621423721313477
+caculate label time 1.9382328987121582
+total eval time 7.836326360702515
+data to cuda time=0.3438088893890381
+predict time 0.015625715255737305
+caculate label time 1.331958532333374
+total eval time 7.027986288070679
+data to cuda time=0.8146116733551025
+predict time 0.06250739097595215
+caculate label time 3.1133692264556885
+total eval time 9.53389286994934
+valid
+data to cuda time=0.0937354564666748
+predict time 0.015613555908203125
+caculate label time 0.468639612197876
+total eval time 5.7923359870910645
+data to cuda time=0.06247735023498535
+predict time 0.0
+caculate label time 0.3436737060546875
+total eval time 5.609509229660034
+data to cuda time=0.18746256828308105
+predict time 0.016968488693237305
+caculate label time 0.7978157997131348
+total eval time 6.296792507171631
+target
+data to cuda time=0.5155432224273682
+predict time 0.015621185302734375
+caculate label time 2.14493727684021
+total eval time 8.03037405014038
+train_acc:0.7833,valid_acc:0.7477,target_acc:0.3330
+total cost time: 2511.4741
+read data time35.44031572341919
+update time 1041.3031117916107
+training cost time: 2546.7713
+===========epoch 29===========
+class_loss:0.3610,dis_loss:1.2457,total_loss:1.6067
+train
+data to cuda time=0.4999070167541504
+predict time 0.015620946884155273
+caculate label time 1.9100449085235596
+total eval time 7.792526960372925
+data to cuda time=0.31360864639282227
+predict time 0.031241893768310547
+caculate label time 1.3746914863586426
+total eval time 7.062021970748901
+data to cuda time=0.8277781009674072
+predict time 0.031243562698364258
+caculate label time 3.285290241241455
+total eval time 9.537566900253296
+valid
+data to cuda time=0.09532308578491211
+predict time 0.015622615814208984
+caculate label time 0.4853835105895996
+total eval time 5.8458240032196045
+data to cuda time=0.07998251914978027
+predict time 0.0
+caculate label time 0.3447883129119873
+total eval time 5.606071472167969
+data to cuda time=0.17184185981750488
+predict time 0.03123760223388672
+caculate label time 0.7966783046722412
+total eval time 6.30856728553772
+target
+data to cuda time=0.4999277591705322
+predict time 0.03124237060546875
+caculate label time 2.0528109073638916
+total eval time 7.995016574859619
+train_acc:0.8123,valid_acc:0.7826,target_acc:0.3638
+total cost time: 2596.9657
+read data time36.51924514770508
+update time 1075.45374917984
+training cost time: 2632.1953
+===========epoch 30===========
+class_loss:0.3004,dis_loss:0.4288,total_loss:0.7292
+train
+data to cuda time=0.4686002731323242
+predict time 0.04685091972351074
+caculate label time 1.9106180667877197
+total eval time 7.768770456314087
+data to cuda time=0.3280956745147705
+predict time 0.03124070167541504
+caculate label time 1.3902723789215088
+total eval time 7.077599763870239
+data to cuda time=0.8132717609405518
+predict time 0.10937666893005371
+caculate label time 3.1883621215820312
+total eval time 9.513637065887451
+valid
+data to cuda time=0.10926318168640137
+predict time 0.0
+caculate label time 0.4687623977661133
+total eval time 5.808213472366333
+data to cuda time=0.07802391052246094
+predict time 0.0
+caculate label time 0.3437490463256836
+total eval time 5.609620809555054
+data to cuda time=0.2185966968536377
+predict time 0.0
+caculate label time 0.7994141578674316
+total eval time 6.311797857284546
+target
+data to cuda time=0.46868014335632324
+predict time 0.031236886978149414
+caculate label time 2.1161534786224365
+total eval time 8.005761623382568
+train_acc:0.7950,valid_acc:0.7741,target_acc:0.3804
+total cost time: 2682.3220
+read data time37.519458532333374
+update time 1109.9444508552551
+training cost time: 2717.8129
+===========epoch 31===========
+class_loss:0.3292,dis_loss:1.2750,total_loss:1.6043
+train
+data to cuda time=0.46868300437927246
+predict time 0.031239748001098633
+caculate label time 1.9731907844543457
+total eval time 7.767667531967163
+data to cuda time=0.31493234634399414
+predict time 0.03226494789123535
+caculate label time 1.3603923320770264
+total eval time 7.011475324630737
+data to cuda time=0.7713809013366699
+predict time 0.031243562698364258
+caculate label time 3.241269111633301
+total eval time 9.569361686706543
+valid
+data to cuda time=0.09370303153991699
+predict time 0.0
+caculate label time 0.4999055862426758
+total eval time 5.81067419052124
+data to cuda time=0.0624842643737793
+predict time 0.031245946884155273
+caculate label time 0.3280456066131592
+total eval time 5.614824295043945
+data to cuda time=0.18744325637817383
+predict time 0.015627145767211914
+caculate label time 0.8148548603057861
+total eval time 6.2961554527282715
+target
+data to cuda time=0.5494956970214844
+predict time 0.031248092651367188
+caculate label time 2.1267683506011963
+total eval time 8.019375324249268
+train_acc:0.8223,valid_acc:0.7876,target_acc:0.4043
+total cost time: 2767.9492
+read data time38.67906045913696
+update time 1144.336948633194
+training cost time: 2803.5013
+===========epoch 32===========
+class_loss:0.9877,dis_loss:0.6020,total_loss:1.5896
+train
+data to cuda time=0.48557090759277344
+predict time 0.10933828353881836
+caculate label time 1.875727891921997
+total eval time 7.817493438720703
+data to cuda time=0.3593266010284424
+predict time 0.031240463256835938
+caculate label time 1.3644616603851318
+total eval time 7.0799689292907715
+data to cuda time=0.7820894718170166
+predict time 0.046862125396728516
+caculate label time 3.294508218765259
+total eval time 9.505935668945312
+valid
+data to cuda time=0.09369349479675293
+predict time 0.0
+caculate label time 0.49991464614868164
+total eval time 5.777606248855591
+data to cuda time=0.07811164855957031
+predict time 0.0
+caculate label time 0.34366321563720703
+total eval time 5.651683807373047
+data to cuda time=0.20308589935302734
+predict time 0.0
+caculate label time 0.814741849899292
+total eval time 6.267658233642578
+target
+data to cuda time=0.5012500286102295
+predict time 0.046831607818603516
+caculate label time 2.0801005363464355
+total eval time 7.989055633544922
+train_acc:0.7484,valid_acc:0.7376,target_acc:0.2622
+total cost time: 2853.6687
+read data time39.75890254974365
+update time 1178.788151025772
+training cost time: 2889.1997
+===========epoch 33===========
+class_loss:0.4733,dis_loss:1.0747,total_loss:1.5480
+train
+data to cuda time=2.1255264282226562
+predict time 0.0704948902130127
+caculate label time 1.6351535320281982
+total eval time 67716.2445678711
+data to cuda time=0.3780052661895752
+predict time 0.0
+caculate label time 1.1583120822906494
+total eval time 7.609413385391235
+data to cuda time=0.8944950103759766
+predict time 0.03223466873168945
+caculate label time 2.677753448486328
+total eval time 9.144058465957642
+valid
+data to cuda time=0.09369993209838867
+predict time 0.0
+caculate label time 0.4235990047454834
+total eval time 6.046324014663696
+data to cuda time=0.06246161460876465
+predict time 0.015647411346435547
+caculate label time 0.29801416397094727
+total eval time 5.712184429168701
+data to cuda time=0.15761661529541016
+predict time 0.015615224838256836
+caculate label time 0.6728875637054443
+total eval time 6.22407341003418
+target
+data to cuda time=0.5359618663787842
+predict time 0.031209707260131836
+caculate label time 1.7366538047790527
+total eval time 7.813692569732666
+train_acc:0.8189,valid_acc:0.7943,target_acc:0.3555
+total cost time: 70648.0253
+read data time41.25646233558655
+update time 1207.4837226867676
+training cost time: 70678.2184
+===========epoch 34===========
+class_loss:0.1312,dis_loss:0.2919,total_loss:0.4232
+train
+data to cuda time=0.5345382690429688
+predict time 0.0468900203704834
+caculate label time 1.612670660018921
+total eval time 7.802220344543457
+data to cuda time=0.4233689308166504
+predict time 0.03124403953552246
+caculate label time 1.173891305923462
+total eval time 7.027687311172485
+data to cuda time=0.8463723659515381
+predict time 0.015617609024047852
+caculate label time 2.6960971355438232
+total eval time 9.087233543395996
+valid
+data to cuda time=0.14168763160705566
+predict time 0.0
+caculate label time 0.40617895126342773
+total eval time 5.869219541549683
+data to cuda time=0.07807254791259766
+predict time 0.0
+caculate label time 0.32807350158691406
+total eval time 5.785226821899414
+data to cuda time=0.20298242568969727
+predict time 0.0
+caculate label time 0.6901533603668213
+total eval time 6.3725597858428955
+target
+data to cuda time=0.7388298511505127
+predict time 0.015591144561767578
+caculate label time 1.7738847732543945
+total eval time 8.04976201057434
+train_acc:0.8273,valid_acc:0.8001,target_acc:0.3887
+total cost time: 70728.2748
+read data time42.668877363204956
+update time 1236.719684123993
+training cost time: 70758.9232
+===========epoch 35===========
+class_loss:0.6131,dis_loss:1.1126,total_loss:1.7257
+train
+data to cuda time=0.5311930179595947
+predict time 0.015619516372680664
+caculate label time 1.6246001720428467
+total eval time 7.673295021057129
+data to cuda time=0.4711287021636963
+predict time 0.0
+caculate label time 1.1896579265594482
+total eval time 7.363466262817383
+data to cuda time=0.8757755756378174
+predict time 0.03126931190490723
+caculate label time 2.713714838027954
+total eval time 9.975972890853882
+valid
+data to cuda time=0.10932016372680664
+predict time 0.0
+caculate label time 0.46547818183898926
+total eval time 6.488637208938599
+data to cuda time=0.06246018409729004
+predict time 0.015618562698364258
+caculate label time 0.3136632442474365
+total eval time 6.227601051330566
+data to cuda time=0.1718127727508545
+predict time 0.015647172927856445
+caculate label time 0.7057089805603027
+total eval time 6.319632291793823
+target
+data to cuda time=0.5789952278137207
+predict time 0.01562047004699707
+caculate label time 1.7852308750152588
+total eval time 7.9222331047058105
+train_acc:0.8033,valid_acc:0.7837,target_acc:0.3730
+total cost time: 70810.9106
+read data time44.21956276893616
+update time 1266.0021579265594
+training cost time: 70841.7594
+===========epoch 36===========
+class_loss:0.4684,dis_loss:1.3407,total_loss:1.8091
+train
+data to cuda time=0.6163136959075928
+predict time 0.04689669609069824
+caculate label time 1.634784460067749
+total eval time 8.34288477897644
+data to cuda time=0.34357476234436035
+predict time 0.03126788139343262
+caculate label time 1.1908390522003174
+total eval time 7.407665491104126
+data to cuda time=0.8631875514984131
+predict time 0.031246423721313477
+caculate label time 2.7563772201538086
+total eval time 9.272217512130737
+valid
+data to cuda time=0.0937662124633789
+predict time 0.0
+caculate label time 0.4217653274536133
+total eval time 6.274398326873779
+data to cuda time=0.06248188018798828
+predict time 0.015628814697265625
+caculate label time 0.3151090145111084
+total eval time 6.084617853164673
+data to cuda time=0.2031080722808838
+predict time 0.015620946884155273
+caculate label time 0.6873595714569092
+total eval time 6.542227029800415
+target
+data to cuda time=0.5154845714569092
+predict time 0.046888113021850586
+caculate label time 1.7856924533843994
+total eval time 8.277161359786987
+train_acc:0.8112,valid_acc:0.7936,target_acc:0.3691
+total cost time: 70894.0385
+read data time45.56419610977173
+update time 1294.8581247329712
+training cost time: 70924.2391
+===========epoch 37===========
+class_loss:0.1468,dis_loss:0.3961,total_loss:0.5429
+train
+data to cuda time=0.5155689716339111
+predict time 0.031202316284179688
+caculate label time 1.6269097328186035
+total eval time 7.663869619369507
+data to cuda time=0.3640894889831543
+predict time 0.03125739097595215
+caculate label time 1.1740972995758057
+total eval time 6.983931303024292
+data to cuda time=0.8952710628509521
+predict time 0.04792904853820801
+caculate label time 2.705271005630493
+total eval time 9.22532320022583
+valid
+data to cuda time=0.09378981590270996
+predict time 0.0
+caculate label time 0.4384317398071289
+total eval time 5.843465566635132
+data to cuda time=0.06247210502624512
+predict time 0.0
+caculate label time 0.3124251365661621
+total eval time 5.58407187461853
+data to cuda time=0.20305347442626953
+predict time 0.0
+caculate label time 0.694115161895752
+total eval time 6.210126876831055
+target
+data to cuda time=0.6269958019256592
+predict time 0.015616178512573242
+caculate label time 1.7825877666473389
+total eval time 7.967487335205078
+train_acc:0.8441,valid_acc:0.8143,target_acc:0.4116
+total cost time: 70973.7798
+read data time46.95827269554138
+update time 1324.0545263290405
+training cost time: 71004.3703
+===========epoch 38===========
+class_loss:1.2074,dis_loss:1.3595,total_loss:2.5668
+train
+data to cuda time=0.5166661739349365
+predict time 0.03125762939453125
+caculate label time 1.6581110954284668
+total eval time 7.721283674240112
+data to cuda time=0.3436305522918701
+predict time 0.04793953895568848
+caculate label time 1.1886875629425049
+total eval time 6.966518878936768
+data to cuda time=0.7820863723754883
+predict time 0.015616655349731445
+caculate label time 2.725935220718384
+total eval time 9.113135576248169
+valid
+data to cuda time=0.0781862735748291
+predict time 0.0
+caculate label time 0.4541504383087158
+total eval time 5.7877888679504395
+data to cuda time=0.0625143051147461
+predict time 0.0
+caculate label time 0.3312385082244873
+total eval time 5.792924165725708
+data to cuda time=0.24998974800109863
+predict time 0.031212806701660156
+caculate label time 0.6883931159973145
+total eval time 6.448690891265869
+target
+data to cuda time=0.577944278717041
+predict time 0.03124213218688965
+caculate label time 1.8341541290283203
+total eval time 8.020349740982056
+train_acc:0.8523,valid_acc:0.8221,target_acc:0.4043
+total cost time: 71054.2522
+read data time48.192386627197266
+update time 1353.0338134765625
+training cost time: 71084.4656
+===========epoch 39===========
+class_loss:0.1846,dis_loss:0.3766,total_loss:0.5612
+train
+data to cuda time=0.45961809158325195
+predict time 0.031241655349731445
+caculate label time 1.6570303440093994
+total eval time 7.668753147125244
+data to cuda time=0.3778364658355713
+predict time 0.015620231628417969
+caculate label time 1.1619668006896973
+total eval time 6.954602003097534
+data to cuda time=0.7968223094940186
+predict time 0.07810616493225098
+caculate label time 2.6937012672424316
+total eval time 9.037474632263184
+valid
+data to cuda time=0.07807540893554688
+predict time 0.015619754791259766
+caculate label time 0.4232823848724365
+total eval time 5.778416156768799
+data to cuda time=0.06246232986450195
+predict time 0.0
+caculate label time 0.3291473388671875
+total eval time 5.553421258926392
+data to cuda time=0.18737554550170898
+predict time 0.015648365020751953
+caculate label time 0.6948063373565674
+total eval time 6.251327753067017
+target
+data to cuda time=0.5466275215148926
+predict time 0.031240224838256836
+caculate label time 1.805985927581787
+total eval time 7.740411043167114
+train_acc:0.8264,valid_acc:0.8088,target_acc:0.3838
+total cost time: 71133.4656
+read data time49.607558488845825
+update time 1383.5225865840912
+training cost time: 71165.3855
+===========epoch 40===========
+class_loss:0.2040,dis_loss:0.3652,total_loss:0.5692
+train
+data to cuda time=0.5648787021636963
+predict time 0.034070730209350586
+caculate label time 1.6717133522033691
+total eval time 7.957852840423584
+data to cuda time=0.3345174789428711
+predict time 0.021596908569335938
+caculate label time 1.1962475776672363
+total eval time 7.015121221542358
+data to cuda time=0.7498431205749512
+predict time 0.08818387985229492
+caculate label time 2.7539894580841064
+total eval time 9.239074945449829
+valid
+data to cuda time=0.09572243690490723
+predict time 0.0
+caculate label time 0.4386143684387207
+total eval time 5.888095855712891
+data to cuda time=0.09489941596984863
+predict time 0.0059833526611328125
+caculate label time 0.30788660049438477
+total eval time 5.761539936065674
+data to cuda time=0.1957082748413086
+predict time 0.013025999069213867
+caculate label time 0.7161884307861328
+total eval time 6.448298692703247
+target
+data to cuda time=0.5003354549407959
+predict time 0.0508425235748291
+caculate label time 1.791046380996704
+total eval time 7.878995180130005
+train_acc:0.7612,valid_acc:0.7207,target_acc:0.3809
+total cost time: 71215.6224
+read data time50.94435954093933
+update time 1413.099544763565
+training cost time: 71246.5361
+===========epoch 41===========
+class_loss:0.0913,dis_loss:0.9345,total_loss:1.0258
+train
+data to cuda time=0.47684502601623535
+predict time 0.05481863021850586
+caculate label time 1.6848170757293701
+total eval time 7.630172967910767
+data to cuda time=0.34150028228759766
+predict time 0.06547188758850098
+caculate label time 1.158125400543213
+total eval time 6.962942123413086
+data to cuda time=0.8034427165985107
+predict time 0.05052661895751953
+caculate label time 2.863553285598755
+total eval time 9.393687009811401
+valid
+data to cuda time=0.12499856948852539
+predict time 0.0
+caculate label time 0.4752204418182373
+total eval time 6.027286767959595
+data to cuda time=0.09374165534973145
+predict time 0.0
+caculate label time 0.33727383613586426
+total eval time 6.333089351654053
+data to cuda time=0.21234750747680664
+predict time 0.014025211334228516
+caculate label time 0.7330291271209717
+total eval time 6.890161514282227
+target
+data to cuda time=0.5476067066192627
+predict time 0.03586101531982422
+caculate label time 1.7902052402496338
+total eval time 7.861806869506836
+train_acc:0.8373,valid_acc:0.8076,target_acc:0.3452
+total cost time: 71297.6750
+read data time52.173611640930176
+update time 1442.2103908061981
+training cost time: 71328.0171
+===========epoch 42===========
+class_loss:0.9759,dis_loss:0.9049,total_loss:1.8808
+train
+data to cuda time=0.5003666877746582
+predict time 0.030944347381591797
+caculate label time 1.6498332023620605
+total eval time 7.614393472671509
+data to cuda time=0.33905720710754395
+predict time 0.02495884895324707
+caculate label time 1.185774564743042
+total eval time 7.039131164550781
+data to cuda time=0.8943562507629395
+predict time 0.05478954315185547
+caculate label time 2.794772148132324
+total eval time 9.410356283187866
+valid
+data to cuda time=0.09674525260925293
+predict time 0.009999275207519531
+caculate label time 0.4268648624420166
+total eval time 5.951965808868408
+data to cuda time=0.07180571556091309
+predict time 0.006983518600463867
+caculate label time 0.3151264190673828
+total eval time 5.758573532104492
+data to cuda time=0.17846274375915527
+predict time 0.014988183975219727
+caculate label time 0.7150583267211914
+total eval time 6.655227899551392
+target
+data to cuda time=0.5933969020843506
+predict time 0.03592801094055176
+caculate label time 1.8121120929718018
+total eval time 8.011534214019775
+train_acc:0.8531,valid_acc:0.8316,target_acc:0.4199
+total cost time: 71378.5183
+read data time53.515763998031616
+update time 1471.793695449829
+training cost time: 71409.4460
+===========epoch 43===========
+class_loss:0.0577,dis_loss:1.0177,total_loss:1.0755
+train
+data to cuda time=0.5127148628234863
+predict time 0.031913042068481445
+caculate label time 1.659632921218872
+total eval time 7.6232218742370605
+data to cuda time=0.35699009895324707
+predict time 0.025933504104614258
+caculate label time 1.1869127750396729
+total eval time 6.998499870300293
+data to cuda time=0.8166310787200928
+predict time 0.05579829216003418
+caculate label time 2.7499606609344482
+total eval time 9.208172798156738
+valid
+data to cuda time=0.10174417495727539
+predict time 0.00897669792175293
+caculate label time 0.42987585067749023
+total eval time 5.835189580917358
+data to cuda time=0.06885361671447754
+predict time 0.005984783172607422
+caculate label time 0.31316041946411133
+total eval time 5.631708860397339
+data to cuda time=0.19041752815246582
+predict time 0.015956401824951172
+caculate label time 0.7031800746917725
+total eval time 6.411889553070068
+target
+data to cuda time=0.6580524444580078
+predict time 0.04189491271972656
+caculate label time 1.8273138999938965
+total eval time 8.154363632202148
+train_acc:0.8344,valid_acc:0.8028,target_acc:0.3828
+total cost time: 71459.3634
+read data time54.878183126449585
+update time 1501.8377451896667
+training cost time: 71490.7746
+===========epoch 44===========
+class_loss:0.2654,dis_loss:0.4797,total_loss:0.7451
+train
+data to cuda time=0.5316011905670166
+predict time 0.033889055252075195
+caculate label time 1.6825487613677979
+total eval time 7.7539849281311035
+data to cuda time=0.3769419193267822
+predict time 0.0269012451171875
+caculate label time 1.1888999938964844
+total eval time 7.104703426361084
+data to cuda time=0.8357656002044678
+predict time 0.05796337127685547
+caculate label time 2.779439687728882
+total eval time 9.217148065567017
+valid
+data to cuda time=0.09970331192016602
+predict time 0.008975028991699219
+caculate label time 0.43589091300964355
+total eval time 5.9731903076171875
+data to cuda time=0.06781744956970215
+predict time 0.0059850215911865234
+caculate label time 0.32712292671203613
+total eval time 5.651351690292358
+data to cuda time=0.2053821086883545
+predict time 0.014951705932617188
+caculate label time 0.7031993865966797
+total eval time 6.6299896240234375
+target
+data to cuda time=0.7478146553039551
+predict time 0.041934967041015625
+caculate label time 1.8167600631713867
+total eval time 8.143628358840942
+train_acc:0.8569,valid_acc:0.8174,target_acc:0.3755
+total cost time: 71541.3007
+read data time56.246214151382446
+update time 1531.7021012306213
+training cost time: 71572.5400
+===========epoch 45===========
+class_loss:0.1553,dis_loss:1.3435,total_loss:1.4988
+train
+data to cuda time=0.5952258110046387
+predict time 0.03590226173400879
+caculate label time 1.6737651824951172
+total eval time 7.9958391189575195
+data to cuda time=0.3774731159210205
+predict time 0.025845766067504883
+caculate label time 1.182011604309082
+total eval time 7.4232871532440186
+data to cuda time=1.0240473747253418
+predict time 0.057898521423339844
+caculate label time 2.8545069694519043
+total eval time 9.759176015853882
+valid
+data to cuda time=0.10273170471191406
+predict time 0.00893855094909668
+caculate label time 0.42691779136657715
+total eval time 6.014215469360352
+data to cuda time=0.07175111770629883
+predict time 0.006011486053466797
+caculate label time 0.30924081802368164
+total eval time 5.89266300201416
+data to cuda time=0.20639395713806152
+predict time 0.01598215103149414
+caculate label time 0.7221026420593262
+total eval time 6.879945278167725
+target
+data to cuda time=0.7250096797943115
+predict time 0.05782341957092285
+caculate label time 1.8005313873291016
+total eval time 8.69085144996643
+train_acc:0.8458,valid_acc:0.8049,target_acc:0.3979
+total cost time: 71625.2479
+read data time57.64406490325928
+update time 1561.3573632240295
+training cost time: 71656.3050
+===========epoch 46===========
+class_loss:0.9560,dis_loss:0.3290,total_loss:1.2850
+train
+data to cuda time=0.562638521194458
+predict time 0.03824734687805176
+caculate label time 1.6672155857086182
+total eval time 7.999002695083618
+data to cuda time=0.43280911445617676
+predict time 0.02794957160949707
+caculate label time 1.2088711261749268
+total eval time 7.361958742141724
+data to cuda time=0.92154860496521
+predict time 0.06089496612548828
+caculate label time 2.775453567504883
+total eval time 9.411701202392578
+valid
+data to cuda time=0.10361075401306152
+predict time 0.008008241653442383
+caculate label time 0.44380879402160645
+total eval time 5.937690258026123
+data to cuda time=0.06886100769042969
+predict time 0.006909847259521484
+caculate label time 0.31421947479248047
+total eval time 5.692081928253174
+data to cuda time=0.1905517578125
+predict time 0.015953779220581055
+caculate label time 0.7100129127502441
+total eval time 6.378247022628784
+target
+data to cuda time=0.5867600440979004
+predict time 0.037896156311035156
+caculate label time 1.8103351593017578
+total eval time 8.207714319229126
+train_acc:0.7980,valid_acc:0.7706,target_acc:0.2935
+total cost time: 71707.3421
+read data time58.93472456932068
+update time 1590.7494940757751
+training cost time: 71738.0274
+===========epoch 47===========
+class_loss:1.2964,dis_loss:0.9901,total_loss:2.2864
+train
+data to cuda time=0.5861997604370117
+predict time 0.03490447998046875
+caculate label time 1.6877093315124512
+total eval time 7.82273530960083
+data to cuda time=0.3999483585357666
+predict time 0.023891210556030273
+caculate label time 1.1948864459991455
+total eval time 7.1381189823150635
+data to cuda time=0.8659892082214355
+predict time 0.05883646011352539
+caculate label time 2.8017215728759766
+total eval time 9.308043956756592
+valid
+data to cuda time=0.09779858589172363
+predict time 0.00897669792175293
+caculate label time 0.44680261611938477
+total eval time 5.936607360839844
+data to cuda time=0.07679319381713867
+predict time 0.006981611251831055
+caculate label time 0.3280930519104004
+total eval time 6.0605340003967285
+data to cuda time=0.20035338401794434
+predict time 0.015982866287231445
+caculate label time 0.7351694107055664
+total eval time 6.501329183578491
+target
+data to cuda time=0.6142261028289795
+predict time 0.03590726852416992
+caculate label time 1.8033344745635986
+total eval time 8.030052661895752
+train_acc:0.8534,valid_acc:0.8109,target_acc:0.3535
+total cost time: 71788.8678
+read data time60.26710295677185
+update time 1620.2408556938171
+training cost time: 71819.6955
+===========epoch 48===========
+class_loss:1.6269,dis_loss:0.6015,total_loss:2.2283
+train
+data to cuda time=0.702115535736084
+predict time 0.04290580749511719
+caculate label time 1.6795291900634766
+total eval time 8.66401481628418
+data to cuda time=0.42780375480651855
+predict time 0.027986526489257812
+caculate label time 1.1888391971588135
+total eval time 8.166748046875
+data to cuda time=0.9284334182739258
+predict time 0.058861732482910156
+caculate label time 2.7826473712921143
+total eval time 9.499486446380615
+valid
+data to cuda time=0.10771012306213379
+predict time 0.008949041366577148
+caculate label time 0.4358329772949219
+total eval time 6.210951328277588
+data to cuda time=0.06878948211669922
+predict time 0.007010221481323242
+caculate label time 0.31319332122802734
+total eval time 5.918504476547241
+data to cuda time=0.19641923904418945
+predict time 0.016927480697631836
+caculate label time 0.7052509784698486
+total eval time 6.5115807056427
+target
+data to cuda time=0.582449197769165
+predict time 0.03509259223937988
+caculate label time 1.8120465278625488
+total eval time 8.2109375
+train_acc:0.8840,valid_acc:0.8274,target_acc:0.4482
+total cost time: 71872.9324
+read data time61.62529373168945
+update time 1649.8765931129456
+training cost time: 71903.9293
+===========epoch 49===========
+class_loss:1.1344,dis_loss:0.8233,total_loss:1.9576
+train
+data to cuda time=0.5912375450134277
+predict time 0.03785896301269531
+caculate label time 1.653804063796997
+total eval time 8.034780502319336
+data to cuda time=0.44790005683898926
+predict time 0.027879714965820312
+caculate label time 1.20475172996521
+total eval time 7.20939040184021
+data to cuda time=0.8573789596557617
+predict time 0.0588831901550293
+caculate label time 2.784658908843994
+total eval time 9.42715311050415
+valid
+data to cuda time=0.09867358207702637
+predict time 0.00797891616821289
+caculate label time 0.4279365539550781
+total eval time 6.052120208740234
+data to cuda time=0.0707545280456543
+predict time 0.0059833526611328125
+caculate label time 0.3191983699798584
+total eval time 6.154543161392212
+data to cuda time=0.20139694213867188
+predict time 0.013988494873046875
+caculate label time 0.7051520347595215
+total eval time 6.4709858894348145
+target
+data to cuda time=0.6342849731445312
+predict time 0.03889656066894531
+caculate label time 1.820206880569458
+total eval time 8.141032218933105
+train_acc:0.8612,valid_acc:0.8216,target_acc:0.3965
+total cost time: 71955.4683
+read data time62.94325304031372
+update time 1679.4486026763916
+training cost time: 71986.3622
+===========epoch 50===========
+class_loss:0.0796,dis_loss:1.1897,total_loss:1.2693
+train
+data to cuda time=0.6581618785858154
+predict time 0.03986692428588867
+caculate label time 1.6756713390350342
+total eval time 8.350791454315186
+data to cuda time=0.4048738479614258
+predict time 0.027009010314941406
+caculate label time 1.187800407409668
+total eval time 7.169002532958984
+data to cuda time=0.8695087432861328
+predict time 0.06186819076538086
+caculate label time 2.7687313556671143
+total eval time 9.372860670089722
+valid
+data to cuda time=0.09676241874694824
+predict time 0.007979393005371094
+caculate label time 0.43483448028564453
+total eval time 5.880475282669067
+data to cuda time=0.07682394981384277
+predict time 0.0059888362884521484
+caculate label time 0.31412839889526367
+total eval time 5.66925573348999
+data to cuda time=0.19153714179992676
+predict time 0.014946460723876953
+caculate label time 0.6981565952301025
+total eval time 6.248429536819458
+target
+data to cuda time=0.5723505020141602
+predict time 0.036933183670043945
+caculate label time 1.8112926483154297
+total eval time 7.915292263031006
+train_acc:0.8599,valid_acc:0.8224,target_acc:0.3750
+total cost time: 72037.0117
+read data time64.243479013443
+update time 1708.7782623767853
+training cost time: 72067.6453
+===========epoch 51===========
+class_loss:0.6544,dis_loss:0.6539,total_loss:1.3083
+train
+data to cuda time=0.5654556751251221
+predict time 0.036900997161865234
+caculate label time 1.6616077423095703
+total eval time 7.807648181915283
+data to cuda time=0.3719663619995117
+predict time 0.02593541145324707
+caculate label time 1.193859338760376
+total eval time 7.108831167221069
+data to cuda time=0.8506464958190918
+predict time 0.059816598892211914
+caculate label time 2.7717127799987793
+total eval time 9.571408748626709
+valid
+data to cuda time=0.09677267074584961
+predict time 0.007979393005371094
+caculate label time 0.4458045959472656
+total eval time 5.912532329559326
+data to cuda time=0.0688478946685791
+predict time 0.006981611251831055
+caculate label time 0.32814955711364746
+total eval time 5.656808614730835
+data to cuda time=0.18640851974487305
+predict time 0.015935182571411133
+caculate label time 0.7122209072113037
+total eval time 6.44624924659729
+target
+data to cuda time=0.6471128463745117
+predict time 0.03795170783996582
+caculate label time 1.8371899127960205
+total eval time 8.114062786102295
+train_acc:0.8333,valid_acc:0.7942,target_acc:0.4165
+total cost time: 72118.3078
+read data time65.5396637916565
+update time 1738.3001446723938
+training cost time: 72149.1308
+===========epoch 52===========
+class_loss:0.3311,dis_loss:0.3131,total_loss:0.6442
+train
+data to cuda time=0.5217123031616211
+predict time 0.03389334678649902
+caculate label time 1.6675362586975098
+total eval time 7.782803535461426
+data to cuda time=0.4338667392730713
+predict time 0.0269320011138916
+caculate label time 1.2458178997039795
+total eval time 7.212054967880249
+data to cuda time=0.8786122798919678
+predict time 0.056891679763793945
+caculate label time 2.9582347869873047
+total eval time 9.666752338409424
+valid
+data to cuda time=0.09876871109008789
+predict time 0.007978439331054688
+caculate label time 0.4617621898651123
+total eval time 6.356103897094727
+data to cuda time=0.08975958824157715
+predict time 0.006011247634887695
+caculate label time 0.34210205078125
+total eval time 6.333466053009033
+data to cuda time=0.22041082382202148
+predict time 0.014963626861572266
+caculate label time 0.7480814456939697
+total eval time 6.974478483200073
+target
+data to cuda time=0.7070512771606445
+predict time 0.04422450065612793
+caculate label time 1.9125816822052002
+total eval time 8.749818563461304
+train_acc:0.8385,valid_acc:0.8045,target_acc:0.3716
+total cost time: 72202.2622
+read data time66.92767143249512
+update time 1769.2536087036133
+training cost time: 72234.6087
+===========epoch 53===========
+class_loss:1.1905,dis_loss:0.5975,total_loss:1.7880
+train
+data to cuda time=0.6777269840240479
+predict time 0.047904014587402344
+caculate label time 1.7905619144439697
+total eval time 8.40949296951294
+data to cuda time=0.4238300323486328
+predict time 0.02804279327392578
+caculate label time 1.2466614246368408
+total eval time 7.728639364242554
+data to cuda time=0.9393622875213623
+predict time 0.06076622009277344
+caculate label time 2.7597594261169434
+total eval time 9.767091035842896
+valid
+data to cuda time=0.10272431373596191
+predict time 0.009008169174194336
+caculate label time 0.42984819412231445
+total eval time 6.262501955032349
+data to cuda time=0.07571840286254883
+predict time 0.006981372833251953
+caculate label time 0.30925583839416504
+total eval time 5.903858423233032
+data to cuda time=0.21741771697998047
+predict time 0.01723456382751465
+caculate label time 0.7008366584777832
+total eval time 6.4942543506622314
+target
+data to cuda time=0.7125749588012695
+predict time 0.045870304107666016
+caculate label time 1.8121814727783203
+total eval time 8.227323055267334
+train_acc:0.8423,valid_acc:0.7914,target_acc:0.3394
+total cost time: 72287.4529
+read data time68.24876952171326
+update time 1798.6467530727386
+training cost time: 72318.1701
+===========epoch 54===========
+class_loss:0.2191,dis_loss:0.7553,total_loss:0.9744
+train
+data to cuda time=0.5814871788024902
+predict time 0.03789710998535156
+caculate label time 1.6645855903625488
+total eval time 7.795159578323364
+data to cuda time=0.3900172710418701
+predict time 0.02395033836364746
+caculate label time 1.192305088043213
+total eval time 7.185735464096069
+data to cuda time=0.8614425659179688
+predict time 0.06163763999938965
+caculate label time 2.760493516921997
+total eval time 9.538523435592651
+valid
+data to cuda time=0.10571551322937012
+predict time 0.007950067520141602
+caculate label time 0.436887264251709
+total eval time 6.012723684310913
+data to cuda time=0.07183527946472168
+predict time 0.005983829498291016
+caculate label time 0.32414698600769043
+total eval time 5.773093938827515
+data to cuda time=0.20545029640197754
+predict time 0.016954898834228516
+caculate label time 0.709101676940918
+total eval time 6.44934344291687
+target
+data to cuda time=0.6293416023254395
+predict time 0.04395008087158203
+caculate label time 1.8070354461669922
+total eval time 8.274481058120728
+train_acc:0.8467,valid_acc:0.8086,target_acc:0.3882
+total cost time: 72369.2459
+read data time69.60094213485718
+update time 1828.2759923934937
+training cost time: 72400.2332
+===========epoch 55===========
+class_loss:0.3630,dis_loss:0.5125,total_loss:0.8755
+train
+data to cuda time=0.6562564373016357
+predict time 0.0438227653503418
+caculate label time 1.678588628768921
+total eval time 8.132047176361084
+data to cuda time=0.42787861824035645
+predict time 0.030924081802368164
+caculate label time 1.19771409034729
+total eval time 7.373230934143066
+data to cuda time=0.9261035919189453
+predict time 0.059859275817871094
+caculate label time 2.769946575164795
+total eval time 9.789338111877441
+valid
+data to cuda time=0.11666107177734375
+predict time 0.010970830917358398
+caculate label time 0.4318721294403076
+total eval time 6.3793253898620605
+data to cuda time=0.07180500030517578
+predict time 0.006014347076416016
+caculate label time 0.3310556411743164
+total eval time 5.965927839279175
+data to cuda time=0.18852806091308594
+predict time 0.013964414596557617
+caculate label time 0.7050755023956299
+total eval time 6.903581380844116
+target
+data to cuda time=0.6433570384979248
+predict time 0.03590559959411621
+caculate label time 1.8080730438232422
+total eval time 8.21789813041687
+train_acc:0.8394,valid_acc:0.8155,target_acc:0.3965
+total cost time: 72453.0411
+read data time70.90325546264648
+update time 1857.9910681247711
+training cost time: 72484.0632
+===========epoch 56===========
+class_loss:1.2607,dis_loss:1.4129,total_loss:2.6736
+train
+data to cuda time=0.614267110824585
+predict time 0.03989911079406738
+caculate label time 1.7264649868011475
+total eval time 8.15253734588623
+data to cuda time=0.4188232421875
+predict time 0.029892921447753906
+caculate label time 1.2491052150726318
+total eval time 7.804225206375122
+data to cuda time=1.0310001373291016
+predict time 0.06883621215820312
+caculate label time 2.9479153156280518
+total eval time 9.985376834869385
+valid
+data to cuda time=0.09868955612182617
+predict time 0.007941722869873047
+caculate label time 0.45312929153442383
+total eval time 6.314878225326538
+data to cuda time=0.09571051597595215
+predict time 0.006980180740356445
+caculate label time 0.3459126949310303
+total eval time 6.107759952545166
+data to cuda time=0.2343137264251709
+predict time 0.018947601318359375
+caculate label time 0.7652912139892578
+total eval time 6.912411689758301
+target
+data to cuda time=0.6111445426940918
+predict time 0.03988790512084961
+caculate label time 1.835357904434204
+total eval time 8.184605121612549
+train_acc:0.8366,valid_acc:0.7878,target_acc:0.3809
+total cost time: 72537.5704
+read data time72.17899918556213
+update time 1888.059847831726
+training cost time: 72568.9173
+===========epoch 57===========
+class_loss:0.4179,dis_loss:0.4625,total_loss:0.8804
+train
+data to cuda time=0.6161074638366699
+predict time 0.03690052032470703
+caculate label time 1.662851333618164
+total eval time 7.869385719299316
+data to cuda time=0.44170284271240234
+predict time 0.031965017318725586
+caculate label time 1.2175359725952148
+total eval time 7.386379718780518
+data to cuda time=0.8655586242675781
+predict time 0.05878782272338867
+caculate label time 2.805483818054199
+total eval time 9.551305294036865
+valid
+data to cuda time=0.09773898124694824
+predict time 0.008054733276367188
+caculate label time 0.4317643642425537
+total eval time 5.999486923217773
+data to cuda time=0.06884527206420898
+predict time 0.005984067916870117
+caculate label time 0.32413172721862793
+total eval time 5.725210428237915
+data to cuda time=0.19152188301086426
+predict time 0.016972780227661133
+caculate label time 0.7110700607299805
+total eval time 6.423127889633179
+target
+data to cuda time=0.5822718143463135
+predict time 0.04198956489562988
+caculate label time 1.809173345565796
+total eval time 8.018101453781128
+train_acc:0.8689,valid_acc:0.8305,target_acc:0.3799
+total cost time: 72619.9364
+read data time73.46615505218506
+update time 1917.405019044876
+training cost time: 72650.5715
+===========epoch 58===========
+class_loss:0.2230,dis_loss:0.9527,total_loss:1.1756
+train
+data to cuda time=0.5853562355041504
+predict time 0.03490304946899414
+caculate label time 1.6617217063903809
+total eval time 7.7963128089904785
+data to cuda time=0.3827688694000244
+predict time 0.022963523864746094
+caculate label time 1.1990180015563965
+total eval time 7.078009843826294
+data to cuda time=0.8535172939300537
+predict time 0.05781245231628418
+caculate label time 2.765392541885376
+total eval time 9.245984315872192
+valid
+data to cuda time=0.09670782089233398
+predict time 0.008009910583496094
+caculate label time 0.4398164749145508
+total eval time 5.9392335414886475
+data to cuda time=0.06785154342651367
+predict time 0.006981849670410156
+caculate label time 0.3121628761291504
+total eval time 5.676242351531982
+data to cuda time=0.18551158905029297
+predict time 0.015952587127685547
+caculate label time 0.7151002883911133
+total eval time 6.2865118980407715
+target
+data to cuda time=0.6940639019012451
+predict time 0.0458827018737793
+caculate label time 1.7982056140899658
+total eval time 8.169036626815796
+train_acc:0.8573,valid_acc:0.8045,target_acc:0.4355
+total cost time: 72700.8147
+read data time74.75126767158508
+update time 1946.9527394771576
+training cost time: 72731.6515
+===========epoch 59===========
+class_loss:0.0587,dis_loss:0.8650,total_loss:0.9237
+train
+data to cuda time=0.5824403762817383
+predict time 0.03590679168701172
+caculate label time 1.6805002689361572
+total eval time 7.876056909561157
+data to cuda time=0.37998247146606445
+predict time 0.02494072914123535
+caculate label time 1.1947975158691406
+total eval time 7.075336456298828
+data to cuda time=0.8755092620849609
+predict time 0.0619044303894043
+caculate label time 2.764650344848633
+total eval time 9.250837087631226
+valid
+data to cuda time=0.11073517799377441
+predict time 0.009966611862182617
+caculate label time 0.4328453540802002
+total eval time 6.212006330490112
+data to cuda time=0.06881427764892578
+predict time 0.005982398986816406
+caculate label time 0.3111693859100342
+total eval time 5.846058130264282
+data to cuda time=0.19845104217529297
+predict time 0.016958236694335938
+caculate label time 0.7551143169403076
+total eval time 6.527182579040527
+target
+data to cuda time=0.570368766784668
+predict time 0.03689837455749512
+caculate label time 1.8122632503509521
+total eval time 7.972785949707031
+train_acc:0.8460,valid_acc:0.8001,target_acc:0.3638
+total cost time: 72782.4587
+read data time76.00996589660645
+update time 1976.2660737037659
+training cost time: 72813.0337
+===========epoch 60===========
+class_loss:0.0634,dis_loss:0.3389,total_loss:0.4023
+train
+data to cuda time=0.5475022792816162
+predict time 0.03394293785095215
+caculate label time 1.6765153408050537
+total eval time 7.758428573608398
+data to cuda time=0.4148061275482178
+predict time 0.025928258895874023
+caculate label time 1.2059133052825928
+total eval time 7.172926664352417
+data to cuda time=0.8387751579284668
+predict time 0.054842472076416016
+caculate label time 2.7716140747070312
+total eval time 9.26972222328186
+valid
+data to cuda time=0.10573863983154297
+predict time 0.008974552154541016
+caculate label time 0.44437551498413086
+total eval time 5.894123792648315
+data to cuda time=0.06778526306152344
+predict time 0.0059833526611328125
+caculate label time 0.3207967281341553
+total eval time 5.677137136459351
+data to cuda time=0.21442818641662598
+predict time 0.014988183975219727
+caculate label time 0.6981296539306641
+total eval time 6.289759159088135
+target
+data to cuda time=0.5844240188598633
+predict time 0.0349421501159668
+caculate label time 1.8061494827270508
+total eval time 7.971339464187622
+train_acc:0.8672,valid_acc:0.8387,target_acc:0.4146
+total cost time: 72863.1183
+read data time77.252366065979
+update time 2005.5790944099426
+training cost time: 72893.6780
+===========epoch 61===========
+class_loss:0.3277,dis_loss:1.3762,total_loss:1.7040
+train
+data to cuda time=0.5884692668914795
+predict time 0.03792071342468262
+caculate label time 1.6814100742340088
+total eval time 7.84866738319397
+data to cuda time=0.3889636993408203
+predict time 0.026950597763061523
+caculate label time 1.1958374977111816
+total eval time 7.133113384246826
+data to cuda time=1.0062110424041748
+predict time 0.06377720832824707
+caculate label time 2.8979923725128174
+total eval time 9.657151699066162
+valid
+data to cuda time=0.09571576118469238
+predict time 0.009973526000976562
+caculate label time 0.4389171600341797
+total eval time 6.155284643173218
+data to cuda time=0.07087087631225586
+predict time 0.0059850215911865234
+caculate label time 0.32811999320983887
+total eval time 6.124624013900757
+data to cuda time=0.21143770217895508
+predict time 0.014957666397094727
+caculate label time 0.7519843578338623
+total eval time 6.775861740112305
+target
+data to cuda time=0.6971955299377441
+predict time 0.04085993766784668
+caculate label time 1.9563510417938232
+total eval time 8.671391725540161
+train_acc:0.8440,valid_acc:0.8036,target_acc:0.3774
+total cost time: 72946.0924
+read data time78.57317638397217
+update time 2035.2243366241455
+training cost time: 72977.0625
+===========epoch 62===========
+class_loss:0.0184,dis_loss:0.4304,total_loss:0.4488
+train
+data to cuda time=0.6203591823577881
+predict time 0.03890490531921387
+caculate label time 1.6570899486541748
+total eval time 8.210902452468872
+data to cuda time=0.3760509490966797
+predict time 0.024965524673461914
+caculate label time 1.189810037612915
+total eval time 7.1753153800964355
+data to cuda time=1.1689066886901855
+predict time 0.07477331161499023
+caculate label time 2.7595887184143066
+total eval time 9.766176700592041
+valid
+data to cuda time=0.09975314140319824
+predict time 0.00995492935180664
+caculate label time 0.42986130714416504
+total eval time 5.9728593826293945
+data to cuda time=0.06881022453308105
+predict time 0.0059893131256103516
+caculate label time 0.31316041946411133
+total eval time 5.849065065383911
+data to cuda time=0.1914963722229004
+predict time 0.01595020294189453
+caculate label time 0.7131214141845703
+total eval time 6.332993030548096
+target
+data to cuda time=0.5793731212615967
+predict time 0.03894853591918945
+caculate label time 1.813159465789795
+total eval time 7.989374399185181
+train_acc:0.8867,valid_acc:0.8328,target_acc:0.4277
+total cost time: 73028.4039
+read data time79.86418890953064
+update time 2064.749559879303
+training cost time: 73059.2231
+===========epoch 63===========
+class_loss:0.8553,dis_loss:0.4296,total_loss:1.2849
+train
+data to cuda time=0.5675270557403564
+predict time 0.03688216209411621
+caculate label time 1.6655197143554688
+total eval time 7.853309631347656
+data to cuda time=0.422898530960083
+predict time 0.025897741317749023
+caculate label time 1.198828935623169
+total eval time 7.30504035949707
+data to cuda time=0.9065589904785156
+predict time 0.05976676940917969
+caculate label time 2.7686476707458496
+total eval time 9.388953685760498
+valid
+data to cuda time=0.10869693756103516
+predict time 0.008965492248535156
+caculate label time 0.4388577938079834
+total eval time 6.105785131454468
+data to cuda time=0.07579922676086426
+predict time 0.005981922149658203
+caculate label time 0.3141331672668457
+total eval time 5.887130498886108
+data to cuda time=0.23425674438476562
+predict time 0.02003312110900879
+caculate label time 0.7020590305328369
+total eval time 7.087913513183594
+target
+data to cuda time=0.7629184722900391
+predict time 0.047936439514160156
+caculate label time 1.8051939010620117
+total eval time 8.873568296432495
+train_acc:0.8766,valid_acc:0.8305,target_acc:0.3911
+total cost time: 73111.7755
+Environment:
+	Python: 3.9.7
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 8.4.0
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\art_painting
++++++++++++++++++++++++++++++++
+len_x 2048
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\cartoon
++++++++++++++++++++++++++++++++
+len_x 2344
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\photo
++++++++++++++++++++++++++++++++
+len_x 1670
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+C:\Users\USTC\PycharmProjects\deepdg\data\PACS\sketch
++++++++++++++++++++++++++++++++
+len_x 3929
+read data time81.42096638679504
+update time 2095.685042142868
+training cost time: 73144.2717
+===========epoch 64===========
+class_loss:0.0517,dis_loss:0.4565,total_loss:0.5082
+train
+=======hyper-parameter used========
+==========================================
+algorithm:DANN
+alpha:0.1
+batch_size:32
+beta1:0.5
+bottleneck:256
+bottleneck_a:256
+checkpoint_freq:1
+checkpoint:None
+classifier:linear
+data_file:
+dataset:PACS
+data_dir:../../data/PACS/
+dis_hidden:256
+gpu_id:0
+groupdro_eta:1
+layer:bn
+logdir:./output/logs
+inner_lr:0.01
+lr:0.005
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:5
+mixupalpha:0.2
+mldg_beta:10.0
+mmd_gamma:1
+momentum:0.9
+mu:0.0
+net:resnet18
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+seed:0
+shownet:False
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:./output/test
+weight_decay:0.0005
+step_per_epoch:41
+domains:['art_painting', 'cartoon', 'photo', 'sketch']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:7
+domain_num:4
+
+===========start training===========
+data to cuda time=1.335279941558838
+predict time 0.04487347602844238
+caculate label time 4.424303770065308
+total eval time 13.341246128082275
+data to cuda time=0.8135039806365967
+predict time 0.03391242027282715
+caculate label time 2.5787742137908936
+total eval time 11.827964305877686
+data to cuda time=1.590754747390747
+predict time 0.07680249214172363
+caculate label time 2.74267315864563
+total eval time 11.157644748687744
+valid
+data to cuda time=0.10061430931091309
+predict time 0.008975505828857422
+caculate label time 0.42893505096435547
+total eval time 6.6172943115234375
+data to cuda time=0.06781888008117676
+predict time 0.005983591079711914
+caculate label time 0.3072395324707031
+total eval time 6.052879810333252
+data to cuda time=0.20045065879821777
+predict time 0.015887737274169922
+caculate label time 0.712148904800415
+total eval time 6.778226613998413
+target
+data to cuda time=0.7150833606719971
+predict time 0.04089522361755371
+caculate label time 1.8071813583374023
+total eval time 8.991291999816895
+train_acc:0.8661,valid_acc:0.8184,target_acc:0.3931
+total cost time: 73209.1081
+read data time82.73132944107056
+update time 2125.0747866630554
+training cost time: 73239.8132
+===========epoch 65===========
+class_loss:0.1065,dis_loss:2.0023,total_loss:2.1088
+train
+data to cuda time=0.6802568435668945
+predict time 0.03786349296569824
+caculate label time 1.6636149883270264
+total eval time 8.302262306213379
+data to cuda time=0.39491748809814453
+predict time 0.0260617733001709
+caculate label time 1.2046995162963867
+total eval time 7.202863693237305
+data to cuda time=1.1418068408966064
+predict time 0.0738527774810791
+caculate label time 2.771634340286255
+total eval time 9.962141990661621
+valid
+data to cuda time=0.10363531112670898
+predict time 0.007978439331054688
+caculate label time 0.4429342746734619
+total eval time 6.394840478897095
+data to cuda time=0.0688011646270752
+predict time 0.0059697628021240234
+caculate label time 0.32715678215026855
+total eval time 5.881591081619263
+data to cuda time=0.186445951461792
+predict time 0.015929698944091797
+caculate label time 0.7161495685577393
+total eval time 6.498763561248779
+target
+data to cuda time=0.6562695503234863
+predict time 0.04389333724975586
+caculate label time 1.8205909729003906
+total eval time 8.429742813110352
+train_acc:0.8590,valid_acc:0.8099,target_acc:0.4434
+total cost time: 73292.5363
+read data time84.04638886451721
+update time 2154.572257757187
+training cost time: 73323.3539
+===========epoch 66===========
+class_loss:2.1955,dis_loss:1.1616,total_loss:3.3571
+train
+data to cuda time=0.5905039310455322
+predict time 0.038861989974975586
+caculate label time 1.66359543800354
+total eval time 7.881134986877441
+data to cuda time=0.39684247970581055
+predict time 0.02794647216796875
+caculate label time 1.1878876686096191
+total eval time 7.103739023208618
+data to cuda time=0.9742703437805176
+predict time 0.06380891799926758
+caculate label time 2.773775100708008
+total eval time 9.637582778930664
+valid
+data to cuda time=0.10472345352172852
+predict time 0.009968996047973633
+caculate label time 0.4328432083129883
+total eval time 6.2841174602508545
+data to cuda time=0.07172131538391113
+predict time 0.0060117244720458984
+caculate label time 0.3161807060241699
+total eval time 5.952990293502808
+data to cuda time=0.18051600456237793
+predict time 0.014969825744628906
+caculate label time 0.7091226577758789
+total eval time 6.550230264663696
+target
+data to cuda time=0.7022402286529541
+predict time 0.04384040832519531
+caculate label time 1.829059362411499
+total eval time 8.391929626464844
+train_acc:0.7940,valid_acc:0.7574,target_acc:0.3052
+total cost time: 73375.2055
+Traceback (most recent call last):
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 146, in <module>
+    loss_record=loss_record/args.step_per_epoch
+KeyboardInterrupt

@@ -1,7 +1,7 @@
 dataset='PACS'
 algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A')
 checkpoint=''
-batch_size=1
+batch_size=32
 test_envs=$1
 gpu_ids=0
 data_dir='../../data/PACS/'

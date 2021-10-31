@@ -100,7 +100,9 @@ def get_args():
 if __name__ == '__main__':
     args = get_args()
     set_random_seed(args.seed)
-
+    print('=======hyper-parameter used========')
+    s = print_args(args, [])
+    print(s)
     writer = SummaryWriter(args.logdir)
     loss_list = alg_loss_dict(args)
     train_loaders, eval_loaders = get_img_dataloader(args)
@@ -118,10 +120,8 @@ if __name__ == '__main__':
     opt = get_optimizer(algorithm, args)
     sch = get_scheduler(opt, args)
 
-    s = print_args(args, [])
-    print('=======hyper-parameter used========')
-    print(s)
     acc_record = {}
+    loss_record=np.zeros(len(loss_list))
     acc_type_list = ['train', 'valid', 'target']
     train_minibatches_iterator = zip(*train_loaders)
     best_valid_acc, target_acc = 0, 0
@@ -131,6 +131,7 @@ if __name__ == '__main__':
     time2=0
     for epoch in range(args.max_epoch):
         for iter_num in range(args.step_per_epoch):
+
             sss1=time.time()
             minibatches_device = [(data)
                                   for data in next(train_minibatches_iterator)]
@@ -139,6 +140,12 @@ if __name__ == '__main__':
             step_vals = algorithm.update(minibatches_device, opt, sch)
             sss3=time.time()
             time2+=sss3-sss2
+            for i ,item in enumerate(loss_list):
+                loss_record[i]+=step_vals[item]
+        loss_record=loss_record/args.step_per_epoch
+        for i, item in enumerate(loss_list):
+            writer.add_scalar('loss/{}'.format(item), loss_record[i], epoch)
+        loss_record=np.zeros(len(loss_list))
         print('read data time{}'.format(time1))
         print('update time {}'.format(time2))
         print('training cost time: %.4f' % (time.time() - sss))
@@ -150,9 +157,8 @@ if __name__ == '__main__':
         if (epoch == (args.max_epoch-1)) or (epoch % args.checkpoint_freq == 0):
             print('===========epoch %d===========' % (epoch))
             s = ''
-            for item in loss_list:
-                s += (item+'_loss:%.4f,' % step_vals[item])
-                writer.add_scalar('loss/{}'.format(item),step_vals[item],epoch)
+            for i,item in enumerate(loss_list):
+                s += (item+'_loss:%.4f,' % loss_record[i])
             print(s[:-1])
             s = ''
             for item in acc_type_list:

@@ -62,3 +62,7 @@ Traceback (most recent call last):
   File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 107, in <module>
     print(train_loaders.dataset.x[0])
 KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 146, in <module>
+    loss_record=loss_record/args.step_per_epoch
+KeyboardInterrupt
