@@ -8,7 +8,7 @@ data_dir='../../data/PACS/'
 net='resnet18'
 task='img_dg'
 output='./output/test'
-logdir='./output/logs'
+logdir='./output/logs/test1'
 alpha=$4
 lr=$2
 max_epoch=$3
@@ -18,7 +18,7 @@ i=2
 mu=0
 # DANN
 python train.py --batch_size $batch_size --mu $mu --seed $seed --alpha $alpha --logdir $logdir $checkpoint --lr $lr --data_dir $data_dir --max_epoch $max_epoch --net $net --task $task --output $output \
---test_envs $test_envs --dataset $dataset --algorithm ${algorithm[i]} --mldg_beta 10
+--test_envs $test_envs --dataset $dataset --algorithm ${algorithm[i]} --mldg_beta 10 --visual
 
 
 #

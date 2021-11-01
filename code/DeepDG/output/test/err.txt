@@ -66,3 +66,194 @@ Traceback (most recent call last):
   File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 146, in <module>
     loss_record=loss_record/args.step_per_epoch
 KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 308, in _check_seekable
+    f.seek(f.tell())
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 311, in _check_seekable
+    raise_err_msg(["seek", "tell"], e)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 304, in raise_err_msg
+    raise type(e)(msg)
+AttributeError: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+Traceback (most recent call last):
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 141, in get_features
+    fea=network.feature(x).cpu.numpy()
+AttributeError: 'builtin_function_or_method' object has no attribute 'numpy'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 176, in <module>
+    fea_arr,clabel_arr=get_features(algorithm,eval_loaders[i])
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 141, in get_features
+    fea=network.feature(x).cpu.numpy()
+AttributeError: 'builtin_function_or_method' object has no attribute 'numpy'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 176, in <module>
+    fea_arr,clabel_arr=get_features(algorithm,eval_loaders[i])
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 141, in get_features
+    fea=network.feature(x).cpu().numpy()
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 56, in feature
+    return self.bottleneck(self.featurizer(x))
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\network\img_network.py", line 47, in forward
+    x = self.conv1(x)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+Traceback (most recent call last):
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 140, in <module>
+    step_vals = algorithm.update(minibatches_device, opt, sch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 42, in update
+    all_preds = self.classifier(all_z)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 308, in _check_seekable
+    f.seek(f.tell())
+AttributeError: 'NoneType' object has no attribute 'seek'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 165, in <module>
+    check_point=torch.load(args.checkpoint)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 594, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 235, in _open_file_like
+    return _open_buffer_reader(name_or_buffer)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 220, in __init__
+    _check_seekable(buffer)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 311, in _check_seekable
+    raise_err_msg(["seek", "tell"], e)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\serialization.py", line 304, in raise_err_msg
+    raise type(e)(msg)
+AttributeError: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 193, in <module>
+    writer.add_embedding(fea_arr_full,
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\utils\tensorboard\writer.py", line 826, in add_embedding
+    assert mat.shape[0] == label_img.shape[0], '#images should equal with #data points'
+AssertionError: #images should equal with #data points
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 186, in <module>
+    fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/feature_vis.py", line 151, in get_features
+    fea=network.feature(x).cpu().numpy()
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 56, in feature
+    return self.bottleneck(self.featurizer(x))
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\network\img_network.py", line 49, in forward
+    x = self.relu(x)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\activation.py", line 98, in forward
+    return F.relu(input, inplace=self.inplace)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\functional.py", line 1297, in relu
+    result = torch.relu_(input)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Traceback (most recent call last):
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\train.py", line 196, in <module>
+    fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\feature_vis.py", line 151, in get_features
+    fea=network.feature(x).cpu().numpy()
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 56, in feature
+    return self.bottleneck(self.featurizer(x))
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\network\img_network.py", line 47, in forward
+    x = self.conv1(x)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
+Traceback (most recent call last):
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\train.py", line 199, in <module>
+    fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\feature_vis.py", line 151, in get_features
+    fea=network.feature(x).cpu().numpy()
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 56, in feature
+    return self.bottleneck(self.featurizer(x))
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\network\img_network.py", line 47, in forward
+    x = self.conv1(x)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
+Traceback (most recent call last):
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\train.py", line 201, in <module>
+    fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\feature_vis.py", line 151, in get_features
+    fea=network.feature(x).cpu().numpy()
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 56, in feature
+    return self.bottleneck(self.featurizer(x))
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\network\img_network.py", line 47, in forward
+    x = self.conv1(x)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
+Traceback (most recent call last):
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\train.py", line 204, in <module>
+    fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\feature_vis.py", line 151, in get_features
+    fea=network.feature(x).cpu().numpy()
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DANN.py", line 56, in feature
+    return self.bottleneck(self.featurizer(x))
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\network\img_network.py", line 47, in forward
+    x = self.conv1(x)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 446, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 442, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same

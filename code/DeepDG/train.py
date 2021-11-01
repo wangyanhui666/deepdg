@@ -8,10 +8,10 @@ import argparse
 import copy
 from alg.opt import *
 from alg import alg, modelopera
-from utils.util import set_random_seed, save_checkpoint, print_args, train_valid_target_eval_names, alg_loss_dict, Tee, img_param_init, print_environ
+from utils.util import set_random_seed, save_checkpoint, print_args, train_valid_target_eval_names, alg_loss_dict, alg_class_dict, Tee, img_param_init, print_environ
 from datautil.getdataloader import get_img_dataloader
 from torch.utils.tensorboard import SummaryWriter
-
+from feature_vis import get_features,select_n_random
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
     parser.add_argument('--algorithm', type=str, default="ERM")
@@ -82,6 +82,7 @@ def get_args():
     parser.add_argument('--tau', type=float, default=1, help="andmask tau")
     parser.add_argument('--test_envs', type=int, nargs='+',
                         default=[0], help='target domains')
+    parser.add_argument('--visual',action='store_true')
     parser.add_argument('--output', type=str,
                         default="train_output", help='result output path')
     parser.add_argument('--weight_decay', type=float, default=5e-4)
@@ -117,6 +118,7 @@ if __name__ == '__main__':
     else:
         algorithm = algorithm_class(args).cuda()
     algorithm.train()
+
     opt = get_optimizer(algorithm, args)
     sch = get_scheduler(opt, args)
 
@@ -176,15 +178,47 @@ if __name__ == '__main__':
                 save_checkpoint(f'model_epoch{epoch}.pkl', algorithm, args)
             print('total cost time: %.4f' % (time.time()-sss))
             algorithm_dict = algorithm.state_dict()
-    if args.shownet==True:
-        all_x = torch.cat([data[0].float() for data in minibatches_device])
-        writer.add_graph(algorithm,all_x)
+
     save_checkpoint('best_model.pkl',best_algorithm,args)
     print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)
+    algorithm.eval()
 
     print('DG result: %.4f' % target_acc)
+    if args.shownet==True:
+        all_x = torch.cat([data[0].float() for data in minibatches_device])
+        writer.add_graph(algorithm,all_x)
+    if args.visual:
+        print('add embedding in tensorboard')
+        algorithm.cuda()
+        algorithm.eval()
 
+        classes = alg_class_dict(args)
+
+        for item in acc_type_list:
+            print(item)
+            for n,i in enumerate(eval_name_dict[item]):
+                fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+                if n==0:
+                    fea_arr_full=fea_arr
+                    clabel_arr_full=clabel_arr
+                    img_tenosr_full=img_tenosr
+                else:
+                    fea_arr_full=np.concatenate((fea_arr_full,fea_arr),axis=0)
+                    clabel_arr_full=np.concatenate((clabel_arr_full,clabel_arr))
+                    img_tenosr_full=torch.cat((img_tenosr_full,img_tenosr),0)
+            print(fea_arr_full.shape)
+            print(clabel_arr_full.shape)
+            print(img_tenosr_full.shape)
+            clabel_list = [classes[lab] for lab in clabel_arr_full]
+            fea_arr_full, clabel_arr_full, img_tenosr_full = select_n_random(fea_arr_full, clabel_arr_full, img_tenosr_full,n=1000)
+            writer.add_embedding(fea_arr_full,
+                             metadata=clabel_arr_full,
+                             label_img=img_tenosr_full,
+                             tag=item)
+            print(fea_arr_full.shape)
+            print(clabel_arr_full.shape)
+            print(img_tenosr_full.shape)
     with open(os.path.join(args.output, 'done.txt'), 'w') as f:
         f.write('done\n')
         f.write('total cost time:%s\n' % (str(time.time()-sss)))
