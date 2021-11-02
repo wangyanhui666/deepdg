@@ -24,7 +24,20 @@ def get_params(alg, args, inner=False):
             params = [
                 {'params': alg.featurizer_a.parameters(), 'lr': args.lr_decay1 * initlr},
                 {'params': alg.bottleneck_a.parameters(), 'lr': args.lr_decay2 * initlr},
-                {'params': alg.classifier.parameters(), 'lr': args.lr_decay2 * initlr}
+                {'params': alg.classifier.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.discriminator.parameters(),'lr': args.lr_decay2 * initlr}
+            ]
+            return params
+        elif ('DAAN' in args.algorithm):
+            params=[
+                {'params': alg.featurizer.parameters(), 'lr': args.lr_decay1 * initlr},
+                {'params': alg.bottleneck.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.common_embedding, 'lr': args.lr_decay2 * initlr},
+                {'params': alg.cross_attn_layer.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.classifier_o.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.classifier_n.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.discriminator_o.parameters(), 'lr': args.lr_decay2 * initlr},
+                {'params': alg.discriminator_n.parameters(), 'lr': args.lr_decay2 * initlr},
             ]
             return params
         else:

@@ -1,5 +1,5 @@
 dataset='PACS'
-algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A')
+algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A' 'DAAN')
 checkpoint=''
 batch_size=32
 test_envs=$1
@@ -8,13 +8,13 @@ data_dir='../../data/PACS/'
 net='resnet18'
 task='img_dg'
 output='./output/test'
-logdir='./output/logs/test1'
+logdir='./output/logs/test2'
 alpha=$4
 lr=$2
 max_epoch=$3
 seed=$5
 
-i=2
+i=9
 mu=0
 # DANN
 python train.py --batch_size $batch_size --mu $mu --seed $seed --alpha $alpha --logdir $logdir $checkpoint --lr $lr --data_dir $data_dir --max_epoch $max_epoch --net $net --task $task --output $output \

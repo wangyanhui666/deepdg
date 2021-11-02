@@ -257,3 +257,95 @@ Traceback (most recent call last):
   File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\conv.py", line 442, in _conv_forward
     return F.conv2d(input, weight, bias, self.stride,
 RuntimeError: Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor) should be the same
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 122, in <module>
+    opt = get_optimizer(algorithm, args)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\opt.py", line 59, in get_optimizer
+    params = get_params(alg, args, inner)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\opt.py", line 35, in get_params
+    {'params': alg.common_embedding.parameters(), 'lr': args.lr_decay2 * initlr},
+AttributeError: 'Parameter' object has no attribute 'parameters'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 142, in <module>
+    step_vals = algorithm.update(minibatches_device, opt, sch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 48, in update
+    disc_input_origin = Adver_network.notReverseLayerF.apply(disc_input_origin, self.args.alpha)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\module.py", line 1177, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'DAAN' object has no attribute 'args'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 142, in <module>
+    step_vals = algorithm.update(minibatches_device, opt, sch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 65, in update
+    common_embedding_batch=self.common_embedding.repeat(x.size(0))
+RuntimeError: Number of dimensions of repeat dims can not be smaller than number of dimensions of tensor
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 142, in <module>
+    step_vals = algorithm.update(minibatches_device, opt, sch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 65, in update
+    common_embedding_batch=self.common_embedding.repeat(x.size(0))
+RuntimeError: Number of dimensions of repeat dims can not be smaller than number of dimensions of tensor
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 142, in <module>
+    step_vals = algorithm.update(minibatches_device, opt, sch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 67, in update
+    x=CrossAttentionEncoderLayer(x,common_embedding_batch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 141, in __init__
+    self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout, batch_first=batch_first,
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\activation.py", line 892, in __init__
+    self._qkv_same_embed_dim = self.kdim == embed_dim and self.vdim == embed_dim
+RuntimeError: Boolean value of Tensor with more than one value is ambiguous
+Traceback (most recent call last):
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 142, in <module>
+    step_vals = algorithm.update(minibatches_device, opt, sch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 67, in update
+    x=self.cross_attn_layer(x,common_embedding_batch)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 141, in __init__
+    self.self_attn = nn.MultiheadAttention(d_model, nhead, dropout=dropout, batch_first=batch_first,
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torch\nn\modules\activation.py", line 891, in __init__
+    self.vdim = vdim if vdim is not None else embed_dim
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_bundle\pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 168, in <module>
+    acc_record[item] = np.mean(np.array([modelopera.accuracy(
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 168, in <listcomp>
+    acc_record[item] = np.mean(np.array([modelopera.accuracy(
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\modelopera.py", line 36, in accuracy
+    p = network.predict(x)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\alg\algs\DAAN.py", line 90, in predict
+    common_embedding_batch = self.common_embedding.repeat(x.size(0))
+RuntimeError: Number of dimensions of repeat dims can not be smaller than number of dimensions of tensor
+Traceback (most recent call last):
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/train.py", line 147, in <module>
+    loss_record=loss_record/args.step_per_epoch
+KeyboardInterrupt

@@ -82,6 +82,7 @@ def get_args():
     parser.add_argument('--tau', type=float, default=1, help="andmask tau")
     parser.add_argument('--test_envs', type=int, nargs='+',
                         default=[0], help='target domains')
+    parser.add_argument('--tokennum',type=int,default=64,help='number of common embedding token')
     parser.add_argument('--visual',action='store_true')
     parser.add_argument('--output', type=str,
                         default="train_output", help='result output path')
@@ -142,11 +143,18 @@ if __name__ == '__main__':
             step_vals = algorithm.update(minibatches_device, opt, sch)
             sss3=time.time()
             time2+=sss3-sss2
+            print(iter_num)
             for i ,item in enumerate(loss_list):
+                print('loss {} {}'.format(item,step_vals[item]))
                 loss_record[i]+=step_vals[item]
+        print(loss_record)
         loss_record=loss_record/args.step_per_epoch
+        print(loss_record)
+        print('step_per_epoch',args.step_per_epoch)
         for i, item in enumerate(loss_list):
             writer.add_scalar('loss/{}'.format(item), loss_record[i], epoch)
+            s += (item + '_loss:%.4f,' % loss_record[i])
+        print(s[:-1])
         loss_record=np.zeros(len(loss_list))
         print('read data time{}'.format(time1))
         print('update time {}'.format(time2))
@@ -159,10 +167,7 @@ if __name__ == '__main__':
         if (epoch == (args.max_epoch-1)) or (epoch % args.checkpoint_freq == 0):
             print('===========epoch %d===========' % (epoch))
             s = ''
-            for i,item in enumerate(loss_list):
-                s += (item+'_loss:%.4f,' % loss_record[i])
-            print(s[:-1])
-            s = ''
+
             for item in acc_type_list:
                 print(item)
                 acc_record[item] = np.mean(np.array([modelopera.accuracy(
