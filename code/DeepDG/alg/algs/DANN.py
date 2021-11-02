@@ -51,3 +51,6 @@ class DANN(Algorithm):
 
     def predict(self, x):
         return self.classifier(self.bottleneck(self.featurizer(x)))
+
+    def feature(self, x):
+        return self.bottleneck(self.featurizer(x))

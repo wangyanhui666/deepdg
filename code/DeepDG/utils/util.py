@@ -41,11 +41,15 @@ def train_valid_target_eval_names(args):
         t += 1
     return eval_name_dict
 
-
+def alg_class_dict(args):
+    classes_dict={'PACS': ['dog','elephant','giraffe','guitar','horse','house','person']}
+    return classes_dict[args.dataset]
 def alg_loss_dict(args):
     loss_dict = {'ANDMask': ['total'],
                  'CORAL': ['class', 'coral', 'total'],
                  'DANN': ['class', 'dis', 'total'],
+                 'DAAN': ['class_o','class_n','dis_o','dis_n','total'],
+                 'DAAN_first': ['class_o', 'class_n', 'dis_o', 'dis_n', 'total'],
                  'DANN_RES_C': ['class', 'total'],
                  'DANN_RES_A': ['class', 'total'],
                  'ERM': ['class'],

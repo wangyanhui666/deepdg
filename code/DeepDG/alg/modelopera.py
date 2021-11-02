@@ -15,6 +15,7 @@ def get_fea(args):
     return net
 
 
+
 def accuracy(network, loader):
     correct = 0
     total = 0
