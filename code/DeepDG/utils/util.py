@@ -49,6 +49,7 @@ def alg_loss_dict(args):
                  'CORAL': ['class', 'coral', 'total'],
                  'DANN': ['class', 'dis', 'total'],
                  'DAAN': ['class_o','class_n','dis_o','dis_n','total'],
+                 'DAAN_first': ['class_o', 'class_n', 'dis_o', 'dis_n', 'total'],
                  'DANN_RES_C': ['class', 'total'],
                  'DANN_RES_A': ['class', 'total'],
                  'ERM': ['class'],

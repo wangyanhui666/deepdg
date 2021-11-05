@@ -61,14 +61,14 @@ class DAAN(Algorithm):
 
         x = all_z.view(all_z.size(0), 1, -1)
         #b,1,256
-        print(x.size(0))
+
         common_embedding_batch=self.common_embedding.repeat(x.size(0),1,1)
-        print(common_embedding_batch.size)
+
         x=self.cross_attn_layer(x,common_embedding_batch)
         #b,1,256
         x=x.view(x.size(0),-1)
         #b,256
-        print(x.size)
+
         disc_input_new = x
         disc_input_new = Adver_network.ReverseLayerF.apply(disc_input_new, self.args.alpha)
         disc_out_new=self.discriminator_n(disc_input_new)
@@ -99,6 +99,124 @@ class DAAN(Algorithm):
         x = self.cross_attn_layer(x, common_embedding_batch)
         x = x.view(x.size(0),-1)
         return x
+
+
+
+
+class DAAN_first(Algorithm):
+    def __init__(self,args):
+        super(DAAN_first, self).__init__(args)
+
+        self.featurizer=get_fea(args)
+        #b,512
+        self.avgpool=nn.AdaptiveAvgPool2d((16,16))
+        self.bottleneck = common_network.feat_bottleneck(
+            self.featurizer.in_features, args.bottleneck, args.layer)
+        self.bottleneck_n = common_network.feat_bottleneck(
+            self.featurizer.in_features, args.bottleneck, args.layer)
+        # self.conv1=nn.Conv2d(512, 256, kernel_size=1, stride=1, padding=0,bias=False)
+        #b,256
+        self.common_embedding=nn.Parameter(torch.randn(1,args.tokennum,256))
+        self.cross_attn_layer=CrossAttentionEncoderLayer(d_model=256,nhead=8,batch_first=True)
+        self.classifier_o = common_network.feat_classifier(
+            args.num_classes, args.bottleneck, args.classifier)
+        self.classifier_n = common_network.feat_classifier(
+            args.num_classes, args.bottleneck, args.classifier)
+        self.discriminator_o = Adver_network.Discriminator(
+            args.bottleneck, args.dis_hidden, args.domain_num - len(args.test_envs))
+        self.discriminator_n = Adver_network.Discriminator(
+            args.bottleneck, args.dis_hidden, args.domain_num - len(args.test_envs))
+        self.args=args
+
+    def update(self, minibatches, opt, sch):
+        all_x = torch.cat([data[0].cuda().float() for data in minibatches])
+        all_y = torch.cat([data[1].cuda().long() for data in minibatches])
+        all_z = self.bottleneck(self.featurizer(all_x))
+        #b,256
+        disc_input_origin = all_z
+        disc_input_origin = Adver_network.notReverseLayerF.apply(disc_input_origin, self.args.alpha)
+        disc_out_origin = self.discriminator_o(disc_input_origin)
+        disc_labels = torch.cat([
+            torch.full((data[0].shape[0], ), i,
+                       dtype=torch.int64, device='cuda')
+            for i, data in enumerate(minibatches)
+        ])
+
+        disc_loss_origin = F.cross_entropy(disc_out_origin, disc_labels)
+        all_preds_origin = self.classifier_o(all_z)
+        classifier_loss_origin = F.cross_entropy(all_preds_origin, all_y)
+        loss_origin = classifier_loss_origin+disc_loss_origin
+
+
+        x=self.featurizer.first_layer(all_x)
+        #b,64,56,56
+        x=self.avgpool(x)
+        #b,64,16,16
+        x=x.view(x.size(0),x.size(1),-1)
+        #b,64,256
+        common_embedding_batch=self.common_embedding.repeat(x.size(0),1,1)
+
+        x=self.cross_attn_layer(x,common_embedding_batch)
+        #b,64,256
+        x=x.view(x.size(0),x.size(1),16,16)
+        #b,64,16,16
+        x=self.featurizer.last_four_layers(x)
+        #b,512,1,1
+        x=x.view(x.size(0),-1)
+        x=self.bottleneck_n(x)
+        #b,256
+        disc_input_new = x
+        disc_input_new = Adver_network.ReverseLayerF.apply(disc_input_new, self.args.alpha)
+        disc_out_new=self.discriminator_n(disc_input_new)
+        disc_loss_new=F.cross_entropy(disc_out_new,disc_labels)
+        all_preds_new=self.classifier_n(x)
+        classifier_loss_new=F.cross_entropy(all_preds_new,all_y)
+        loss_new=classifier_loss_new+disc_loss_new
+        loss=loss_new+loss_origin
+        opt.zero_grad()
+        loss.backward()
+        opt.step()
+        if sch:
+            sch.step()
+        return {'total': loss.item(), 'class_o': classifier_loss_origin.item(),'class_n': classifier_loss_new.item(), 'dis_o': disc_loss_origin.item(),'dis_n': disc_loss_new.item()}
+
+    def predict(self, x):
+        x=self.featurizer.first_layer(x)
+        x = self.avgpool(x)
+        # b,64,16,16
+        x = x.view(x.size(0), x.size(1), -1)
+        # b,64,256
+        common_embedding_batch = self.common_embedding.repeat(x.size(0), 1, 1)
+
+        x = self.cross_attn_layer(x, common_embedding_batch)
+        # b,64,256
+        x = x.view(x.size(0), x.size(1), 16, 16)
+        # b,64,16,16
+        x = self.featurizer.last_four_layers(x)
+        x = x.view(x.size(0), -1)
+        x = self.bottleneck_n(x)
+        return self.classifier_n(x)
+
+    def feature(self,x):
+        x = self.featurizer.first_layer(x)
+        x = self.avgpool(x)
+        # b,64,16,16
+        x = x.view(x.size(0), x.size(1), -1)
+        # b,64,256
+        common_embedding_batch = self.common_embedding.repeat(x.size(0), 1, 1)
+
+        x = self.cross_attn_layer(x, common_embedding_batch)
+        # b,64,256
+        x = x.view(x.size(0), x.size(1), 16, 16)
+        # b,64,16,16
+        x = self.featurizer.last_four_layers(x)
+        x = x.view(x.size(0), -1)
+        x = self.bottleneck_n(x)
+        return x
+
+
+
+
 
 class CrossAttentionEncoderLayer(nn.Module):
     r"""TransformerEncoderLayer is made up of self-attn and feedforward network.

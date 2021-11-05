@@ -48,6 +48,7 @@ class ResBase(nn.Module):
         x = self.bn1(x)
         x = self.relu(x)
         x = self.maxpool(x)
+        # b,64,56,56
         x = self.layer1(x)
         x = self.layer2(x)
         x = self.layer3(x)
@@ -58,6 +59,21 @@ class ResBase(nn.Module):
         #b,512
         return x
 
+    def first_layer(self,x):
+        x=self.conv1(x)
+        x=self.bn1(x)
+        x=self.relu(x)
+        x=self.maxpool(x)
+        return x
+
+    def last_four_layers(self,x):
+        x = self.layer1(x)
+        x = self.layer2(x)
+        x = self.layer3(x)
+        x = self.layer4(x)
+        x = self.avgpool(x)
+        x =x.view(x.size(0),-1)
+        return x
 
 class DTNBase(nn.Module):
     def __init__(self):

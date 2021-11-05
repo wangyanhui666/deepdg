@@ -12,6 +12,8 @@ from utils.util import set_random_seed, save_checkpoint, print_args, train_valid
 from datautil.getdataloader import get_img_dataloader
 from torch.utils.tensorboard import SummaryWriter
 from feature_vis import get_features,select_n_random
+
+
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
     parser.add_argument('--algorithm', type=str, default="ERM")
@@ -42,9 +44,12 @@ def get_args():
                         default=1, help="groupdro eta")
     parser.add_argument('--layer', type=str, default="bn",
                         choices=["ori", "bn"], help='bottleneck normalization style')
-    parser.add_argument('--logdir',type=str,default=None,help='tensorboard logdir path')
+
     parser.add_argument('--inner_lr', type=float,
                         default=1e-2, help="learning rate used in MLDG")
+    parser.add_argument('--local_run',action='store_true')
+    parser.add_argument('--logdir', type=str, default=None, help='tensorboard logdir path')
+
     parser.add_argument('--lr', type=float, default=1e-2, help="learning rate")
     parser.add_argument('--lr_decay', type=float, default=0.75, help='for sgd')
     parser.add_argument('--lr_decay1', type=float,
@@ -100,7 +105,12 @@ def get_args():
 
 
 if __name__ == '__main__':
+
     args = get_args()
+    if not args.local_run:
+        import tensorflow as tf
+        import tensorboard as tb
+        tf.io.gfile = tb.compat.tensorflow_stub.io.gfile
     set_random_seed(args.seed)
     print('=======hyper-parameter used========')
     s = print_args(args, [])
@@ -135,29 +145,24 @@ if __name__ == '__main__':
     for epoch in range(args.max_epoch):
         for iter_num in range(args.step_per_epoch):
 
-            sss1=time.time()
+            # sss1=time.time()
             minibatches_device = [(data)
                                   for data in next(train_minibatches_iterator)]
-            sss2=time.time()
-            time1+=sss2-sss1
+            # sss2=time.time()
+            # time1+=sss2-sss1
             step_vals = algorithm.update(minibatches_device, opt, sch)
-            sss3=time.time()
-            time2+=sss3-sss2
-            print(iter_num)
+            # sss3=time.time()
+            # time2+=sss3-sss2
             for i ,item in enumerate(loss_list):
-                print('loss {} {}'.format(item,step_vals[item]))
                 loss_record[i]+=step_vals[item]
-        print(loss_record)
         loss_record=loss_record/args.step_per_epoch
-        print(loss_record)
-        print('step_per_epoch',args.step_per_epoch)
         for i, item in enumerate(loss_list):
             writer.add_scalar('loss/{}'.format(item), loss_record[i], epoch)
             s += (item + '_loss:%.4f,' % loss_record[i])
         print(s[:-1])
         loss_record=np.zeros(len(loss_list))
-        print('read data time{}'.format(time1))
-        print('update time {}'.format(time2))
+        # print('read data time{}'.format(time1))
+        # print('update time {}'.format(time2))
         print('training cost time: %.4f' % (time.time() - sss))
         if (epoch in [int(args.max_epoch*0.7), int(args.max_epoch*0.9)]) and (not args.schuse):
             print('manually descrease lr')
@@ -179,6 +184,7 @@ if __name__ == '__main__':
                 best_valid_acc = acc_record['valid']
                 target_acc = acc_record['target']
                 best_algorithm = copy.deepcopy(algorithm)
+                best_epoch = epoch
             if args.save_model_every_checkpoint:
                 save_checkpoint(f'model_epoch{epoch}.pkl', algorithm, args)
             print('total cost time: %.4f' % (time.time()-sss))
@@ -187,7 +193,7 @@ if __name__ == '__main__':
     save_checkpoint('best_model.pkl',best_algorithm,args)
     print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)
-    algorithm.eval()
+    writer.add_scalar('result acc',target_acc,global_step=best_epoch)
 
     print('DG result: %.4f' % target_acc)
     if args.shownet==True:
@@ -212,18 +218,14 @@ if __name__ == '__main__':
                     fea_arr_full=np.concatenate((fea_arr_full,fea_arr),axis=0)
                     clabel_arr_full=np.concatenate((clabel_arr_full,clabel_arr))
                     img_tenosr_full=torch.cat((img_tenosr_full,img_tenosr),0)
-            print(fea_arr_full.shape)
-            print(clabel_arr_full.shape)
-            print(img_tenosr_full.shape)
+
             clabel_list = [classes[lab] for lab in clabel_arr_full]
             fea_arr_full, clabel_arr_full, img_tenosr_full = select_n_random(fea_arr_full, clabel_arr_full, img_tenosr_full,n=1000)
             writer.add_embedding(fea_arr_full,
                              metadata=clabel_arr_full,
                              label_img=img_tenosr_full,
                              tag=item)
-            print(fea_arr_full.shape)
-            print(clabel_arr_full.shape)
-            print(img_tenosr_full.shape)
+
     with open(os.path.join(args.output, 'done.txt'), 'w') as f:
         f.write('done\n')
         f.write('total cost time:%s\n' % (str(time.time()-sss)))

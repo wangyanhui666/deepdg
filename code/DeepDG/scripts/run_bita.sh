@@ -1,5 +1,5 @@
 dataset='PACS'
-algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A' 'DAAN')
+algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A' 'DAAN' 'DAAN_first')
 checkpoint='/model/yanhui/DANN_PACS/DANN_24/model.pkl'
 test_envs=$1
 gpu_ids=0
