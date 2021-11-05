@@ -51,10 +51,14 @@ def get_img_dataloader(args):
     eval_loaders = [DataLoader(
         dataset=env,
 <<<<<<< HEAD
+<<<<<<< HEAD
         batch_size=64,
 =======
         batch_size=8,
 >>>>>>> f0a7744 (add DAAN first model)
+=======
+        batch_size=64,
+>>>>>>> ca343d2 (fix tensorflow bug in github)
         num_workers=args.N_WORKERS,
         drop_last=False,
         shuffle=False,

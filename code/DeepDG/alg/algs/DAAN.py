@@ -163,9 +163,12 @@ class DAAN_first(Algorithm):
         x=self.featurizer.last_four_layers(x)
         #b,512,1,1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         print(x.shape)
 >>>>>>> f0a7744 (add DAAN first model)
+=======
+>>>>>>> ca343d2 (fix tensorflow bug in github)
         x=x.view(x.size(0),-1)
         x=self.bottleneck_n(x)
         #b,256
