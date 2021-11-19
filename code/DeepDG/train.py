@@ -12,16 +12,6 @@ from utils.util import set_random_seed, save_checkpoint, print_args, train_valid
 from datautil.getdataloader import get_img_dataloader
 from torch.utils.tensorboard import SummaryWriter
 from feature_vis import get_features,select_n_random
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-=======
->>>>>>> f0a7744 (add DAAN first model)
-=======
-
-
->>>>>>> ca343d2 (fix tensorflow bug in github)
 def get_args():
     parser = argparse.ArgumentParser(description='DG')
     parser.add_argument('--algorithm', type=str, default="ERM")
@@ -152,60 +142,24 @@ if __name__ == '__main__':
     time2=0
     for epoch in range(args.max_epoch):
         for iter_num in range(args.step_per_epoch):
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-            # sss1=time.time()
-=======
-            sss1=time.time()
->>>>>>> f0a7744 (add DAAN first model)
-=======
-            # sss1=time.time()
->>>>>>> ca343d2 (fix tensorflow bug in github)
             minibatches_device = [(data)
                                   for data in next(train_minibatches_iterator)]
             # sss2=time.time()
             # time1+=sss2-sss1
             step_vals = algorithm.update(minibatches_device, opt, sch)
-<<<<<<< HEAD
-<<<<<<< HEAD
-            # sss3=time.time()
-            # time2+=sss3-sss2
-            for i ,item in enumerate(loss_list):
-                loss_record[i]+=step_vals[item]
-        loss_record=loss_record/args.step_per_epoch
-=======
-            sss3=time.time()
-            time2+=sss3-sss2
             for i ,item in enumerate(loss_list):
                 loss_record[i]+=step_vals[item]
         loss_record=loss_record/args.step_per_epoch
 
->>>>>>> f0a7744 (add DAAN first model)
-=======
-            # sss3=time.time()
-            # time2+=sss3-sss2
-            for i ,item in enumerate(loss_list):
-                loss_record[i]+=step_vals[item]
-        loss_record=loss_record/args.step_per_epoch
->>>>>>> ca343d2 (fix tensorflow bug in github)
         for i, item in enumerate(loss_list):
             writer.add_scalar('loss/{}'.format(item), loss_record[i], epoch)
             s += (item + '_loss:%.4f,' % loss_record[i])
         print(s[:-1])
         loss_record=np.zeros(len(loss_list))
-<<<<<<< HEAD
-<<<<<<< HEAD
-        # print('read data time{}'.format(time1))
-        # print('update time {}'.format(time2))
-=======
+
         print('read data time{}'.format(time1))
         print('update time {}'.format(time2))
->>>>>>> f0a7744 (add DAAN first model)
-=======
-        # print('read data time{}'.format(time1))
-        # print('update time {}'.format(time2))
->>>>>>> ca343d2 (fix tensorflow bug in github)
+
         print('training cost time: %.4f' % (time.time() - sss))
         if (epoch in [int(args.max_epoch*0.7), int(args.max_epoch*0.9)]) and (not args.schuse):
             print('manually descrease lr')
@@ -236,15 +190,13 @@ if __name__ == '__main__':
     save_checkpoint('best_model.pkl',best_algorithm,args)
     print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     writer.add_scalar('result acc',target_acc,global_step=best_epoch)
-=======
+
     algorithm.eval()
->>>>>>> f0a7744 (add DAAN first model)
-=======
+
     writer.add_scalar('result acc',target_acc,global_step=best_epoch)
->>>>>>> ca343d2 (fix tensorflow bug in github)
+
 
     print('DG result: %.4f' % target_acc)
     if args.shownet==True:
@@ -256,7 +208,6 @@ if __name__ == '__main__':
         algorithm.eval()
 
         classes = alg_class_dict(args)
-<<<<<<< HEAD
 
         for item in acc_type_list:
             print(item)
@@ -277,8 +228,7 @@ if __name__ == '__main__':
                              metadata=clabel_arr_full,
                              label_img=img_tenosr_full,
                              tag=item)
-=======
->>>>>>> f0a7744 (add DAAN first model)
+
 
         for item in acc_type_list:
             print(item)
