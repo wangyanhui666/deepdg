@@ -1,13 +1,5 @@
 dataset='PACS'
-<<<<<<< HEAD
-<<<<<<< HEAD
 algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A' 'DAAN' 'DAAN_first')
-=======
-algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A' 'DAAN' 'DANN_first')
->>>>>>> f0a7744 (add DAAN first model)
-=======
-algorithm=('MLDG' 'ERM' 'DANN' 'RSC' 'Mixup' 'MMD' 'CORAL' 'DANN_RES_C' 'DANN_RES_A' 'DAAN' 'DAAN_first')
->>>>>>> ca343d2 (fix tensorflow bug in github)
 checkpoint='/model/yanhui/DANN_PACS/DANN_24/model.pkl'
 test_envs=$1
 gpu_ids=0

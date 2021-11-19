@@ -157,9 +157,6 @@ if __name__ == '__main__':
         print(s[:-1])
         loss_record=np.zeros(len(loss_list))
 
-        print('read data time{}'.format(time1))
-        print('update time {}'.format(time2))
-
         print('training cost time: %.4f' % (time.time() - sss))
         if (epoch in [int(args.max_epoch*0.7), int(args.max_epoch*0.9)]) and (not args.schuse):
             print('manually descrease lr')
