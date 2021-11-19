@@ -190,11 +190,6 @@ if __name__ == '__main__':
     save_checkpoint('best_model.pkl',best_algorithm,args)
     print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)
-
-    writer.add_scalar('result acc',target_acc,global_step=best_epoch)
-
-    algorithm.eval()
-
     writer.add_scalar('result acc',target_acc,global_step=best_epoch)
 
 
@@ -208,26 +203,6 @@ if __name__ == '__main__':
         algorithm.eval()
 
         classes = alg_class_dict(args)
-
-        for item in acc_type_list:
-            print(item)
-            for n,i in enumerate(eval_name_dict[item]):
-                fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
-                if n==0:
-                    fea_arr_full=fea_arr
-                    clabel_arr_full=clabel_arr
-                    img_tenosr_full=img_tenosr
-                else:
-                    fea_arr_full=np.concatenate((fea_arr_full,fea_arr),axis=0)
-                    clabel_arr_full=np.concatenate((clabel_arr_full,clabel_arr))
-                    img_tenosr_full=torch.cat((img_tenosr_full,img_tenosr),0)
-
-            clabel_list = [classes[lab] for lab in clabel_arr_full]
-            fea_arr_full, clabel_arr_full, img_tenosr_full = select_n_random(fea_arr_full, clabel_arr_full, img_tenosr_full,n=1000)
-            writer.add_embedding(fea_arr_full,
-                             metadata=clabel_arr_full,
-                             label_img=img_tenosr_full,
-                             tag=item)
 
 
         for item in acc_type_list:
