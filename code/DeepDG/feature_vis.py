@@ -416,4 +416,8 @@ if __name__ == '__main__':
     writer.add_embedding(fea_arr_full,
                          metadata=clabel_arr_full,
                          label_img=img_tenosr_full)
+<<<<<<< HEAD
 >>>>>>> f0a7744 (add DAAN first model)
+=======
+>>>>>>> ca343d2fe1a09fa14879de06d8f005931bb90a7c
+>>>>>>> yanhui

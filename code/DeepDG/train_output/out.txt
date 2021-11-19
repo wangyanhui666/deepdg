@@ -160,4 +160,8 @@ Traceback (most recent call last):
   File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
     classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
 FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+<<<<<<< HEAD
 >>>>>>> f0a7744 (add DAAN first model)
+=======
+>>>>>>> ca343d2fe1a09fa14879de06d8f005931bb90a7c
+>>>>>>> yanhui
