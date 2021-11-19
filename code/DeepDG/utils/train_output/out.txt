@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Environment:
 	Python: 3.9.7
 	PyTorch: 1.10.0
@@ -78,3 +79,85 @@ Traceback (most recent call last):
   File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
     classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
 FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+=======
+Environment:
+	Python: 3.9.7
+	PyTorch: 1.10.0
+	Torchvision: 0.11.1
+	CUDA: 10.2
+	CUDNN: 7605
+	NumPy: 1.21.2
+	PIL: 8.4.0
+=======hyper-parameter used========
+==========================================
+algorithm:ERM
+alpha:1
+batch_size:32
+beta1:0.5
+bottleneck:256
+bottleneck_a:256
+checkpoint_freq:1
+checkpoint:None
+classifier:linear
+data_file:
+dataset:office
+data_dir:
+dis_hidden:256
+gpu_id:0
+groupdro_eta:1
+layer:bn
+logdir:None
+inner_lr:0.01
+lr:0.01
+lr_decay:0.75
+lr_decay1:1.0
+lr_decay2:1.0
+lr_gamma:0.0003
+max_epoch:120
+mixupalpha:0.2
+mldg_beta:1
+mmd_gamma:1
+momentum:0.9
+mu:1
+net:resnet50
+N_WORKERS:4
+rsc_f_drop_factor:0.3333333333333333
+rsc_b_drop_factor:0.3333333333333333
+save_model_every_checkpoint:False
+schuse:False
+seed:0
+shownet:False
+split_style:strat
+task:img_dg
+tau:1
+test_envs:[0]
+output:train_output
+weight_decay:0.0005
+step_per_epoch:100000000000
+domains:['amazon', 'dslr', 'webcam']
+img_dataset:{'office': ['amazon', 'dslr', 'webcam'], 'office-caltech': ['amazon', 'dslr', 'webcam', 'caltech'], 'office-home': ['Art', 'Clipart', 'Product', 'Real_World'], 'PACS': ['art_painting', 'cartoon', 'photo', 'sketch'], 'dg5': ['mnist', 'mnist_m', 'svhn', 'syn', 'usps'], 'VLCS': ['Caltech101', 'LabelMe', 'SUN09', 'VOC2007']}
+input_shape:(3, 224, 224)
+num_classes:31
+
+C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\utils\amazon
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\pydevd.py", line 1483, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm 2021.2.3\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "C:/Users/USTC/PycharmProjects/deepdg/code/DeepDG/utils/feature_vis.py", line 160, in <module>
+    train_loaders, eval_loaders = get_img_dataloader(args)
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\datautil\getdataloader.py", line 18, in get_img_dataloader
+    tedatalist.append(ImageDataset(args.dataset, args.task, args.data_dir,
+  File "C:\Users\USTC\PycharmProjects\deepdg\code\DeepDG\datautil\imgdata\imgdataload.py", line 16, in __init__
+    self.imgs = ImageFolder(root_dir+domain_name).imgs
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torchvision\datasets\folder.py", line 310, in __init__
+    super(ImageFolder, self).__init__(root, loader, IMG_EXTENSIONS if is_valid_file is None else None,
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torchvision\datasets\folder.py", line 145, in __init__
+    classes, class_to_idx = self.find_classes(self.root)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torchvision\datasets\folder.py", line 221, in find_classes
+    return find_classes(directory)
+  File "C:\Users\USTC\anaconda3\envs\deepdg\lib\site-packages\torchvision\datasets\folder.py", line 40, in find_classes
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'amazon'
+>>>>>>> f0a7744 (add DAAN first model)

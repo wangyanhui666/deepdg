@@ -50,7 +50,11 @@ def get_img_dataloader(args):
 
     eval_loaders = [DataLoader(
         dataset=env,
+<<<<<<< HEAD
         batch_size=64,
+=======
+        batch_size=8,
+>>>>>>> f0a7744 (add DAAN first model)
         num_workers=args.N_WORKERS,
         drop_last=False,
         shuffle=False,

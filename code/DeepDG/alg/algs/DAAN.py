@@ -162,6 +162,10 @@ class DAAN_first(Algorithm):
         #b,64,16,16
         x=self.featurizer.last_four_layers(x)
         #b,512,1,1
+<<<<<<< HEAD
+=======
+        print(x.shape)
+>>>>>>> f0a7744 (add DAAN first model)
         x=x.view(x.size(0),-1)
         x=self.bottleneck_n(x)
         #b,256
