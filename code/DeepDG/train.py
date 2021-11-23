@@ -150,7 +150,7 @@ if __name__ == '__main__':
             for i ,item in enumerate(loss_list):
                 loss_record[i]+=step_vals[item]
         loss_record=loss_record/args.step_per_epoch
-
+        s=''
         for i, item in enumerate(loss_list):
             writer.add_scalar('loss/{}'.format(item), loss_record[i], epoch)
             s += (item + '_loss:%.4f,' % loss_record[i])
@@ -166,7 +166,6 @@ if __name__ == '__main__':
         if (epoch == (args.max_epoch-1)) or (epoch % args.checkpoint_freq == 0):
             print('===========epoch %d===========' % (epoch))
             s = ''
-
             for item in acc_type_list:
                 print(item)
                 acc_record[item] = np.mean(np.array([modelopera.accuracy(
@@ -188,24 +187,30 @@ if __name__ == '__main__':
     print('Best model saved!')
     save_checkpoint('model.pkl', algorithm, args)
     writer.add_scalar('result acc',target_acc,global_step=best_epoch)
-
-
     print('DG result: %.4f' % target_acc)
     if args.shownet==True:
-        all_x = torch.cat([data[0].float() for data in minibatches_device])
-        writer.add_graph(algorithm,all_x)
+        # all_x = torch.cat([data[0].float() for data in minibatches_device])
+        # writer.add_graph(algorithm,all_x)
+        pass
     if args.visual:
-        print('add embedding in tensorboard')
-        algorithm.cuda()
-        algorithm.eval()
+        print('visual best algorithm')
+        best_algorithm.cuda()
 
         classes = alg_class_dict(args)
 
-
+        s = ''
+        for item in acc_type_list:
+            print(item)
+            acc_record[item] = np.mean(np.array([modelopera.accuracy(
+                best_algorithm, eval_loaders[i]) for i in eval_name_dict[item]]))
+            s += (item + '_acc:%.4f,' % acc_record[item])
+        print(s[:-1])
+        best_algorithm.eval()
+        print('eval_name_dict',eval_name_dict)
         for item in acc_type_list:
             print(item)
             for n,i in enumerate(eval_name_dict[item]):
-                fea_arr,clabel_arr,img_tenosr=get_features(algorithm,eval_loaders[i])
+                fea_arr,clabel_arr,img_tenosr=get_features(best_algorithm,eval_loaders[i])
                 if n==0:
                     fea_arr_full=fea_arr
                     clabel_arr_full=clabel_arr
