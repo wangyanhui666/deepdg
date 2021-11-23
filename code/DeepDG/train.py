@@ -226,7 +226,7 @@ if __name__ == '__main__':
                              metadata=clabel_arr_full,
                              label_img=img_tenosr_full,
                              tag=item)
-
+    print('DG result: %.4f' % target_acc)
     with open(os.path.join(args.output, 'done.txt'), 'w') as f:
         f.write('done\n')
         f.write('total cost time:%s\n' % (str(time.time()-sss)))
